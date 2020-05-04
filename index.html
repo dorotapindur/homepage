@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTF notatki</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <main>
+
+        <header id="up" class="flex-container">
+
+            <p class="autor">Dora Pindur</p>
+    
+            <img src="https://res.cloudinary.com/dxdfioc82/image/upload/v1587980652/wtf-cut_bn5xpm.png" alt="logo WTF" width="224" height="178">
+    
+            <h1 class="h1">Co ten frontend<br>
+            <span>Moja przygoda z programowaniem</span>
+            </h1>
+            
+        </header>
+
+        <section>
+            <div class="gradient-box">
+            <h2>Jak tutaj trafiłam?</h2>
+            </div>
+
+            <p>Poszukiwałam różnych materiałów na temat nauki programowania dla początkujących. Przeglądałam też oferty
+                bardzo drogich kursów czy „bootcampów“. Po kilku dniach Facebook wyświetlił mi reklamę <a
+                    href="https://cotenfrontend.pl/" target="_blank">CO TEN FRONTEND</a>.
+                Poczytałam, pooglądałam i podjęłam decyzję: spróbuję! Decyzji sprzyjała też sensowna cena kursu i
+                sympatyczny prowadzący.</p>
+        </section>
+
+        <section>
+            <div class="gradient-box">
+            <h2>Od zera do bohatera</h2>
+            </div>
+
+            <p>Mam nadzieję na taki przebieg mojej programistycznej kariery, ale zobaczymy, jak mi pójdzie. Zaczynam z
+                poziomu „Turbo Pascal 20 lat temu w liceum“ i na razie programowanie to dla mnie totalny kosmos!</p>
+        </section>
+
+        <section class="cosmos">
+            <div class="gradient-box">
+            <h2>Dziennik szkolenia</h2>
+            </div>
+
+            <nav class="weeks">
+                <ul>
+                    <li><a href="#week1">Tydzień 1</a></li>
+                    <li><a href="#week2">Tydzień 2</a></li>
+                    <li><a href="#week3">Tydzień 3</a></li>
+                    <li><a href="#week4">Tydzień 4</a></li>
+                    <li><a href="#week5">Tydzień 5</a></li>
+                    <li><a href="#week6">Tydzień 6</a></li>
+                    <li><a href="#week7">Tydzień 7</a></li>
+                    <li><a href="#week8">Tydzień 8</a></li>
+                    <li><a href="#week9">Tydzień 9</a></li>
+                    <li><a href="#week10">Tydzień 10</a></li>
+                    <li><a href="#week11">Tydzień 11</a></li>
+                    <li><a href="#week12">Tydzień 12</a></li>
+                    <li><a href="#week13">Tydzień 13</a></li>
+                </ul>
+            </nav>
+
+            <article>
+
+                <h3 id="week1">Tydzień 1</h3>
+
+
+                <p>Zapisałam się dość późno, bo 20-go kwietnia 2020, a kurs pojawił się 16-go, ale szybko nadrobiłam
+                    materiał z
+                    pierwszego, wprowadzającego tygodnia. Zainstalowałam całe „środowisko“ - potrzebną przeglądarkę,
+                    program do
+                    pisania kodu oraz konto na <strong>Slacku</strong>.
+                    Odrabiając zadanie domowe pomieszałam trochę w stronie przykładowej (zmieniając ją na stronę USk)
+                    oraz na
+                    stronie NFM-u.</p>
+            </article>
+
+            <article>
+
+                <h3 id="week2">Tydzień 2</h3>
+
+                <p>Właśnie odrabiam pierwsze zadanie - tworzę własną prostą stronę, którą będę ulepszać i
+                    uaktualniać.<br>
+                    Zaglądam do zadań domowych innych uczestników, czytam komentarze do nich i próbuję wykorzystać
+                    niektóre elementy u siebie.</p>
+                <p>Strona www ma 4 warstwy:</p>
+                <ol start="0">
+                    <li><span>treść</span></li>
+                    <li><span><span class="note">HTML</span> - Hypertext Markup Language</span></li>
+                    <li><span><span class="note">CSS</span> - Cascading Style Sheets</span></li>
+                    <li><span class="note">Java Script</span></li>
+                </ol>
+                <p>Chrome - funkcja <span class="note">"inspect"</span> do badania kodu wyświetlanej strony (Firefox też ma tę funkcję)</p>
+                <p><a href="https://validator.w3.org/nu/#textarea" target="_blank">Validator</a> - sprawdza kod i
+                    wskazuje błędy</p>
+                <p>Dobrym zwyczajem jest podawanie rozmiarów umieszczonego na stronie obrazka - jeśli nie wczyta się on
+                    u użytkownika, nie zmieni to układu reszty elementów.<br>
+                    ( src="obrazek.jpg" alt="tekst alternatywny" width="x" height="y" )</p>
+                <p>&lt;link href="style.css" rel="stylesheet" type="text/css"&gt; - odnośnik do zewnętrznego arkusza stylów (w części HEAD kodu)</p>
+                <p>&lt;!-- tekst --&gt; - komentarz do kodu HTML, tekst ignorowany przez przeglądarkę</p>
+                <p>/* tekst */ - komentarz do kodu CSS</p>
+                <p>Przy wstawianiu obrazka (lub innego odnośnika) - WZGLĘDNA ścieżka dostępu - czyli według umiejscowienia względem katalogu strony (ważne przy wrzucaniu na serwer).</p>
+
+            </article>
+
+            <article>
+
+                <h3 id="week3">Tydzień 3</h3>
+
+                <section class="inner">
+                    <h4>Kanban</h4>                
+                    <p><span class="note">Kanban</span> - japoński termin określający listę przeczy do zrobienia. Ułatwia śledzenie postępów pracy. Składa się z trzech obszarów:</p>
+                    <ul>
+                        <li><span>to do</span></li>
+                        <li><span>doing</span></li>
+                        <li><span>done</span></li>
+                    </ul>
+                    <p>Praktyczny kanban online: <a href="https://trello.com" target="_blank">Trello.com</a></p>   
+                </section>
+            
+
+                <section class="inner">
+                    <h4>Nazewnictwo w programowaniu:</h4>
+                <ul>
+                    <li><span>bez polskich znaków</span></li>
+                    <li><span>bez spacji</span></li>
+                    <li><span>po angielsku</span></li>
+                    <li><span>konsekwentnie, według jakiegoś schematu.</span></li>
+                    <li><span>nie zaczynamy od cyfry</span></li>
+                </ul>
+
+                <p>Konwencja nazewnictwa</p>
+
+                <ul>
+                    <li><span class="note">camelCase</span><span> - np. myHeader</span></li>
+                    <li><span class="note">kebab-case</span><span> - np. my-header</span></li>
+                    <li><span class="note">snake_case</span><span> - np. my_header</span></li>
+                    <li><span class="note">PascalCase</span><span> - np. MyHeader</span></li>
+                </ul>
+
+                <table>
+                    <tr><td><img class="small" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/camel7-5_uwljxq.jpg" alt="camel picture"></td><td><img class="small" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/kebab7-5_znht7k.jpg" alt="kebab picture"></td><td><img class="small" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/snake7-5_id1icb.jpg" alt="snake picture"></td><td><img class="small" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/pascal7-5_mdl2at.jpg" alt="pascal picture"></td></tr>
+                    <tr><td>camelCase</td><td>kebab-case</td><td>snake_case</td><td>PascalCase</td></tr>
+                 </table>
+
+                </section>
+
+                <section class="inner">
+                    <h4>Różne rodzaje stylowania w CSS</h4>
+                    <ul>
+                        <li><span>styl </span><span class="note">inline</span><span> - wewnątrz znacznika, miejscowo.<br>
+                        &lt;znacznik style="color:red;"&gt;treść&lt;/znacznik&gt;</span></li>
+                        <li><span>atrybut </span><span class="note">class</span><span> - dla grupy elementów.<br>
+                        &lt;znacznik class="name"&gt;treść&lt;/znacznik&gt;<br>
+                        w CSS klasę oznaczamy kropką: .name { } Nazwa klasy w kebab-case.</span></li>
+                        <li><span>stylowanie za pomocą </span><span class="note">id</span><br>
+                        <span>&lt;znacznik id="name"&gt;treść&lt;/znacznik&gt;<br>
+                        w CSS identyfikator oznaczamy krzyżykiem (hashem): #name { } Na stronie tylko jeden znacznik powinien mieć id="name" - służy do wewnętrznej nawigacji po stronie.</span></li>
+                        <li><span class="note">!important</span><span> - polecenie wstawiane po wartości danej właściwości<br>
+                        selektor {<br>
+                        właściwość: wartość !important;<br>
+                        }<br>
+                        To zła praktyka. To polecenie unieważnia i nadpisuje inne reguły, powodując zamieszanie - lepiej nie używać.</span></li>
+                    </ul>
+                    <p><b>Specyficzność w CSS</b> (od najważniejszej):</p>
+                    <ol>
+                        <li><span>!important</span></li>
+                        <li><span>style inline</span></li>
+                        <li><span>id</span></li>
+                        <li><span>class</span></li>
+                        <li><span>element</span></li>
+                    </ol>
+                    <p>Jeśli specyficzność jest równa, ważniejszy jest selektor "bliżej" danego elementu (czyli te facto to, co jest niżej w kodzie).</p>
+                </section>
+
+                <section class="inner">
+                    <h4>Jak działa internet</h4>
+                    <p><span class="note">HTTP(S)</span> - Hypertext Transfer Protocol (Secure) - protokół, którego używa przeglądaka do transportowania HTML-a. 
+                        Pobiera i wyświetla pliki znajdujące się w stronach internetowych.</p>
+                    <p><span class="note">URL</span> - Uniform Resource Locator - adres, który wpisujemy. Ten adres składa się z kilku części:</p>
+                    
+                    <table class="https">
+                       <tr><td class="left">
+                           <ul>
+                                <li><span class="content-protocol"><b>https://</b> - protokół</span></li>
+                                <li><span class="content-host"><b>cotenfrontend.pl</b> - host (adres serwera)</span></li>
+                                <li><span class="content-port"><b>:443</b> - port (ta część zazwyczaj jest dla użytkownika niewidoczna). Wskazuje przeglądarce, na którym porcie na serwerze znajdują się pliki strony</span></li>
+                                <li><span class="content-root"><b style="color: red">/</b> - bardzo ważny znak / - <b>root</b> - przy podawaniu ścieżki do zasobów (src). 
+                                    Jeśli podajemy źródło ze slashem na początku (src="/img.jpg"), przeglądarka szuka w katalogu głównym. Jeśli podajemy bez (src="img.jpg") - szuka w katalogu <b>aktualnym</b>, czyli np w katalogu podstrony. Dlatego lepiej podawać źródło (na serwerze) ze slashem na początku.</span></li>
+                                <li><span class="content-path"><b>index.html</b> - ścieżka dostępu do zasobu</span></li>
+                                <li><span class="content-parameter"><b>?paramert=wartość</b> - parametry</span></li>
+                            </ul>
+                            </td>
+                            <td class="right"><span class="protocol">https://</span><span class="host">cotenfrontend</span><span class="port">:443</span><span class="root">/</span><span class="path">index.html</span><span class="parameter">?parametry=wartość</span></td>
+                        </tr>
+                    </table>
+
+                    <p><span class="note">DNS</span> - Domain Name System - system tłumaczący nazwę mnemoniczną (czyli "dla ludzi") na odpowiadający jej adres IP.</p>
+                    <p><span class="note">parsowanie</span> - sprawdzanie składni</p>
+                    <p>Kody odpowiedzi protokołu HTTP:</p>
+                    <ul>
+                        <li><span><b>10x</b> - czekaj</span></li>
+                        <li><span><b>200</b> - wszystko ok.</span></li>
+                        <li><span><b>30x</b> - Przekierowania: szukasz w złym miejscu - przekieruję cię w dobre, bo wiem, gdzie.</span></li>
+                        <li><span><b>404</b> - nie mam tego, czego potrzebujesz :(</span></li>
+                        <li><span><b>50x</b> - błędy serwera</span></li>
+                    </ul>
+                    <p>Kody możemy sprawdzić w Devtools (F12) w zakładce Network.</p>
+                </section>
+
+                <section class="inner">
+                    <h4>JavaScript</h4>
+                    <p>JavaScript jest językiem programowania opartym na specyfikacji ECMAScript 6+.</p>
+                    <p>JavaScript składa się z:</p>
+                    <ul>
+                        <li><span>wartości</span></li>
+                        <li><span>operacji porównywania</span></li>
+                        <li><span>literałów</span></li>
+                        <li><span>zmiennych</span></li>
+                        <li><span>obiektów</span></li>
+                        <li><span>funkcji</span></li>
+                    </ul>
+                    <p>Dołączanie zewnętrznego formularza main.js - na samym dole kodu, tuż przed zamknięciem znacznika &lt;/body&gt;.<br>
+                    &lt;script src="main.js"&gt;&lt;/script&gt;</p>
+                </section>
+
+                <section class="inner">
+                    <h4>Terminal</h4>
+                    <p>Uruchomienie terminala w Linuxie: Ctrl+Alt+T.</p>
+                    <p>Polecenia:</p>
+                    <ul>
+                        <li><span><b>pwd</b> - wyświetla pełną ścieżkę</span></li>
+                        <li><span><b>klawisz Tab</b> - dopełnia nazwy</span></li>
+                        <li><span><b>cd Katalog/</b> - idź do katalogu</span></li>
+                        <li><span><b>cd ~</b> - idź do katalogu domowego</span></li>
+                        <li><span><b>cd ..</b> - idź jeden katalog do góry</span></li>
+                        <li><span><b>cd ../..</b> - idź dwa katalogi do góry (itd.)</span></li>
+                        <li><span><b>ls</b> - pokaż zawartość katalogu</span></li>
+                        <li><span><b>mkdir</b> - utwórz katalog</span></li>
+                        <li><span><b>code .</b> - otwiera katalog w Visual Studio Code</span></li>
+                        <li><span><b>code otwórz-mnie-w-code</b> - otwiera konkretny plik w Visual Studio Code</span></li>
+                    </ul>
+                </section>
+                
+
+            </article><!--pamiętaj o id dla kolejnych tygodni-->
+
+        </section>
+
+        <nav class="navi">
+            <ul>
+                <li class="navigation-item"><a href="/home/dora/dev/homepage/skroty.html">skróty</a></li>
+                <li class="navigation-item"><a href="/home/dora/dev/homepage/linki.html">linki</a></li>
+                <li class="navigation-item"><a href="/home/dora/dev/homepage/znaczniki.html">znaczniki</a></li>
+                <li class="navigation-item"><a href="zlote.html">złote myśli Korsana</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="gradient-box">
+            <h2>Co dalej?</h2>
+            </div>
+            <p>Pomysły na to, co robić po WTF:</p>
+            <ul>
+                <li><a href="https://devupgrade.online/">DevUpgrade.online</a> - darmowy kurs online dla programistów na poziomie junior i regular</li>
+            </ul>
+        </section>
+
+    </main>
+
+    
+    <footer>
+        <div class="flex-container">
+            <nav><a href="#up">do góry</a></nav>
+            <div class="footer-note">Strona jest zadaniem domowym ze <u><strong>szkolenia</strong></u> WTF - Co Ten Frontend 2020</div>
+        </div>
+    </footer>
+    
+
+    <sszsgscript src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+alert('Czy jesteś gotów na oświecenie?')
