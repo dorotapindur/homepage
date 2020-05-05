@@ -11,31 +11,31 @@
 
 <body>
 
-    <header class="flex-container">
+    <header id="up" class="main-header">
 
-        <img id="up" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1587980652/wtf-cut_bn5xpm.png"
+        <img class="main-header__image" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1587980652/wtf-cut_bn5xpm.png"
             alt="logo WTF" width="224" height="178" style="margin:0px 0px 50px">
     
         </header>
 
     <main>
 
-        <nav id="up" class="navi">
+        <nav class="navigation">
             <ul>
-                <li class="navigation-item"><a href="skroty.html">skróty</a></li>
-                <li class="navigation-item"><a href="linki.html">linki</a></li>
-                <li class="navigation-item">znaczniki</li>
-                <li class="navigation-item"><a href="zlote.html">złote myśli Korsana</a></li>
+                <li class="navigation__item"><a href="skroty.html">skróty</a></li>
+                <li class="navigation__item"><a href="linki.html">linki</a></li>
+                <li class="navigation__item">znaczniki</li>
+                <li class="navigation__item"><a href="zlote.html">złote myśli Korsana</a></li>
             </ul>
         </nav>
 
-        <section>
+        <section class="section">
 
-            <div class="gradient-box">
-            <h1 class="secondary-h1">Poznane znaczniki HTML</h1>
+            <div class="section__gradient-box">
+            <h1 class="section__heading">Poznane znaczniki HTML</h1>
             </div>
 
-            <p><b><span class="sign">&lt;</span>
+            <p class="section__content"><b><span class="sign">&lt;</span>
                 <span class="tag">znacznik</span>
                 <span class="atr"> atrybut</span>
                 =
@@ -47,38 +47,38 @@
                 <span class="sign">&gt;</span></b> -
                 ogólne nazewnictwo</p>
 
-            <ul>
-                <li><span class="note">&lt;br&gt;</span><span> - nowa linia</span></li>
-                <li><span class="note">&lt;b&gt;</span><span> - <b>bold</b>, pogrubienie</span></li>
-                <li><span class="note">&lt;i&gt;</span><span> - <i>italic</i>, kursywa</i></span></li>
-                <li><span class="note">&lt;strong&gt;</span><span> - <strong>important</strong>, pogrubienie + ważność (np. w czytniku)</span></li>
-                <li><span class="note">&lt;em&gt;</span><span> - <em>emphasize</em>, kursywa + emocjonalne podkreślenie</span></li>
-                <li><b><span class="sign">&lt;</span>
-                <span class="tag">a</span>
-                <span class="atr"> href</span>
-                <span>=</span>
-                <span class="cont">"target"</span>
-                <span class="sign">&gt;</span>
-                <span>opis łącza</span>
-                <span class="sign">&lt;/</span>
-                <span class="tag">a</span>
-                <span class="sign">&gt;</span></b>
-                <span> - odnośnik. Dla odnośników wewnątrz strony: id="name", target="#name" </span></li>
-                <li><span class="note">&lt;nav&gt;</span><span> - nawigacja po stronie/witrynie (ważne dla czytników)</span></li>
-                <li><span class="note">&lt;ul&gt; - &lt;li&gt;, &lt;ol&gt; - &lt;li&gt;</span><span> - lista</span></li>
+            <ul class="section__list">
+                <li class="section__list--item"><span class="mark">&lt;br&gt;</span><span class="section__list--content"> - nowa linia</span></li>
+                <li class="section__list--item"><span class="mark">&lt;b&gt;</span><span class="section__list--content"> - <b>bold</b>, pogrubienie</span></li>
+                <li class="section__list--item"><span class="mark">&lt;i&gt;</span><span class="section__list--content"> - <i>italic</i>, kursywa</i></span></li>
+                <li class="section__list--item"><span class="mark">&lt;strong&gt;</span><span class="section__list--content"> - <strong>important</strong>, pogrubienie + ważność (np. w czytniku)</span></li>
+                <li class="section__list--item"><span class="mark">&lt;em&gt;</span><span class="section__list--content"> - <em>emphasize</em>, kursywa + emocjonalne podkreślenie</span></li>
+                <li class="section__list--item"><b><span class="sign-color">&lt;</span>
+                <span class="tag-color">a</span>
+                <span class="atribute-color"> href</span>
+                <span class="section__list--content">=</span>
+                <span class="content-color">"target"</span>
+                <span class="sign-color">&gt;</span>
+                <span class="section__list--content">opis łącza</span>
+                <span class="sign-color">&lt;/</span>
+                <span class="tag-color">a</span>
+                <span class="sign-color">&gt;</span></b>
+                <span class="section__list--content"> - odnośnik. Dla odnośników wewnątrz strony: id="name", target="#name" </span></li>
+                <li class="section__list--item"><span class="mark">&lt;nav&gt;</span><span class="section__list--content"> - nawigacja po stronie/witrynie (ważne dla czytników)</span></li>
+                <li class="section__list--item"><span class="mark">&lt;ul&gt; - &lt;li&gt;, &lt;ol&gt; - &lt;li&gt;</span><span class="section__list--content"> - lista</span></li>
 
 
             </ul>
 
         </section>
 
-        <nav class="back"><a href="index.html">&vltri;&vltri; &nbsp;&nbsp; Powrót do strony głównej</a></nav>
+        <nav class="back-button"><a class="back-button__link" href="index.html">&vltri;&vltri; &nbsp;&nbsp; Powrót do strony głównej</a></nav>
 
     </main>
 
-    <footer>
-        <nav><a href="#up">do góry</a></nav>
-        Strona jest zadaniem domowym ze <u><strong>szkolenia</strong></u> WTF - Co Ten Frontend 2020
+    <footer class="footer">
+        <nav class="footer__navigation"><a class="footer__navigation--link" href="#up">do góry</a></nav>
+        <div class="footer__text">Strona jest zadaniem domowym ze <u><strong>szkolenia</strong></u> WTF - Co Ten Frontend 2020</div>
     </footer>
 
 </body>
