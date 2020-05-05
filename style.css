@@ -1,321 +1,12 @@
 body {
-    background-color: black;
-    background-image: url(https://res.cloudinary.com/dxdfioc82/image/upload/v1588407470/space-tile_wgvnxi.png);
-    background-attachment: fixed;
-    font-family: 'Open Sans', sans-serif;
-    margin: 80px 0px 120px 0px;
-    
+  background-color: black;
+  background-image: url(https://res.cloudinary.com/dxdfioc82/image/upload/v1588407470/space-tile_wgvnxi.png);
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  margin: 80px 0px 120px 0px;
 }
 
-.autor {
-    margin: auto;
-    flex-wrap: nowrap;
-    text-align: center;
-    color: rgb(157, 46, 190);
-    font-size: 40px;
-    text-shadow: rgb(72, 0, 139) 0 0 0.1em, rgba(163, 1, 128, 0.904) 0 0 0.1em;
-    transition: text-shadow 0.5s linear;
-}
-
-.autor:hover {
-    text-shadow: rgb(72, 0, 139) 0 -0.2em 0.1em, rgba(163, 1, 128, 0.904) 0 0.2em 0.1em;
-}
-
-header img {
-    margin: auto;
-    filter: brightness(0.8);
-    transform: scale(1);
-    transition: filter 0.5s linear;
-    transition: transform 0.5s linear;
-    padding: 10px 0 20px;
-}
-
-header img:hover {
-    filter: brightness(1.1);
-    transform: scale(1.1);
-}
-
-.h1 {
-    display: inline-block;
-    color: rgb(216, 25, 0);
-    font-size: 60px;
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: rgba(165, 60, 0, 0.801) 0 0 0.1em;
-    margin: auto;
-    padding: 20px 20px 50px;
-    line-height: 50%;
-    transition: text-shadow 0.5s linear;
-}
-
-h1:hover {
-    text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em;
-}
-
-h1 span {
-    font-size: 48%;
-    font-style: normal;
-    color: rgb(255, 102, 0);
-}
-
-.secondary-h1 {
-    background: linear-gradient(90deg,#f9c802,#ec6c06);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-section {
-    background: rgba(21, 0, 44, 0.582);
-    border-radius: 25px;
-    border-color: rgb(16, 0, 31);
-    border-style: groove;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 0px 140px 20px 140px;
-}
-
-.cosmos {
-    background-image: url(https://res.cloudinary.com/dxdfioc82/image/upload/v1588275255/cosmos-long_d4qhg2.png);
-    background-repeat: repeat-y;
-}
-
-.navi {
-    text-align: center;
-    text-transform: uppercase;
-    background:  rgba(21, 0, 44, 0.39);
-    border: none;
-    list-style-type: none;
-    margin-bottom: 20px; 
-}
-
-.navi a:link {
-    color: rgb(255, 102, 0);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-.navi a:visited {
-    color: rgb(255, 102, 0);
-    transition: color 0.3s ease;
-}
-.navi a:hover {
-    color: rgb(157, 46, 190);
-}
-.navi a:active {
-    color: rgb(21, 0, 31);
-}
-
-.navigation-item {
-    display: inline;/*uwaga display, zweryfikować po 5-tym tygodniu*/
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0px 30px;
-    color: rgb(111, 53, 129);
-}
-
-.back {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 40px;
-    margin-left: 140px;
-    background: rgba(21, 0, 44, 0.582);
-    width: 300px;
-    text-align: center;
-    border-radius: 15px;
-    border-color: rgb(16, 0, 31);
-    border-style: groove;
-    transition: background 0.5s linear;
-}
-
-.back:hover {
-    background: rgba(92, 17, 153, 0.521);   
-}
-
-.back a:link {
-    color: rgb(255, 102, 0);
-    transition: color 0.5s linear;
-}
-.back a:visited {
-    color: rgb(255, 102, 0);
-    transition: color 0.5s linear;
-}
-.back a:hover {
-    color: rgb(236, 172, 52);
-}
-
-
-.note {
-    font-weight: bolder;
-    color: rgb(236, 172, 52);
-}
-
-.inner {
-    margin: 0px 20px 20px 20px;
-    background: rgba(83, 39, 119, 0.253);
-    border-color: none;
-    border-style: none;
-    border-radius: 25px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-.small {
-    max-width: 200px;
-    margin: 10px;
-    box-shadow: 5px 5px 5px black;
-}
-
-/*klasy kolorów kodu*/
-.tag {
-    color: rgb(28, 88, 255);
-}
-
-.atr {
-    color: rgb(55, 161, 228);
-}
-
-.cont {
-    color: tomato;
-}
-
-.sign {
-    color: grey;
-}
-
-/**/
-
-.gradient-box {
-    margin: 0 auto;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-h2 {
-    background: linear-gradient(90deg,#f9c802,#ec6c06);
-    -webkit-background-clip: text;
-    background-clip: text;
-	-webkit-text-fill-color: transparent;
-    font-weight: bold;
-}
-
-h3 {
-     color: rgb(255, 102, 0);
-}
-
-h4 {
-     color: #f5f5f5c9;
-     font-weight: bold;
-     text-shadow: black 0.2em 0.2em 0.2em;
-}
-
-p {
-     color: #f5f5f5c9;
-     margin-left: 20px;
-     text-shadow: black 0.2em 0.2em 0.2em;
-}
-
-q {
-     font-weight: bold;
-}
-
-table {
-     margin: 0 auto;
-     padding-bottom: 10px;
-     color:  #f5f5f5f6;
-     text-align: center;
-     text-shadow: black 0.2em 0.2em 0.2em;
-}
-
-/*URL opis i podświetlany adres*/
-
- .https {
-    margin: 0 auto;
-    padding-bottom: 10px;
-    color:  #f5f5f5f6;
-    text-shadow: black 0.2em 0.2em 0.2em;
- }
-
- .left {
-    width: 40%;
-    text-align: justify;
- }
-
- .right {
-    width: 60%;
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(162, 0, 255);
- }
-
- .protocol:hover {
-     color: rgb(255, 102, 0);
-     cursor: pointer;
- }
-
- .host:hover {
-    color: rgb(255, 102, 0);
- }
-
- .port:hover {
-    color: rgb(255, 102, 0);
- }
-
- .root:hover {
-    color: red;
- }
-
- .path:hover {
-    color: rgb(255, 102, 0);
- }
-
- .parameter:hover {
-    color: rgb(255, 102, 0);
- }
-
-/**/
-
-
-a:link {
-   color: #f5f5f5f6;
-   text-decoration: none;
-   font-weight: bold;
-}
-a:visited {
-   color: #f5f5f5c9;
-}
-a:hover {
-   color: rgb(111, 53, 129);
-}
-a:active {
-   color: rgb(21, 0, 31);
-}
-
-li {
-     color: rgb(255, 102, 0);
-     margin-left: 10px;
-     line-height: 1.5em;
-}
-
-li span {
-     color: #f5f5f5ab;
-     text-shadow: black 0.2em 0.2em 0.2em;
-}
-
-footer {
-     position: fixed;
-     left: 0;
-     bottom: 0;
-     width: 100%;
-     color: rgba(255, 255, 255, 0.5);
-     font-size: small;
-     text-align: center;
-     text-shadow: black 0.1em 0.1em 0.2em;
-     margin: none;    
-}
-
-.flex-container {
+.main-header {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -323,19 +14,351 @@ footer {
     align-items: center;
 }
 
+    .main-header__author {
+        margin: auto;
+        flex-wrap: nowrap;
+        text-align: center;
+        color: rgb(157, 46, 190);
+        font-size: 40px;
+        text-shadow: rgb(72, 0, 139) 0 0 0.1em, rgba(163, 1, 128, 0.904) 0 0 0.1em;
+        transition: text-shadow 0.5s linear;
+    }
+
+    .main-header__author:hover {
+        text-shadow: rgb(72, 0, 139) 0 -0.2em 0.1em,
+        rgba(163, 1, 128, 0.904) 0 0.2em 0.1em;
+    }
+
+    .main-header__image {
+        margin: auto;
+        filter: brightness(0.8);
+        transform: scale(1);
+        transition: filter 0.5s linear;
+        transition: transform 0.5s linear;
+        padding: 10px 0 20px;
+    }
+
+    .main-header__image:hover {
+        filter: brightness(1.1);
+        transform: scale(1.1);
+    }
+
+    .main-header__title {
+        display: inline-block;
+        color: rgb(216, 25, 0);
+        font-size: 60px;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: rgba(165, 60, 0, 0.801) 0 0 0.1em;
+        margin: auto;
+        padding: 20px 20px 50px;
+        line-height: 50%;
+        transition: text-shadow 0.5s linear;
+    }
+
+    .main-header__title span {
+        font-size: 48%;
+        font-style: normal;
+        color: rgb(255, 102, 0);
+    }
+
+    .main-header__title:hover {
+        text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secondary-h1 {
+  background: linear-gradient(90deg, #f9c802, #ec6c06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section {
+  background: rgba(21, 0, 44, 0.582);
+  border-radius: 25px;
+  border-color: rgb(16, 0, 31);
+  border-style: groove;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0px 140px 20px 140px;
+}
+
+.cosmos {
+  background-image: url(https://res.cloudinary.com/dxdfioc82/image/upload/v1588275255/cosmos-long_d4qhg2.png);
+  background-repeat: repeat-y;
+}
+
+.navi {
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(21, 0, 44, 0.39);
+  border: none;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.navi a:link {
+  color: rgb(255, 102, 0);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.navi a:visited {
+  color: rgb(255, 102, 0);
+  transition: color 0.3s ease;
+}
+.navi a:hover {
+  color: rgb(157, 46, 190);
+}
+.navi a:active {
+  color: rgb(21, 0, 31);
+}
+
+.navigation-item {
+  display: inline; /*uwaga display, zweryfikować po 5-tym tygodniu*/
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0px 30px;
+  color: rgb(111, 53, 129);
+}
+
+.back {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 40px;
+  margin-left: 140px;
+  background: rgba(21, 0, 44, 0.582);
+  width: 300px;
+  text-align: center;
+  border-radius: 15px;
+  border-color: rgb(16, 0, 31);
+  border-style: groove;
+  transition: background 0.5s linear;
+}
+
+.back:hover {
+  background: rgba(92, 17, 153, 0.521);
+}
+
+.back a:link {
+  color: rgb(255, 102, 0);
+  transition: color 0.5s linear;
+}
+.back a:visited {
+  color: rgb(255, 102, 0);
+  transition: color 0.5s linear;
+}
+.back a:hover {
+  color: rgb(236, 172, 52);
+}
+
+.note {
+  font-weight: bolder;
+  color: rgb(236, 172, 52);
+}
+
+.inner {
+  margin: 0px 20px 20px 20px;
+  background: rgba(83, 39, 119, 0.253);
+  border-color: none;
+  border-style: none;
+  border-radius: 25px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.small {
+  max-width: 200px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px black;
+}
+
+/*klasy kolorów kodu*/
+.tag {
+  color: rgb(28, 88, 255);
+}
+
+.atr {
+  color: rgb(55, 161, 228);
+}
+
+.cont {
+  color: tomato;
+}
+
+.sign {
+  color: grey;
+}
+
+/**/
+
+.gradient-box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+h2 {
+  background: linear-gradient(90deg, #f9c802, #ec6c06);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+h3 {
+  color: rgb(255, 102, 0);
+}
+
+h4 {
+  color: #f5f5f5c9;
+  font-weight: bold;
+  text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+p {
+  color: #f5f5f5c9;
+  margin-left: 20px;
+  text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+q {
+  font-weight: bold;
+}
+
+table {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  color: #f5f5f5f6;
+  text-align: center;
+  text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+/*URL opis i podświetlany adres*/
+
+.https {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  color: #f5f5f5f6;
+  text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+.left {
+  width: 40%;
+  text-align: justify;
+}
+
+.right {
+  width: 60%;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(162, 0, 255);
+}
+
+.protocol:hover {
+  color: rgb(255, 102, 0);
+  cursor: pointer;
+}
+
+.host:hover {
+  color: rgb(255, 102, 0);
+}
+
+.port:hover {
+  color: rgb(255, 102, 0);
+}
+
+.root:hover {
+  color: red;
+}
+
+.path:hover {
+  color: rgb(255, 102, 0);
+}
+
+.parameter:hover {
+  color: rgb(255, 102, 0);
+}
+
+/**/
+
+a:link {
+  color: #f5f5f5f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: #f5f5f5c9;
+}
+a:hover {
+  color: rgb(111, 53, 129);
+}
+a:active {
+  color: rgb(21, 0, 31);
+}
+
+li {
+  color: rgb(255, 102, 0);
+  margin-left: 10px;
+  line-height: 1.5em;
+}
+
+li span {
+  color: #f5f5f5ab;
+  text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: small;
+  text-align: center;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin: none;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 footer nav {
-    text-transform: uppercase;
-    font-size: 150%;
-    padding-top: 10px;
-    border-radius: 15px 15px 0 0;
-    margin: auto;
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0.349);
+  text-transform: uppercase;
+  font-size: 150%;
+  padding-top: 10px;
+  border-radius: 15px 15px 0 0;
+  margin: auto;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.349);
 }
 
 .footer-note {
-    margin: auto;
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0.349);
-    padding-bottom: 10px;
+  margin: auto;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.349);
+  padding-bottom: 10px;
 }
