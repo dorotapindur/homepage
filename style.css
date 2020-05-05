@@ -66,8 +66,41 @@ body {
         text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em;
     }
 
+.section {
+  background: rgba(21, 0, 44, 0.582);
+  border-radius: 25px;
+  border-color: rgb(16, 0, 31);
+  border-style: groove;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0px 140px 20px 140px;
+}
 
+    .section__gradient-box {
+        margin: 0 auto;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
 
+    .section__heading {
+        background: linear-gradient(90deg, #f9c802, #ec6c06);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    .section__content {
+        color: #f5f5f5c9;
+        margin-left: 20px;
+        text-shadow: black 0.2em 0.2em 0.2em;
+    }
+
+    .section--cosmos {
+        background-image: url(https://res.cloudinary.com/dxdfioc82/image/upload/v1588275255/cosmos-long_d4qhg2.png);
+        background-repeat: repeat-y;
+    }
 
 
 
@@ -90,20 +123,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-section {
-  background: rgba(21, 0, 44, 0.582);
-  border-radius: 25px;
-  border-color: rgb(16, 0, 31);
-  border-style: groove;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin: 0px 140px 20px 140px;
-}
 
-.cosmos {
-  background-image: url(https://res.cloudinary.com/dxdfioc82/image/upload/v1588275255/cosmos-long_d4qhg2.png);
-  background-repeat: repeat-y;
-}
+
+
 
 .navi {
   text-align: center;
@@ -209,20 +231,9 @@ section {
 
 /**/
 
-.gradient-box {
-  margin: 0 auto;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
 
-h2 {
-  background: linear-gradient(90deg, #f9c802, #ec6c06);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
+
+
 
 h3 {
   color: rgb(255, 102, 0);
@@ -232,12 +243,16 @@ h4 {
   color: #f5f5f5c9;
   font-weight: bold;
   text-shadow: black 0.2em 0.2em 0.2em;
+  margin-left: 20px;
 }
 
 p {
-  color: #f5f5f5c9;
-  margin-left: 20px;
-  text-shadow: black 0.2em 0.2em 0.2em;
+    color: #f5f5f5c9;
+    margin-left: 20px;
+    text-shadow: black 0.2em 0.2em 0.2em;
+ color: #f5f5f5c9;
+ margin-left: 20px;
+ text-shadow: black 0.2em 0.2em 0.2em;
 }
 
 q {
