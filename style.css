@@ -76,11 +76,8 @@ body {
   margin: 0px 140px 20px 140px;
 }
 
-.section__gradient-box {
-  margin: 0 auto;
+.section__heading--gradient-box {
   display: flex;
-  justify-content: left;
-  align-items: center;
 }
 
 .section__heading {
@@ -172,7 +169,7 @@ body {
   text-shadow: black 0.2em 0.2em 0.2em;
 }
 
-.inner-section__list .inner-section__list-item {
+.inner-section__list {
   color: rgb(255, 102, 0);
   margin-left: 10px;
   line-height: 1.5em;
@@ -183,7 +180,7 @@ body {
   text-shadow: black 0.2em 0.2em 0.2em;
 }
 
-.section__list .section__list-item {
+.section__list {
   color: rgb(255, 102, 0);
   margin-left: 10px;
   line-height: 1.5em;
