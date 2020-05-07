@@ -313,25 +313,25 @@
                     </ul>
                     <p class="inner-section__text"><span class="mark">Box model</span></p>
                     <div class="box-model__wrapper">
-
-                    <div class="box-model__box-column">
+                      
                         <div class="box-model-area">
-                        <div class="box-model box-model__margin">margin</div>
+                            <div class="box-model box-model__margin">margin</div>
                             <div class="box-model box-model__border">border</div>
-                                <div class="box-model box-model__padding">padding</div>
-                                    <div class="box-model box-model__content">content</div>    
+                            <div class="box-model box-model__padding">padding</div>
+                            <div class="box-model box-model__content">content</div>    
                         </div>
-                    </div>
-
-                    <div class="box-model__description-column">    
-                        <div class="box-model__description">
-                            <p class="inner-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore saepe ex, consectetur fugiat corporis earum reprehenderit consequuntur voluptatum vero.</p>
-                         </div>
-                    </div>
                     
+                        <p class="inner-section__text">Box model zawsze jest prostokątem, który potem może być modyfikowany.</p>
+                        <ul class="inner-section__list">
+                            <li><span id="padding" class="inner-section__list-content"><span class="mark">padding</span> - wewnętrzny margines</span></li>
+                            <li><span id="border" class="inner-section__list-content"><span class="mark">border</span> - granica (kontur) elementu. Można zapisywać łącznie (border: 3px solid red;). Border-radius - zaokrągla narożniki (50%=kółko)</span></li>
+                            <li><span id="margin" class="inner-section__list-content"><span class="mark">margin</span> - zewnętrzny margines. Marginesy sumują się. "margin: auto" wyśrodkowuje elementy o właściwości "display: block", jeśli mają określoną szerokość.</span></li>
+                        </ul>
+                        <p class="inner-section__text">Właściwość <span class="mark">box-sizing</span> (domyślna) - bierze pod uwagę wymiary content-box. 
+                            Właściwość <span class="mark">border-box</span> bierze pod uwagę wymiary całego elementu z padding i konturem.</p>              
                     </div>
 
-                    <p class="inner-section__text"><span class="mark">Position</span></p>
+                    <p class="inner-section__text no-float"><span class="mark">Position</span></p>
                     <ul class="inner-section__list">
                         <li><span class="inner-section__list-content">position: static (domyślna) - element ma swoją stałą pozycję na stronie</span></li>
                         <li><span class="inner-section__list-content">position: relative - podobnie, ale można określić wymiary i z-index. Daje możliwość użycia "absolute" w Środku</span></li>
