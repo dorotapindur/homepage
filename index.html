@@ -312,15 +312,39 @@
                         <li><span class="inner-section__list-content">vh- viewport height</span></li>
                     </ul>
                     <p class="inner-section__text"><span class="mark">Box model</span></p>
-                    <div class="box-model-area">
-                        <div class="box-model__margin">margin</div>
-                            <div class="box-model__border">border</div>
-                                <div class="box-model__padding">padding</div>
-                                    <div class="box-model__content">content</div>    
+                    <div class="box-model__wrapper">
+
+                    <div class="box-model__box-column">
+                        <div class="box-model-area">
+                        <div class="box-model box-model__margin">margin</div>
+                            <div class="box-model box-model__border">border</div>
+                                <div class="box-model box-model__padding">padding</div>
+                                    <div class="box-model box-model__content">content</div>    
+                        </div>
                     </div>
 
+                    <div class="box-model__description-column">    
+                        <div class="box-model__description">
+                            <p class="inner-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore saepe ex, consectetur fugiat corporis earum reprehenderit consequuntur voluptatum vero.</p>
+                         </div>
+                    </div>
+                    
+                    </div>
+
+                    <p class="inner-section__text"><span class="mark">Position</span></p>
+                    <ul class="inner-section__list">
+                        <li><span class="inner-section__list-content">position: static (domyślna) - element ma swoją stałą pozycję na stronie</span></li>
+                        <li><span class="inner-section__list-content">position: relative - podobnie, ale można określić wymiary i z-index. Daje możliwość użycia "absolute" w Środku</span></li>
+                        <li><span class="inner-section__list-content">position: absolute - stała względem rodzica. Ustalana za pomocą top, left, right, bottom (pozycja lewego górnego rogu), z-index ("głębokość")</span></li>
+                        <li><span class="inner-section__list-content">position: fixed - element "przyklejony" do okna w ustalonej pozycji</span></li>
+                        <li><span class="inner-section__list-content">position: sticky - porusza się jak "fixed", ale w ramach większego elementu, a nie całego okna - "dokleja" się do treści powyżej i poniżej</span></li>
+                    </ul>
+                    <p class="inner-section__text"><span class="mark">Float</span> - własność do opływania elementów. Może przyjmować wartości: right, left, none, inherit.</p>
+                    <p class="inner-section__text"><span class="mark">Clear</span> - "anti-float", czięki tej właściwości element nie opływa innego, tylko ustawia się pod spodem.</p>
 
                 </section>
+
+                
 
             </article><!--pamiętaj o id dla kolejnych tygodni-->
 
