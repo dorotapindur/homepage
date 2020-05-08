@@ -25,27 +25,33 @@
             </h1>
             
         </header>
+        
+        <div class="half-size-sections__wrapper">
+            <div class="half-size-section__left-column">    
+                <section class="half-size-section">
+                    <div class="section__heading--gradient-box">
+                    <h2 class="section__heading">Jak tutaj trafiłam?</h2>
+                    </div>
 
-        <section class="section">
-            <div class="section__heading--gradient-box">
-            <h2 class="section__heading">Jak tutaj trafiłam?</h2>
+                    <p class="section__text">Poszukiwałam różnych materiałów na temat nauki programowania dla początkujących. Przeglądałam też oferty
+                        bardzo drogich kursów czy „bootcampów“. Po kilku dniach Facebook wyświetlił mi reklamę <a class="external-link" 
+                        href="https://cotenfrontend.pl/" target="_blank">CO TEN FRONTEND</a>.
+                        Poczytałam, pooglądałam i podjęłam decyzję: spróbuję! Decyzji sprzyjała też sensowna cena kursu i
+                        sympatyczny prowadzący.</p>
+                </section>               
             </div>
 
-            <p class="section__text">Poszukiwałam różnych materiałów na temat nauki programowania dla początkujących. Przeglądałam też oferty
-                bardzo drogich kursów czy „bootcampów“. Po kilku dniach Facebook wyświetlił mi reklamę <a class="external-link" 
-                href="https://cotenfrontend.pl/" target="_blank">CO TEN FRONTEND</a>.
-                Poczytałam, pooglądałam i podjęłam decyzję: spróbuję! Decyzji sprzyjała też sensowna cena kursu i
-                sympatyczny prowadzący.</p>
-        </section>
+            <div class="half-size-section__right-column">                
+                <section class="half-size-section">
+                    <div class="section__heading--gradient-box">
+                    <h2 class="section__heading">Od zera do bohatera</h2>
+                    </div>
 
-        <section class="section">
-            <div class="section__heading--gradient-box">
-            <h2 class="section__heading">Od zera do bohatera</h2>
+                    <p class="section__text">Mam nadzieję na taki przebieg mojej programistycznej kariery, ale zobaczymy, jak mi pójdzie. Zaczynam z
+                        poziomu „Turbo Pascal 20 lat temu w liceum“ i na razie programowanie to dla mnie totalny kosmos! Lorem200</p>
+                </section>                
             </div>
-
-            <p class="section__text">Mam nadzieję na taki przebieg mojej programistycznej kariery, ale zobaczymy, jak mi pójdzie. Zaczynam z
-                poziomu „Turbo Pascal 20 lat temu w liceum“ i na razie programowanie to dla mnie totalny kosmos!</p>
-        </section>
+        </div>
 
         <section class="section section--cosmos">
             <div class="section__heading--gradient-box">
@@ -186,10 +192,29 @@
                         <li><span class="mark">PascalCase</span><span class="inner-section__list-content"> - np. MyHeader</span></li>
                     </ul>
 
-                    <table><!--do poprawy jako display-->
-                        <tr><td><img class="small-image" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/camel7-5_uwljxq.jpg" alt="camel picture"></td><td><img class="small-image" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/kebab7-5_znht7k.jpg" alt="kebab picture"></td><td><img class="small-image" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/snake7-5_id1icb.jpg" alt="snake picture"></td><td><img class="small-image" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/pascal7-5_mdl2at.jpg" alt="pascal picture"></td></tr>
-                        <tr><td>camelCase</td><td>kebab-case</td><td>snake_case</td><td>PascalCase</td></tr>
-                    </table>
+                    <div class="name-illustrations__wrapper">
+                        <figure class="name-illustrations__figure">
+                            <img class="name-illustrations__image" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/camel7-5_uwljxq.jpg" alt="camel picture">
+                            <figcaption class="name-illustrations__figcaption">camelCase</figcaption>
+                        </figure>
+                        <figure class="name-illustrations__figure">
+                            <img class="name-illustrations__image" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/kebab7-5_znht7k.jpg" alt="kebab picture">
+                            <figcaption class="name-illustrations__figcaption">kebab-case</figcaption>
+                        </figure>
+                        <figure class="name-illustrations__figure">
+                            <img class="name-illustrations__image" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/snake7-5_id1icb.jpg" alt="snake picture">
+                            <figcaption class="name-illustrations__figcaption">snake_case</figcaption>
+                        </figure>
+                        <figure class="name-illustrations__figure">
+                            <img class="name-illustrations__image" src="https://res.cloudinary.com/dxdfioc82/image/upload/v1588399750/pascal7-5_mdl2at.jpg" alt="pascal picture">
+                            <figcaption class="name-illustrations__figcaption">PascalCase</figcaption>
+                        </figure>
+                       
+                       <p></p>
+                       <p></p></p>
+                       <p></p>
+                       <p></p>
+                    </div>
 
                 </section>
 
@@ -225,11 +250,12 @@
                     <h4 class="inner-section__heading">Jak działa internet</h4>
                     <p class="inner-section__text"><span class="mark">HTTP(S)</span> - Hypertext Transfer Protocol (Secure) - protokół, którego używa przeglądaka do transportowania HTML-a. 
                         Pobiera i wyświetla pliki znajdujące się w stronach internetowych.</p>
-                    <p class="inner-section__text"><span class="mark">URL</span> - Uniform Resource Locator - adres, który wpisujemy. Ten adres składa się z kilku części:</p>
+                    <p class="inner-section__text"><span class="mark">URL</span> - Uniform Resource Locator - adres strony. Ten adres składa się z kilku części:</p>
                     
-                    <table class="https"><!--zmienić w display-->
-                       <tr><td class="left">
-                           <ul class="inner-section__list">
+                    <div class="http-section__wrapper">
+                        
+                            <p class="http-address"><span class="protocol">https://</span><span class="host">cotenfrontend</span><span class="port">:443</span><span class="root">/</span><span class="path">index.html</span><span class="parameter">?parametry=wartość</span></p>                
+                            <ul class="inner-section__list http-section__list">
                                 <li><span class="inner-section__list-content"><b>https://</b> - protokół</span></li>
                                 <li><span class="inner-section__list-content"><b>cotenfrontend.pl</b> - host (adres serwera)</span></li>
                                 <li><span class="inner-section__list-content"><b>:443</b> - port (ta część zazwyczaj jest dla użytkownika niewidoczna). Wskazuje przeglądarce, na którym porcie na serwerze znajdują się pliki strony</span></li>
@@ -237,11 +263,8 @@
                                     Jeśli podajemy źródło ze slashem na początku (src="/img.jpg"), przeglądarka szuka w katalogu głównym. Jeśli podajemy bez (src="img.jpg") - szuka w katalogu <b>aktualnym</b>, czyli np w katalogu podstrony. Dlatego lepiej podawać źródło (na serwerze) ze slashem na początku.</span></li>
                                 <li><span class="inner-section__list-content"><b>index.html</b> - ścieżka dostępu do zasobu</span></li>
                                 <li><span class="inner-section__list-content"><b>?paramert=wartość</b> - parametry</span></li>
-                            </ul>
-                            </td>
-                            <td class="right"><span class="protocol">https://</span><span class="host">cotenfrontend</span><span class="port">:443</span><span class="root">/</span><span class="path">index.html</span><span class="parameter">?parametry=wartość</span></td>
-                        </tr>
-                    </table>
+                            </ul>                           
+                    </div>   
 
                     <p class="inner-section__text"><span class="mark">DNS</span> - Domain Name System - system tłumaczący nazwę mnemoniczną (czyli "dla ludzi") na odpowiadający jej adres IP.</p>
                     <p class="inner-section__text"><span class="mark">parsowanie</span> - sprawdzanie składni</p>
