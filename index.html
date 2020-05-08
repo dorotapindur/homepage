@@ -30,10 +30,10 @@
             <div class="half-size-section__left-column">    
                 <section class="half-size-section">
                     <div class="section__heading--gradient-box">
-                    <h2 class="section__heading">Jak tutaj trafiłam?</h2>
+                    <h2 class="section__heading welcome-heading--js">Jak tutaj trafiłam?</h2>
                     </div>
 
-                    <p class="section__text">Poszukiwałam różnych materiałów na temat nauki programowania dla początkujących. Przeglądałam też oferty
+                    <p class="section__text">Pewnie zastanawiasz się, jak trafiłam na ten kurs. Poszukiwałam różnych materiałów na temat nauki programowania dla początkujących. Przeglądałam też oferty
                         bardzo drogich kursów czy „bootcampów“. Po kilku dniach Facebook wyświetlił mi reklamę <a class="external-link" 
                         href="https://cotenfrontend.pl/" target="_blank">CO TEN FRONTEND</a>.
                         Poczytałam, pooglądałam i podjęłam decyzję: spróbuję! Decyzji sprzyjała też sensowna cena kursu i
@@ -54,26 +54,26 @@
             </div>
         </div>
 
-        <section class="section section--cosmos">
+        <section class="section">
             <div class="section__heading--gradient-box">
             <h2 class="section__heading">Dziennik szkolenia</h2>
             </div>
 
             <nav class="navigation-weeks">
                 <ul class="navigation-weeks__list">
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week1">Tydzień 1</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week2">Tydzień 2</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week3">Tydzień 3</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week4">Tydzień 4</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week5">Tydzień 5</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week6">Tydzień 6</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week7">Tydzień 7</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week8">Tydzień 8</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week9">Tydzień 9</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week10">Tydzień 10</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week11">Tydzień 11</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week12">Tydzień 12</a></li>
-                    <li class="navigation-weeks__list-item"><a class="navigation-weeks__list-link" href="#week13">Tydzień 13</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week1">Tydzień 1</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week2">Tydzień 2</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week3">Tydzień 3</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week4">Tydzień 4</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week5">Tydzień 5</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week6">Tydzień 6</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week7">Tydzień 7</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week8">Tydzień 8</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week9">Tydzień 9</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week10">Tydzień 10</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week11">Tydzień 11</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week12">Tydzień 12</a></li>
+                    <li><a class="navigation-weeks__list-link" href="#week13">Tydzień 13</a></li>
                 </ul>
             </nav>
 
@@ -251,7 +251,7 @@
                     
                     <div class="http-section__wrapper">
                         
-                            <p class="http-address"><span class="protocol">https://</span><span class="host">cotenfrontend</span><span class="port">:443</span><span class="root">/</span><span class="path">index.html</span><span class="parameter">?parametry=wartość</span></p>                
+                            <div class="http-address__container"><p class="http-address__text"><span class="protocol">https://</span><span class="host">cotenfrontend</span><span class="port">:443</span><span class="root">/</span><span class="path">index.html</span><span class="parameter">?parametry=wartość</span></p></div>                
                             <ul class="inner-section__list http-section__list">
                                 <li><span class="inner-section__list-content"><b>https://</b> - protokół</span></li>
                                 <li><span class="inner-section__list-content"><b>cotenfrontend.pl</b> - host (adres serwera)</span></li>
@@ -363,8 +363,32 @@
                     <p class="inner-section__text"><span class="mark">Clear</span> - "anti-float", czięki tej właściwości element nie opływa innego, tylko ustawia się pod spodem.</p>
 
                 </section>
-
                 
+                    <section class="inner-section">
+                    <h4 class="inner-section__heading">JavaScript - zmienne</h4>
+                    <p class="inner-section__text">Zmienna w języku JS nie jest wartością, tylko <u>wskazuje</u>wartość.<br>
+                    Rodzaje zmiennych:</p>
+                    <ul class="inner-section__list">
+                        <li><span class="mark">let</span><span class="inner-section__list-content"> - możemy w jej ramach podstawiać różne wartości</span></li>
+                        <li><span class="mark">const</span><span class="inner-section__list-content"> - stałe połączenie z jedną wartością</span></li>
+                        <li><span class="inner-section__list-content"><b>var</b> - wychodzi z użycia</span></li>
+                    </ul>
+                    <p class="inner-section__text">Nzawy zmiennych podajemy w camelCase. Zmienne mogą przyjmować różne wartości, np. tekst lub liczby.<br>
+                    Typy proste (primitive values):</p>
+                    <ul class="inner-section__list">
+                        <li><span class="inner-section__list-content">String - tekst (w ' ' lub - rzadziej - " ")</span></li>
+                        <li><span class="inner-section__list-content">Number - liczba</span></li>
+                        <li><span class="inner-section__list-content">Bigint - duża liczba, większa od 2<sup>53</sup></span></li>
+                        <li><span class="inner-section__list-content">boolean - true/false</span></li>
+                        <li><span class="inner-section__list-content">null - celowo niezdefiniowana</span></li>
+                        <li><span class="inner-section__list-content">undefined - błąd; jeśli wcześniej niezdefiniowana</span></li>
+                        <li><span class="inner-section__list-content">*symbol - unikalne opakowanie na obiekty</span></li>
+                    </ul>
+                    <p class="inner-section__text">Polecenie <b>typeof</b> - sprawdza typ naszej zmiennej</p>
+                    <p class="inner-section__text"><span class="mark">Immutability</span> - "niezmienność" - nie możemy zmieniać <strong>wartości</strong> typów prostych. To, co zmieniamy, to <strong>połączenie</strong>między nimi a zmiennymi.</p>
+                    <p class="inner-section__text"><span class="mark">DOM - Document Object Model</span> - to nie kod, ale już wykonana instrukcja - czyli to, co widać w dev-tools. JD korzysta z DOM i w ten sposób możemy się ze stroną komunikować. Robimy to za pomocą polecenia:</p>                  <p class="inner-section__text"><b>document.querySelector('.selector'</b> - polecenie umożliwiające zmiany na stronie. Selektor oznaczamy w kodzie HTML jako dodatkową klasę, ale dla porządku dodajemy zawsze --js (.selector--js). Ta klasa nie służy do stylowania, tylko jest odnośnikiem dla JS.</p>
+        
+                </section>
 
             </article><!--pamiętaj o id dla kolejnych tygodni-->
 
