@@ -52,7 +52,7 @@ main {
 
 .main-header__title {
   display: inline-block;
-  color: rgb(216, 25, 0);
+  color: rgb(216, 0, 0);
   font-size: 60px;
   text-transform: uppercase;
   text-align: center;
@@ -576,4 +576,16 @@ main {
 
 .no-float {
   clear: both;
+}
+
+.bem-section__wrapper {
+  min-height: 5vw;
+}
+
+.bem-section__hand-icon {
+  display: block;
+  position: relative;
+  height: 5vw;
+  margin: 0;
+  float: right;
 }
