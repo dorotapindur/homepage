@@ -4,13 +4,13 @@ body {
   background-attachment: fixed;
   background-size: 100vw;
   font-family: "Open Sans", sans-serif;
-  padding: 6vw 0;
 }
 
 main {
   display: block;
   max-width: 1000px;
   margin: auto;
+  padding: 40px 0;
 }
 
 .main-header {
@@ -356,7 +356,6 @@ main {
 
 .back-button-box {
   margin-top: 3.5vw;
-  margin-left: 6vw;
   width: 300px;
 }
 
@@ -470,7 +469,6 @@ main {
   text-align: right;
 }
 
-
 .protocol:hover {
   color: rgb(255, 102, 0);
   cursor: pointer;
@@ -501,6 +499,9 @@ main {
   cursor: pointer;
 }
 
+abbr {
+  text-decoration: none;
+}
 /**/
 
 .box-model__wrapper {
@@ -588,4 +589,53 @@ main {
   height: 5vw;
   margin: 0;
   float: right;
+  transform: scale(1);
+  transition: transform 0.5s linear;
 }
+.bem-section__hand-icon:hover {
+  transform: scale(1.2);
+}
+
+.top-navigation__wrapper {
+  display: block;
+  position: fixed;
+  float: left;
+  border: none;
+  width: 220px;
+  z-index: 30;
+}
+
+.top-navigation__item {
+  display: flex;
+  width: 130px;
+  height: 130px;
+  border: 3px solid rgba(58, 0, 83, 0.589);
+  border-radius: 50%;
+  background: rgba(35, 0, 63, 0.527);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 30px;
+  text-decoration: none;
+  color: rgb(255, 102, 0);
+  outline: 0;
+  transform: scale(1);
+  transition: transform 0.5s linear;
+  
+}
+.top-navigation__item:visited {
+  color: rgb(255, 102, 0);
+  background: rgba(58, 0, 83, 0.589);
+  transform: scale(1);
+  transition: transform 0.5s linear;
+}
+.top-navigation__item:hover {
+  color: rgb(111, 53, 129);
+  background: rgba(238, 199, 255, 0.589);
+  transform: scale(1.1);
+}
+
+
