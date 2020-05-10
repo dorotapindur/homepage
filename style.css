@@ -9,6 +9,7 @@ body {
 .top-navigation__wrapper {
   display: block;
   position: fixed;
+  top: 0;
   float: left;
   border: none;
   width: 220px;
@@ -19,9 +20,9 @@ body {
   display: flex;
   width: 130px;
   height: 130px;
-  border: 3px solid rgba(58, 0, 83, 0.589);
+  border: 3px solid rgb(16, 0, 31);
   border-radius: 50%;
-  background: rgba(35, 0, 63, 0.527);
+  background: rgba(58, 0, 83, 0.589);
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -33,7 +34,7 @@ body {
   color: rgb(255, 102, 0);
   outline: 0;
   transform: scale(1);
-  transition: background 0.5s linear, transform 0.5s linear;
+  transition: background 0.5s linear, transform 0.5s linear, color 0.5s linear;
   
 }
 .top-navigation__item:visited {
@@ -49,11 +50,23 @@ body {
   transform: scale(1.1);
 }
 
-main {
-  display: block;
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 0;
+.top-navigation__item--disabled {
+  display: flex;
+  width: 130px;
+  height: 130px;
+  border: 3px solid rgb(16, 0, 31);
+  border-radius: 50%;
+  background: rgba(58, 0, 83, 0.445);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 30px;
+  text-decoration: none;
+  color: rgba(185, 90, 204, 0.521);
+  outline: 0;
 }
 
 .main-header {
@@ -62,6 +75,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 50px 0 0;
 }
 
 .main-header__author {
@@ -85,7 +99,7 @@ main {
   transform: scale(1);
   transition: filter 0.5s linear;
   transition: transform 0.5s linear;
-  padding: 1vw 0 2vw;
+  padding: 1vw 0;
 }
 
 .main-header__image:hover {
@@ -101,7 +115,7 @@ main {
   text-align: center;
   text-shadow: rgba(165, 60, 0, 0.801) 0 0 0.1em;
   margin: auto;
-  padding: 2vw 2vw 5vw;
+  padding: 2vw 0;
   line-height: 50%;
   transition: text-shadow 0.5s linear;
 }
@@ -114,6 +128,13 @@ main {
 
 .main-header__title:hover {
   text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em;
+}
+
+main {
+  display: block;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 40px;
 }
 
 .section {
@@ -398,7 +419,7 @@ main {
 }
 
 .back-button-box {
-  margin-top: 3.5vw;
+  margin: 2.5vw 0;
   width: 300px;
 }
 
