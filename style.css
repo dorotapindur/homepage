@@ -14,7 +14,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.top-navigation__wrapper {
+.top-navigation {
   display: flex;
   position: fixed;
   top: 0;
@@ -154,34 +154,27 @@ main {
   margin: 0 0 1.5vw;
 }
 
-.half-size-sections__wrapper {
+.half-size-sections {
   display: flex;
   align-items: top;
   justify-content: center;
   margin: 0 0 1.5vw;
   min-height: 200px;
 }
-.half-size-section__left-column {
+.half-size-sections__left-column {
   width: 50%;
   display: block;
   margin: 0;
   padding-right: 0.8vw;;
 }
-.half-size-section__right-column {
+.half-size-sections__right-column {
   width: 50%;
   display: block;
   margin: 0;
   padding-left: 0.8vw;;
 }
 
-.half-size-section {
-  display: block;
-  box-sizing: border-box;
-  background: rgba(21, 0, 44, 0.582);
-  border-radius: 2vw;
-  border-color: rgb(16, 0, 31);
-  border-style: groove;
-  padding: 0 25px 25px;
+.half-size-sections__content {
   min-height: 100%;
 }
 
@@ -210,18 +203,18 @@ main {
   line-height: 1.5em;
 }
 
-.navigation-weeks__list-link:link {
+.navigation-weeks__link:link {
   color: #dddddd;
   text-decoration: none;
   font-weight: bold;
 }
-.navigation-weeks__list-link:visited {
+.navigation-weeks__link:visited {
   color: #dddddd;
 }
-.navigation-weeks__list-link:hover {
+.navigation-weeks__link:hover {
   color: rgb(111, 53, 129);
 }
-.navigation-weeks__list-:active {
+.navigation-weeks__link:active {
   color: rgb(21, 0, 31);
 }
 
@@ -278,13 +271,13 @@ main {
   text-shadow: black 0.2em 0.2em 0.2em;
 }
 
-.inner-section__list {
+.inner-section-list {
   color: rgb(255, 102, 0);
   margin-left: 1vw;
   line-height: 1.5em;
 }
 
-.inner-section__list-content {
+.inner-section-list__content {
   color: #dddddd;
   text-shadow: black 0.2em 0.2em 0.2em;
 }
