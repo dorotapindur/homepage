@@ -156,6 +156,7 @@ main {
   border-style: groove;
   padding: 0 1vw;
   margin: 0 0 1.5vw;
+  text-align: justify;
 }
 
 .half-size-sections {
@@ -256,7 +257,8 @@ main {
   border-color: none;
   border-style: none;
   border-radius: 2vw;
-  padding: 0.5vw;
+  padding: 0.5vw 1vw;
+  text-align: justify;
 }
 
 .inner-section__heading {
@@ -296,47 +298,6 @@ main {
   color: #dddddd;
   text-shadow: black 0.2em 0.2em 0.2em;
 }
-
-.navigation-box {
-  text-align: center;
-  text-transform: uppercase;
-  background: rgba(10, 0, 15, 0.753);
-  border: none;
-  border-radius: 1vw;
-  margin-bottom: 1.5vw;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  width: 100%;
-  flex-wrap: wrap;
-  
-
-}
-.navigation__item {
-  display: inline;
-  margin: 0 25px;
-  color: rgb(157, 46, 190);
-  white-space: nowrap;
-}
-
-.navigation__item a:link {
-  text-decoration: none;
-  color: rgb(255, 102, 0);
-  transition: color 0.3s ease;
-}
-.navigation__item a:visited {
-  color: rgb(255, 102, 0);
-  transition: color 0.3s ease;
-}
-.navigation__item a:hover {
-  color: rgb(157, 46, 190);
-}
-.navigation__item a:active {
-  color: rgb(21, 0, 31);
-}
-
 
 .footer {
   width: 100%;
