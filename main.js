@@ -48,3 +48,25 @@ function createContent(querySelectorContent, content) {
 createContent('.inner-section__another-text--js', `A to jest tekst wstawiony za pomocą funkcji o nazwie createContent. W zasadzie ten tekst powinien być w ${weekNumber} tygodniu. Numer tygodnia jest określony za pomocą zmiennej const weekNumber = '5'.`);
 createContent('.section__welcome-heading--js', `Cześć! Witam na moim poligonie eksperymentalnym.`);
 
+console.log('Więcej funkcji liczących coś prostego:');
+
+
+const timesFour = (someNumber) => {
+    inputNumber = someNumber;
+    console.log(`podana liczba to ${inputNumber}`);
+    timesFourResult = someNumber*4;
+    console.log(`wynik mnożenia liczby ${inputNumber} razy 4 to: ${timesFourResult}`);
+}
+
+timesFour(5);
+
+
+function calculateMultiplication(firstInputNumber, secondInputNumber) {
+    console.log(`podane liczby to ${firstInputNumber} i ${secondInputNumber}`);
+    multiplicationResult = firstInputNumber*secondInputNumber;
+    console.log(`wynik mnożenia to ${multiplicationResult}`);
+}
+
+calculateMultiplication(6, 8);
+calculateMultiplication(2, 2);
+calculateMultiplication(12, 3);
