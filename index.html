@@ -419,6 +419,111 @@
                     </div>
                 </section>
 
+            </article>
+            
+            <article class="week-article">
+            
+                <h3 id="week5" class="week-article__heading">Tydzień 5</h3>
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Dziedziczenie</h4>
+                    <p class="inner-section__text">DOM to rodzina elementów, jak drzewo genealogiczne. Pojedynczy element to węzeł <span class="mark">node</span>.
+                         W HTML obowiązuje dziedziczenie, chyba że ostylujemy inaczej.</p>
+                    <p class="inner-section__text">Linki mają domyślne style przeglądarki - niedziedziczone. Trzeba je definiować osobno - np. za pomocą "inherit"</p>
+                </section>
+                
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">JS - funkcje</h4>
+                    <p class="inner-section__text">Funkcje stosujemy, aby nie powtarzać wielokrotnie pojawiającego się kodu (zasada <span class="mark">DRY</span> - don't repeat yourself. 
+                    Łatwiej jest znaleźć i poprawić kod w jednym miejscu</p>
+                    <p class="inner-section__text">Jak wygląda funkcja (przykład):</p>
+                    <pre><code class="code">
+                        <abbr title="deklaracja">function</abbr> <abbr title="nazwa">calculate</abbr><abbr title="parametr">(myNumber)</abbr> {
+                            <abbr title="słowo kluczowe">return</abbr>  <abbr title="wynik">myNumber*7</abbr>;
+                        }
+                    </code></pre>
+                    <p class="inner-section__text">(Fat) arrow functions (przykład):</p>
+                    <pre><code class="code">
+                        const calculate = (myNumber) => {
+                            myNumber = myNumber+3;
+                            console.log(myNumber);
+                            return myNumber*7;
+                        }
+                    </code></pre>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">JS - obiekt</h4>
+                    <p class="inner-section__text">Obiekt jest strukturą danych. Może zawierać wiele własności (property - zmienne) lub metod (method - funkcje). W konsoli są one wyświetlane alfabetycznie. Własność dzieli się na:</p>
+                    <p class="inner-section__text">&#9;klucz: wartość;</p>
+                    <p class="inner-section__text">Klucz musi być unikalny w ramach jednego obiektu. Wartość może być prymitywem, funkcją lub zagnieżdżeniem</p>
+                    <p class="inner-section__text">Przykład:</p>
+                    <pre><code class="code">
+                        const car = {
+                            type: 'passenger car',
+                            make: 'Ford',
+                            model: 'Focus 1',
+                            yearOfManufacture: 2002,
+                            navigation: (destination) => {
+                                console.log(`Going to: ${destination}`)
+                            },
+                            engine: 1.6,
+                            fuel: 'gasoline',
+                        }</code></pre>
+                    <p class="inner-section__text">Sposoby wyświetlania jednej z własności:</p>
+                    <p class="inner-section__text"><span class="mark">&squf;</span> dot notation - np. console.log(car.mark), console.log(car.navigation('Warszawa')</p>
+                    <p class="inner-section__text"><span class="mark">&lsqb; &rsqb;</span> bracket notation - np. console.log(car['type'])</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Dlaczego nie działa - debugging</h4>
+                    <ol class="inner-section-list" start="0">
+                        <li><span class="inner-section-list__content">"Have you tried turning it off and turning it on again?" :)</span></li>
+                        <li><span class="inner-section-list__content">zapisz plik (ctrl+S)</span></li>
+                        <li><span class="inner-section-list__content">czy edytujesz właściwy plik?</span></li>
+                        <li><span class="inner-section-list__content">odśwież przeglądarkę (F5 lub ctrl+F5)</span></li>
+                        <li><span class="inner-section-list__content">sprawdź w dev tools, w której linijce jest błąd (i jaki), szukaj czerwonego kodu w edytorze</span></li>
+                        <li><span class="inner-section-list__content">czytaj opis błędów</span></li>
+                        <li><span class="inner-section-list__content">zakładka Network (np. zła ścieżka do pliku)</span></li>
+                        <li><span class="inner-section-list__content">pogadaj z kaczką</span></li>
+                        <li><span class="inner-section-list__content">Wygoogluj problem (zaznacz "Narzędzia: Ostatni rok")</span></li>
+                    </ul>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Listy, tabele</h4>
+                    <p class="inner-section__text">&lt;ul&gt; / &lt;ol&gt;, &lt;li&gt; - podstawowe znaczniki list. Stylowanie: list-style(-type):...</p>
+                    <p class="inner-section__text">&lt;dl&gt; - description list - lista definicji (np. encyklopedia, leksykon). Jej składniki to &lt;dt&gt; (description term) i &lt;dd&gt; (description details)</p>
+                    <p class="inner-section__text">&lt;table&gt; - tabela. Znaczniki wewnątrz tabeli:</p>
+                    <ul class="inner-section-list">
+                        <li><span class="inner-section-list__content">&lt;thead&gt; - nagłówek tabeli</span></li>
+                        <li><span class="inner-section-list__content">&lt;th&gt; - komórka w nagłówku</span></li>
+                        <li><span class="inner-section-list__content">&lt;tbody&gt; - ciało tabeli</span></li>
+                        <li><span class="inner-section-list__content">&lt;tr&gt; - table row</span></li>
+                        <li><span class="inner-section-list__content">&lt;td&gt; - table data (cell)</span></li>
+                        <li><span class="inner-section-list__content">&lt;caption&gt; - opis tabeli</span></li>
+                </section>  
+                
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Flexbox</h4>
+                    <p class="inner-section__text">Rozległy temat - szczegółowy opis można znaleźć tu: <a class="external-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank">Basic Concepts of Flexbox</a>.</p>
+                    <p class="inner-section__text">A potrenować można grając we <a class="external-link" href="https://flexboxfroggy.com/#pl" target="_blank">Flexbox Froggy</a>.</p>
+                </section> 
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Reset i Normalizacja</h4>
+                    <p class="inner-section__text">Przeglądarka posiada swoje domyślne style, które nadpisujemy w naszym CSS. Reset je unieważnia. Trzeba być ostrożnym w jego używaniu - strona staje się nieczytelna i traci na dostępności. <span class="mark">NIE WOLNO</span> resetować outline! (outline: 0 lub none) - wtedy linki nie są podświetlane przy pomocy klawisza Tab (dla niedowidzących i osób posługujących się tylko klawiaturą).</p>
+                    <p class="inner-section__text"><span class="mark">Normalizacja</span> - tworzymy specjalny plik normalize.css (link do treści <a class="external-link" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" target="_blank">tutaj</a>), automatycznie wyrównujący drobne różnice między przeglądarkami. Najlepiej zawsze dodawać go w części &lt;head&gt; kodu przed naszym arkuszem stylów.</p>
+                    <p class="inner-section__text">Warto też ustawić  w całym html box-sizing na border-box (a dla potomków: inherit).</p>
+                    <pre><code class="code">
+                        html {
+                            box-sizing: border-box;
+                        }
+                        
+                        *, *:before, *:after {
+                            box-sizing: inherit;
+                        }</code></pre>
+
+                </section>
             </article><!--pamiętaj o id dla kolejnych tygodni-->
 
         </section>

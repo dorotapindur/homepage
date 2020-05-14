@@ -70,3 +70,38 @@ function calculateMultiplication(firstInputNumber, secondInputNumber) {
 calculateMultiplication(6, 8);
 calculateMultiplication(2, 2);
 calculateMultiplication(12, 3);
+
+const violin = {
+    strings: 'G D A E',
+    pitch: 442,
+    size: 4/4,
+    dateOfManufacture: 2017,
+    condition: 'perfect',
+    owner: {
+        name: 'Dora Pindur',
+        orchestra: 'Leopoldinum',
+        position: 'musician',
+    },
+    violinMaker: 'Adam Skubisz',
+    label: (year) => {
+        console.log(`Adam Skubisz, Bielsko-Biała ${year}`)
+    },
+}
+console.log(violin);
+console.log(violin.label(2017));
+
+const car = {
+    type: 'passenger car',
+    make: 'Ford',
+    model: 'Focus 1',
+    yearOfManufacture: 2002,
+    navigation: (destination) => {
+        console.log(`Going to: ${destination}`)
+    },
+    engine: 1.6,
+    fuel: 'gasoline',
+}
+
+console.log(car);
+console.log(car['model']);
+console.log(car.navigation('Gdańsk'));
