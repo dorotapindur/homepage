@@ -441,46 +441,31 @@ main {
 .http-address__text {
   font-size: 130%;
   font-weight: bold;
-  color: rgb(171, 81, 255);
   text-shadow: black 0.05em 0.05em 0.08em;
   margin: 0 0 0 1vw;
   padding-right: 1vw;
   text-align: right;
 }
 
-.protocol:hover {
-  color: rgb(255, 102, 0);
-  cursor: pointer;
-}
-
-.host:hover {
-  color: rgb(255, 102, 0);
-  cursor: pointer;
-}
-
-.port:hover {
-  color: rgb(255, 102, 0);
-  cursor: pointer;
-}
-
-.root:hover {
-  color: red;
-  cursor: pointer;
-}
-
-.path:hover {
-  color: rgb(255, 102, 0);
-  cursor: pointer;
-}
-
-.parameter:hover {
-  color: rgb(255, 102, 0);
-  cursor: pointer;
-}
-
-abbr {
+abbr[title] {
   text-decoration: none;
+  cursor: pointer;
 }
+
+.light-on-hover {
+  color: rgb(171, 81, 255);
+}
+.light-on-hover:hover {
+  color: rgb(255, 102, 0);
+}
+
+.light-on-hover--root {
+  color: rgb(171, 81, 255);
+}
+.light-on-hover--root:hover {
+  color: red;
+}
+
 /**/
 
 .box-model__wrapper {
