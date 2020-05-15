@@ -8,9 +8,10 @@ html {
 
 body {
   background-color: black;
-  background-image: url(https://res.cloudinary.com/dxdfioc82/image/upload/v1588275255/cosmos-long_d4qhg2.png);
+  background-image: url(pictures/cosmos.jpg);
   background-attachment: fixed;
-  background-size: 100vw;
+  background-size: cover;
+  background-position: center center;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -576,6 +577,4 @@ abbr {
 
 .code {
   color: #c47124;
-  display: block;
-  margin-left: 2vw;
 }
