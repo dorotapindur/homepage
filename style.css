@@ -21,10 +21,9 @@ body {
   top: 0;
   float: left;
   border: none;
-  width: 220px;
   z-index: 30;
   flex-direction: column;
-  padding: 15px;
+  padding: 1vw;
 }
 
 .top-navigation__item {
@@ -381,21 +380,20 @@ main {
   color: rgb(236, 172, 52);
 }
 
-.name-illustrations__wrapper {
+.name-illustrations {
   display: flex;
-  align-content: center;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .name-illustrations__figure {
   display: inline-block;
-  max-width: 200px;
-  margin: 2vw;
+  margin: 10px;
 } 
 
 .name-illustrations__image {
-  width: 20vw;
+ 
   max-width: 200px;
   box-shadow: 5px 5px 5px black; 
 }
