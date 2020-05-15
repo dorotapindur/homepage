@@ -578,3 +578,11 @@ abbr {
 .code {
   color: #c47124;
 }
+.code-wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+pre {
+  white-space: pre-wrap;
+}

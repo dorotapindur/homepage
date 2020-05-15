@@ -433,22 +433,25 @@
                 
                 <section class="inner-section">
                     <h4 class="inner-section__heading">JS - funkcje</h4>
-                    <p class="inner-section__text">Funkcje stosujemy, aby nie powtarzać wielokrotnie pojawiającego się kodu (zasada <span class="mark">DRY</span> - don't repeat yourself. 
-                    Łatwiej jest znaleźć i poprawić kod w jednym miejscu</p>
+                    <p class="inner-section__text">Funkcje stosujemy, aby nie powtarzać wielokrotnie pojawiającego się kodu (zasada <span class="mark">DRY</span> - don't repeat yourself. Łatwiej jest znaleźć i poprawić kod w jednym miejscu</p>
                     <p class="inner-section__text">Jak wygląda funkcja (przykład):</p>
-                    <pre><code class="code">
-                        <abbr title="deklaracja">function</abbr> <abbr title="nazwa">calculate</abbr><abbr title="parametr">(myNumber)</abbr> {
-                            <abbr title="słowo kluczowe">return</abbr>  <abbr title="wynik">myNumber*7</abbr>;
-                        }
-                    </code></pre>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+<abbr title="deklaracja">function</abbr> <abbr title="nazwa">calculate</abbr><abbr title="parametr">(myNumber)</abbr> {
+    <abbr title="słowo kluczowe">return</abbr>  <abbr title="wynik">myNumber*7</abbr>;
+}
+                        </code></pre>
+                    </div>
                     <p class="inner-section__text">(Fat) arrow functions (przykład):</p>
-                    <pre><code class="code">
-                        const calculate = (myNumber) => {
-                            myNumber = myNumber+3;
-                            console.log(myNumber);
-                            return myNumber*7;
-                        }
-                    </code></pre>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+const calculate = (myNumber) => {
+    myNumber = myNumber+3;
+    console.log(myNumber);
+    return myNumber*7;
+}
+                        </code></pre>
+                    </div>
                 </section>
 
                 <section class="inner-section">
@@ -457,18 +460,21 @@
                     <p class="inner-section__text">&#9;klucz: wartość;</p>
                     <p class="inner-section__text">Klucz musi być unikalny w ramach jednego obiektu. Wartość może być prymitywem, funkcją lub zagnieżdżeniem</p>
                     <p class="inner-section__text">Przykład:</p>
-                    <pre><code class="code">
-                        const car = {
-                            type: 'passenger car',
-                            make: 'Ford',
-                            model: 'Focus 1',
-                            yearOfManufacture: 2002,
-                            navigation: (destination) => {
-                                console.log(`Going to: ${destination}`)
-                            },
-                            engine: 1.6,
-                            fuel: 'gasoline',
-                        }</code></pre>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+const car = {
+    type: 'passenger car',
+    make: 'Ford',
+    model: 'Focus 1',
+    yearOfManufacture: 2002,
+    navigation: (destination) => {
+        .log(`Going to: ${destination}`)
+       },
+    engine: 1.6,
+    fuel: 'gasoline',
+}
+                        </code></pre>
+                    </div>
                     <p class="inner-section__text">Sposoby wyświetlania jednej z własności:</p>
                     <p class="inner-section__text"><span class="mark">&squf;</span> dot notation - np. console.log(car.mark), console.log(car.navigation('Warszawa')</p>
                     <p class="inner-section__text"><span class="mark">&lsqb; &rsqb;</span> bracket notation - np. console.log(car['type'])</p>
@@ -514,14 +520,17 @@
                     <p class="inner-section__text">Przeglądarka posiada swoje domyślne style, które nadpisujemy w naszym CSS. Reset je unieważnia. Trzeba być ostrożnym w jego używaniu - strona staje się nieczytelna i traci na dostępności. <span class="mark">NIE WOLNO</span> resetować outline! (outline: 0 lub none) - wtedy linki nie są podświetlane przy pomocy klawisza Tab (dla niedowidzących i osób posługujących się tylko klawiaturą).</p>
                     <p class="inner-section__text"><span class="mark">Normalizacja</span> - tworzymy specjalny plik normalize.css (link do treści <a class="external-link" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" target="_blank">tutaj</a>), automatycznie wyrównujący drobne różnice między przeglądarkami. Najlepiej zawsze dodawać go w części &lt;head&gt; kodu przed naszym arkuszem stylów.</p>
                     <p class="inner-section__text">Warto też ustawić  w całym html box-sizing na border-box (a dla potomków: inherit).</p>
-                    <pre><code class="code">
-                        html {
-                            box-sizing: border-box;
-                        }
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+html {
+    box-sizing: border-box;
+}
                         
-                        *, *:before, *:after {
-                            box-sizing: inherit;
-                        }</code></pre>
+*, *:before, *:after {
+    box-sizing: inherit;
+}   
+                        </code></pre>
+                    </div>
                 </section>
 
                 
