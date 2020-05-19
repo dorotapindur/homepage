@@ -105,3 +105,21 @@ const car = {
 console.log(car);
 console.log(car['model']);
 console.log(car.navigation('Gdańsk'));
+
+
+const mySound = document.getElementById("sound--js");   
+var handButton = document.getElementById("play-bem--js"); 
+handButton.addEventListener("click", function(togglePlay) {
+    if (mySound.paused) {
+        mySound.play();
+    }
+    else {
+        mySound.pause();
+    }
+} );
+
+
+
+
+    
+    
