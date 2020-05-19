@@ -630,9 +630,41 @@ switch (myVariable) {
                     <p class="inner-section__text">Żądanie typu GET - domyślne, wrzuca zawartość formularza do adresu - lepszy do pobierania<br>
                     Żądanie typu POST - zostawia czysty adres, lepsze do wysyłania formularza.</p>
                     <p class="inner-section__text">enctype - określa typ formularza. Domyśny to enctype="application/x-www-form-urlencoded". Jeśli wysyłamy z formularza plik, musimy go zmienić na enctype="multipart/form-data".</p>
-                    <p class="inner-section__text">Właściwość "required" - ustawia pole wymagane. Właściwość "pattern" - pozwala ustawić format wprowadzanej treści (np. kod pocztowy to dwie cyfry, myślnik, trzy cyfry - czyli pattern="[0-9]{2}-[0-9]{3}". Wzory tych wyrażeń online: <a class="external-link" href="http://html5pattern.com/" target=_blank">html5pattern.com</a>.</p>
+                    <p class="inner-section__text">Właściwość "required" - ustawia pole wymagane. Właściwość "pattern" - pozwala ustawić format wprowadzanej treści (np. kod pocztowy to dwie cyfry, myślnik, trzy cyfry - czyli pattern="[0-9]{2}-[0-9]{3}". Wzory tych wyrażeń online: <a class="external-link" href="http://html5pattern.com/" target=_blank>html5pattern.com</a>.</p>
                     <p class="inner-section__text">Walidacja po stronie front-endu nie zastępuje walidacji po stronie back-endu.</p>
+                </section>
 
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Grid</h4>
+                    <img class="grid-scheme" src="pictures/grid-concepts.svg" alt="rysunek - schemat grida">
+                    <p class="inner-section__text">Grid działa tylko na swoje dzieci, głębiej nie.</p>
+                    <p class="inner-section__text">&lt;div&gt; display: grid;</p>
+                    <p class="inner-section__text">grid-template-columns: 100px 300px; itd.</p>
+                    <p class="inner-section__text">grid-template-rows: 100px 200px; itd; rzadko stosowany - raczej nie definiujemy wysokości, bo służszy tekst wyleci poza nią.</p>
+                    <p class="inner-section__text">Elastyczna jednostka <span class="mark">fr</span> - ułamek całości (wolnej przestrzeni), skaluje się.</p>
+                    <p class="inner-section__text">Funkcja repeat(4, 1fr); - tworzy przykładowo 4 kolumny o szerokości 1fr (zamiast pisać 1fr 1fr 1fr 1fr).<br>
+                    Funkcja minmax(200px, 1fr) - ustawia minimalną i maksymalną szerokość kolumny</p>
+                    <p class="inner-section__text">column-gap, row-gap - ustawia odstępy (zamiast kombinowania z marginesami, bardzo wygodne)</p>
+                    <p class="inner-section__text">&lt;aside&gt; - treść boczna, mniej istotna od głównej</p>
+                    <p class="inner-section__text">grid-template-areas:</p>
+                    <p class="inner-section__text">"header header"<br>
+                    "article" "aside"<br>
+                    "footer footer";</p><!--to zrób w gridzie-->
+                    <p class="inner-section__text">grid-row-start: 2;<br>
+                    grid-row-end: 4; - ten rząd zajmnie komówki od drugiej do początku czwartej (czyli drugą i trzecią). Można też użyć zapisu<br>
+                    grid-row-end: span 2; - czyli przez 2 komórki. To samo dotyczy kolumn.</p>
+                    <p class="inner-section__text">Zapis skrócony to grid-area: <small>row-start</small> / <small>column-start</small> / <small>row-end</small> / <small>column-end</small>;<br>
+                    grid-row: <small>row-start</small> / <small>row-end</small>;</p>
+                    <p class="inner-section__text">Kolumny można nazywać w grid-template-columns: [pierwsza]100px [druga]150px; itp.</p>
+                    <p class="inner-section__text">W gridzie działa z-index.</p>
+                    <p class="inner-section__text">Wszystko zamykamy w prostokącie.</p>
+                    <p class="inner-section__text">Grid nie zastępuje flexboxa, uzupełniają się.</p>
+                    <p class="inner-section__text">Więcej na: <a class="external-link" href="https://webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/" target=_blank>webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/</a></p>
+                    <aside class="grid-aside">
+                        <img class="grid-aside__image" src="pictures/heart-icon-small.png" alt="beating heart">
+                        <p class="inner-section__text grid-aside__text">GRID!</p>
+                    </aside>
+                </section>
 
             </article><!--pamiętaj o id dla kolejnych tygodni-->
 
