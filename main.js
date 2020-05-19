@@ -106,6 +106,13 @@ console.log(car);
 console.log(car['model']);
 console.log(car.navigation('Gdańsk'));
 
+const bemSong = {
+    title: 'Moje serce to jest muzyk',
+    author: 'Wojciech Młynarski',
+    composer: 'Jacek Mikuła',
+    year: 1980,
+    performer: 'Ewa Bem'
+}
 
 const mySound = document.getElementById("sound--js");   
 var handButton = document.getElementById("play-bem--js"); 
@@ -116,6 +123,7 @@ handButton.addEventListener("click", function(togglePlay) {
     else {
         mySound.pause();
     }
+    console.log(bemSong);
 } );
 
 
