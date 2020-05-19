@@ -154,7 +154,6 @@ main {
   border-style: groove;
   padding: 0 1vw;
   margin: 0 0 1.5vw;
-  text-align: justify;
 }
 
 .half-size-sections {
@@ -163,6 +162,7 @@ main {
   justify-content: center;
   margin: 0 0 1.5vw;
   min-height: 200px;
+  text-align: justify;
 }
 .half-size-sections__left-column {
   width: 50%;
@@ -256,7 +256,6 @@ main {
   border-style: none;
   border-radius: 2vw;
   padding: 0.5vw 1vw;
-  text-align: justify;
 }
 
 .inner-section__heading {
@@ -377,7 +376,7 @@ main {
 
 .mark {
   font-weight: bolder;
-  color: rgb(236, 172, 52);
+  color: rgb(255, 73, 17);
 }
 
 .name-illustrations {
