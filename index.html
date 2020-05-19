@@ -660,10 +660,42 @@ switch (myVariable) {
                     <p class="inner-section__text">Wszystko zamykamy w prostokącie.</p>
                     <p class="inner-section__text">Grid nie zastępuje flexboxa, uzupełniają się.</p>
                     <p class="inner-section__text">Więcej na: <a class="external-link" href="https://webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/" target=_blank>webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/</a></p>
+                    <p class="inner-section__text"><i>/*Układ tej sekcji został utworzony w gridzie*/</i></p>
                     <aside class="grid-aside">
-                        <img class="grid-aside__image" src="pictures/heart-icon-small.png" alt="beating heart">
-                        <p class="inner-section__text grid-aside__text">GRID!</p>
+                        <p class="inner-section__text grid-aside__text">I </p>
+                        <img class="grid-aside__image" src="pictures/heart-icon-small.png" alt="heart">
+                        <p class="inner-section__text grid-aside__text"> GRID!</p>
                     </aside>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">CSS Media Queries</h4>
+                    <p class="inner-section__text">RWD - Responsive Web Design - strona wygląda dobrze na urządzeniach o różnej wielkości ekranu.</p>
+                    <p class="inner-section__text">@media screen / print / all / ... - zapytanie o media.</p>
+                    <p class="inner-section__text">W media queries używamy operatorów logicznych <span class="mark">and</span>, <span class="mark">,</span> (przecinek, odpowiadający "or") i <span class="mark">not</span></p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    /tutaj selektory dla danej wielkości ekranu
+    (okna przeglądarki), jakby osobny arkusz/
+}
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Niektóre elementy można "chować" za pomocą display: none.</p>
+                    <p class="inner-section__text">Breakpoint - miejsce "łamania" strony, przeskoku do stylów dla innej wielkości.</p>
+                    <p class="inner-section__text">Wiele osób poleca zasadę <span class="mark">Mobile First</span>.</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">JS - eventy</h4>
+                    <p class="inner-section__text">&lt;button&gt; - przycisk, osobna klasa dla JS. Wykonuje interakcje na stronie, nie jest linkiem &lt;a&gt; (odpowiadającym za nawigację po sekcjach i między stronami).</p>
+                    <p class="inner-section__text">element.addEventListener(type, listener [options])<br>
+                    Typ to np. mouse events: click / mouseenter / mouseleave / mouseover.</p>
+                    <p class="inner-section__text">element.classList.add('nazwa-klasy--js') - dodawanie klasy do elementu<br>
+                        element.classList.toggle - przełączanie<br>
+                        element.classList.remove - usuwa jakąś klasę<br>
+                        element.classList.contains - czy element posiada taką klasę</p>
+                    <p class="inner-section__text"><span class="mark">aria-label</span>: opis guzika dla czytników, np. &lt;button aria-label="otwórz menu"&gt;</p>
                 </section>
 
             </article><!--pamiętaj o id dla kolejnych tygodni-->
