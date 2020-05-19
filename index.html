@@ -634,38 +634,47 @@ switch (myVariable) {
                     <p class="inner-section__text">Walidacja po stronie front-endu nie zastępuje walidacji po stronie back-endu.</p>
                 </section>
 
-                <section class="inner-section">
-                    <h4 class="inner-section__heading">Grid</h4>
-                    <img class="grid-scheme" src="pictures/grid-concepts.svg" alt="rysunek - schemat grida">
-                    <p class="inner-section__text">Grid działa tylko na swoje dzieci, głębiej nie.</p>
-                    <p class="inner-section__text">&lt;div&gt; display: grid;</p>
-                    <p class="inner-section__text">grid-template-columns: 100px 300px; itd.</p>
-                    <p class="inner-section__text">grid-template-rows: 100px 200px; itd; rzadko stosowany - raczej nie definiujemy wysokości, bo służszy tekst wyleci poza nią.</p>
-                    <p class="inner-section__text">Elastyczna jednostka <span class="mark">fr</span> - ułamek całości (wolnej przestrzeni), skaluje się.</p>
-                    <p class="inner-section__text">Funkcja repeat(4, 1fr); - tworzy przykładowo 4 kolumny o szerokości 1fr (zamiast pisać 1fr 1fr 1fr 1fr).<br>
-                    Funkcja minmax(200px, 1fr) - ustawia minimalną i maksymalną szerokość kolumny</p>
-                    <p class="inner-section__text">column-gap, row-gap - ustawia odstępy (zamiast kombinowania z marginesami, bardzo wygodne)</p>
-                    <p class="inner-section__text">&lt;aside&gt; - treść boczna, mniej istotna od głównej</p>
-                    <p class="inner-section__text">grid-template-areas:</p>
-                    <p class="inner-section__text">"header header"<br>
-                    "article" "aside"<br>
-                    "footer footer";</p><!--to zrób w gridzie-->
-                    <p class="inner-section__text">grid-row-start: 2;<br>
-                    grid-row-end: 4; - ten rząd zajmnie komówki od drugiej do początku czwartej (czyli drugą i trzecią). Można też użyć zapisu<br>
-                    grid-row-end: span 2; - czyli przez 2 komórki. To samo dotyczy kolumn.</p>
-                    <p class="inner-section__text">Zapis skrócony to grid-area: <small>row-start</small> / <small>column-start</small> / <small>row-end</small> / <small>column-end</small>;<br>
-                    grid-row: <small>row-start</small> / <small>row-end</small>;</p>
-                    <p class="inner-section__text">Kolumny można nazywać w grid-template-columns: [pierwsza]100px [druga]150px; itp.</p>
-                    <p class="inner-section__text">W gridzie działa z-index.</p>
-                    <p class="inner-section__text">Wszystko zamykamy w prostokącie.</p>
-                    <p class="inner-section__text">Grid nie zastępuje flexboxa, uzupełniają się.</p>
-                    <p class="inner-section__text">Więcej na: <a class="external-link" href="https://webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/" target=_blank>webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/</a></p>
-                    <p class="inner-section__text"><i>/*Układ tej sekcji został utworzony w gridzie*/</i></p>
+                <section class="inner-section grid-section">
+                    <h4 class="inner-section__heading grid-section__heading">Grid</h4>
+                    <div class="grid-section__content">
+                        <p class="inner-section__text">Grid działa tylko na swoje dzieci, głębiej nie.</p>
+                        <p class="inner-section__text">&lt;div&gt; display: grid;</p>
+                        <p class="inner-section__text">grid-template-columns: 100px 300px; itd.</p>
+                        <p class="inner-section__text">grid-template-rows: 100px 200px; itd; rzadko stosowany - raczej nie definiujemy wysokości, bo służszy tekst wyleci poza nią.</p>
+                        <p class="inner-section__text">Elastyczna jednostka <span class="mark">fr</span> - ułamek całości (wolnej przestrzeni), skaluje się.</p>
+                        <p class="inner-section__text">Funkcja repeat(4, 1fr); - tworzy przykładowo 4 kolumny o szerokości 1fr (zamiast pisać 1fr 1fr 1fr 1fr).<br>
+                        Funkcja minmax(200px, 1fr) - ustawia minimalną i maksymalną szerokość kolumny</p>
+                        <p class="inner-section__text">column-gap, row-gap - ustawia odstępy (zamiast kombinowania z marginesami, bardzo wygodne)</p>
+                        <p class="inner-section__text">&lt;aside&gt; - treść boczna, mniej istotna od głównej</p>
+                        <div class="grid-template-areas">
+                            <p class="inner-section__text grid-template-areas__property" >grid-template-areas:</p>
+                            <p class="inner-section__text grid-template-areas__value">"header header"<br>
+                            "article aside"<br>
+                            "footer footer";</p>
+                        </div><!--to zrób w gridzie-->
+                        <p class="inner-section__text">grid-row-start: 2;<br>
+                        grid-row-end: 4; - ten rząd zajmnie komówki od drugiej do początku czwartej (czyli drugą i trzecią). Można też użyć zapisu<br>
+                        grid-row-end: span 2; - czyli przez 2 komórki. To samo dotyczy kolumn.</p>
+                        <p class="inner-section__text">Zapis skrócony to grid-area: <small>row-start</small> / <small>column-start</small> / <small>row-end</small> / <small>column-end</small>;<br>
+                        grid-row: <small>row-start</small> / <small>row-end</small>;</p>
+                        <p class="inner-section__text">Kolumny można nazywać w grid-template-columns:<br>
+                            [pierwsza]100px [druga]150px; itp.</p>
+                        <p class="inner-section__text">W gridzie działa z-index.</p>
+                        <p class="inner-section__text">Wszystko zamykamy w prostokącie.</p>
+                        <p class="inner-section__text">Grid nie zastępuje flexboxa, uzupełniają się.</p>
+                    </div>
+                    <img class="grid-section__scheme" src="pictures/grid-concepts.svg" alt="rysunek - schemat grida">
                     <aside class="grid-aside">
-                        <p class="inner-section__text grid-aside__text">I </p>
+                        <p class="inner-section__text grid-aside__text">I</p>
                         <img class="grid-aside__image" src="pictures/heart-icon-small.png" alt="heart">
-                        <p class="inner-section__text grid-aside__text"> GRID!</p>
+                        <p class="inner-section__text grid-aside__text">GRID!</p>
                     </aside>
+                    <div class="grid-section__footer">
+                        <p class="inner-section__text">Więcej na: <a class="external-link" href="https://webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/" target=_blank>webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/</a><br>
+                        oraz <a class="external-link" href="https://css-tricks.com/snippets/css/complete-guide-grid/" target=_blank>CSS-tricks: A complete Guide to Grid</a>.</p>
+                        <p class="inner-section__text">Poćwiczyć można za pomocą gry <a class="external-link" href="https://cssgridgarden.com/#pl" target=_blank>Grid Garden</a>.</p>
+                        <p class="inner-section__text"><i>/*Układ tej sekcji został utworzony za pomocą grid-a*/</i></p>
+                    </div>
                 </section>
 
                 <section class="inner-section">
