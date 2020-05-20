@@ -133,6 +133,11 @@ menuButton.addEventListener('click', () => {
     navOpen.classList.toggle('top-navigation--open');
 })
 
+const clickScheme = document.querySelector('.scheme--js');
+clickScheme.addEventListener('click', () => {
+    const scaleScheme = document.querySelector('.scheme--js');
+    scaleScheme.classList.toggle('grid-section__scheme--clicked');
+})
 
 
     
