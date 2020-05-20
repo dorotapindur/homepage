@@ -82,28 +82,28 @@ body {
 
 
 .page-content {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 50px);
   margin: 0;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .main-header {
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin: 50px 0 0;
+  margin: 0 0 20px;
 }
 
 .main-header__author {
-  margin: auto;
   flex-wrap: nowrap;
   text-align: center;
   color: rgb(157, 46, 190);
   font-size: 2.5em;
   text-shadow: rgb(24, 0, 46) 0 0 0.1em, rgba(163, 1, 128, 0.904) 0 0 0.1em;
   transition: text-shadow 0.5s linear;
+  margin: 0;
 }
 
 .main-header__author:hover {
@@ -112,11 +112,11 @@ body {
 }
 
 .main-header__image {
-  margin: 1vw;
   filter: brightness(0.8);
   transform: scale(1);
   transition: filter 0.5s linear;
   transition: transform 0.5s linear;
+  margin: 0;
 }
 
 .main-header__image:hover {
@@ -131,8 +131,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-shadow: rgba(165, 60, 0, 0.801) 0 0 0.1em;
-  margin: auto;
-  padding: 2vw 0;
+  margin: 0;
+  padding: 20px 0;
   line-height: 50%;
   transition: text-shadow 0.5s linear;
 }
@@ -182,6 +182,7 @@ main {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  font-size: 22px;
 }
 
 .section__text {
@@ -241,7 +242,7 @@ main {
 }
 
 .inner-section {
-  margin: 0 0 1vw;
+  margin: 0 0 15px;
   background: rgba(83, 39, 119, 0.253);
   border-color: none;
   border-style: none;
@@ -537,7 +538,7 @@ abbr[title] {
 .bem-section__hand-icon {
   display: block;
   position: relative;
-  height: 5vw;
+  height: 100px;
   margin: 0;
   float: right;
   transform: scale(1);
@@ -678,7 +679,7 @@ pre {
     padding: 10px;
     border: 2px solid rgb(16, 0, 31);
     background-color: rgb(58, 0, 83);
-    color: rgb(255, 102, 0);
+    color: #dddddd;
     z-index: 30;
   }
   .top-navigation {
@@ -695,6 +696,7 @@ pre {
     border: none;
     z-index: 30;
     padding: 1vw;
+    background-color: rgba(173, 137, 202, 0.795);
   }
   .top-navigation__item {
     display: flex;
@@ -764,7 +766,8 @@ pre {
     border: 2px solid rgb(16, 0, 31);
     border-radius: 50% 0 0 0;
     background-color: rgba(58, 0, 83, 0.822);
-    text-align: center;
+    text-align: right;
+    padding-right: 12px;
     align-items: center;
     justify-content: center;
     font-weight: bold;
@@ -823,7 +826,6 @@ pre {
   .box-model__wrapper {
     margin-bottom: 20px;
   }
-  
   .box-model-area {
     display: block;
     width: 80vw;
@@ -847,6 +849,10 @@ pre {
   .grid-section__scheme--clicked {
     transform: none;
     transition: none;
+  }
+  .footer {
+    display: block;
+    width: 80%;
   }
 
 }

@@ -1,5 +1,3 @@
-alert('Czy jesteś gotów na oświecenie?')
-
 
 const menuButton = document.querySelector('.menu-button--js');
 menuButton.addEventListener('click', () => {
