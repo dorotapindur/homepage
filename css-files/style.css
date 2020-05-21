@@ -8,7 +8,7 @@ html {
 
 body {
   background-color: black;
-  background-image: url(pictures/cosmos.jpg);
+  background-image: url(../pictures/cosmos.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
