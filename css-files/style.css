@@ -184,7 +184,15 @@ main {
   font-weight: bold;
   font-size: 22px;
 }
-
+.section__heading::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #f9c802;
+  margin-right: 8px;
+}
 .section__text {
   color: #dddddd;
   margin-left: 0.5vw;
@@ -291,7 +299,7 @@ main {
 .footer {
   width: 100%;
   padding: 10px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #7f61a3;
   font-size: small;
   text-align: center;
   text-shadow: black 0.1em 0.1em 0.2em;
@@ -494,7 +502,8 @@ abbr[title] {
   max-height: 100%;  
 }
 .box-model__margin:hover {
-  background: rgb(236, 172, 52);
+  background: rgb(236, 172, 52);-webkit-animation: pulsate-fwd 1.5s ease-in-out infinite both;
+  animation: pulsate-fwd 1.5s ease-in-out infinite both;
 }
 
 .box-model__border {
