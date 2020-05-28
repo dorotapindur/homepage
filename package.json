@@ -4,6 +4,7 @@
   "description": "my homepage",
   "main": "index.js",
   "scripts": {
+    "sass": "npx node-sass -w scss-files/style.scss css-files/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
