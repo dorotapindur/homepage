@@ -29,7 +29,7 @@
             alt="logo WTF" width="224" height="178">
 
         <h1 class="main-header__title">Co ten frontend<br>
-        <span>Moja przygoda z programowaniem</span>
+        <span class="main-header__title--span">Moja przygoda z programowaniem</span>
         </h1>
         
     </header>    
@@ -109,10 +109,10 @@
                     niektóre elementy u siebie.</p>
                 <p class="week-article__text">Strona www ma 4 warstwy:</p>
                 <ol class="week-article__list" start="0">
-                    <li class="week-article__list-item"><span class="week-article__list-content">treść</span></li>
-                    <li class="week-article__list-item"><span class="week-article__list-content"><span class="mark">HTML</span> - Hypertext Markup Language</span></li>
-                    <li class="week-article__list-item"><span class="week-article__list-content"><span class="mark">CSS</span> - Cascading Style Sheets</span></li>
-                    <li class="week-article__list-item"><span class="week-article__list-content"><span class="mark">Java Script</span></span></li>
+                    <li><span class="week-article__list-content">treść</span></li>
+                    <li><span class="week-article__list-content"><span class="mark">HTML</span> - Hypertext Markup Language</span></li>
+                    <li><span class="week-article__list-content"><span class="mark">CSS</span> - Cascading Style Sheets</span></li>
+                    <li><span class="week-article__list-content"><span class="mark">Java Script</span></span></li>
                 </ol>
                 <p class="week-article__text">Chrome - funkcja <span class="mark">"inspect"</span> do badania kodu wyświetlanej strony (Firefox też ma tę funkcję)</p>
                 <p class="week-article__text"><a class="external-link" href="https://validator.w3.org/nu/#textarea" target="_blank">Validator</a> - sprawdza kod i
@@ -347,13 +347,13 @@
                         <li><span class="inner-section-list__content">vh- viewport height</span></li>
                     </ul>
                     <p class="inner-section__text"><span class="mark">Box model</span></p>
-                    <div class="box-model__wrapper">
+                    <div class="box-model">
                       
-                        <div class="box-model-area">
-                            <div class="box-model box-model__margin">margin</div>
-                            <div class="box-model box-model__border">border</div>
-                            <div class="box-model box-model__padding">padding</div>
-                            <div class="box-model box-model__content">content</div>    
+                        <div class="box-model__float">
+                            <div class="box-model__item box-model__item--margin">margin</div>
+                            <div class="box-model__item box-model__item--border">border</div>
+                            <div class="box-model__item box-model__item--padding">padding</div>
+                            <div class="box-model__item box-model__item--content">content</div>    
                         </div>
                     
                         <p class="inner-section__text">Box model zawsze jest prostokątem, który potem może być modyfikowany.</p>
@@ -407,7 +407,7 @@
                     <p class="inner-section__text inner-section__another-text--js"></p>
                 </section>
 
-                <section class="inner-section">
+                <section class="inner-section bem-section">
                     <div class="bem-section__wrapper">
                         <audio id="sound--js">   
                             <source src="sounds/bem.mp3" />   
