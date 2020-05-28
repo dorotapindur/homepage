@@ -150,6 +150,7 @@ html {
   main {
     display: block;
     max-width: 1000px;
+    padding: 0 1.5vw;
     margin: auto;
     padding-bottom: 40px;
     word-wrap: break-word;
@@ -161,7 +162,7 @@ html {
     border-color: rgb(16, 0, 31);
     border-style: groove;
     padding: 0 1vw;
-    margin: 0 1.5vw 1.5vw;
+    margin: 0 0 1.5vw;
   }
   
   .half-size-sections {
