@@ -709,6 +709,82 @@ switch (myVariable) {
                     <p class="inner-section__text"><span class="mark">aria-label</span>: opis guzika dla czytników, np. &lt;button aria-label="otwórz menu"&gt;</p>
                 </section>
 
+            </article>
+            <article class="week-article">
+                <h3 id="week7" class="week-article__heading">Tydzień 7</h3>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Pseudoelementy i pseudoklasy</h4>
+                    <p class="inner-section__text"><span class="mark">Pseudoelementy</span> - oznaczane są za pomocą <span class="mark">::</span> . Jednymi z najczęściej używanych są ::before i ::after. Pozwalają dodać treść przed i po elemencie bez dopisywania jej w kodzie HTML - za pomocą właściwości content: "dodana treść". Ta treść nie daje się zaznaczyć na stronie jako tekst i raczej jest używana do elementów dekoracyjnych</p>
+                    <p class="inner-section__text"><span class="mark">Pseudoklasy</span> - oznaczane są za pomocą <span class="mark">:</span> . Wprowadzają modyfikacje wynikające z  innego działania, np :hover, :active.</p>
+                    <ul class="inner-section-list">
+                        <li><span class="inner-section-list__content"><b>:focus</b> - przy przeskakiwaniu tabulatorem po np.linkach lub inputach można je dodatkowo wyróżnić.</span></li>
+                        <li><span class="inner-section-list__content"><b>:first-child</b></span></li>
+                        <li><span class="inner-section-list__content"><b>:last-child</b></span></li>
+                        <li><span class="inner-section-list__content"><b>:nth-child</b></span></li>
+                        <li><span class="inner-section-list__content"><b>:not</b> - zaprzeczenie.</span></li>
+                    </ul>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+body :not(p) {
+  text-decoration: underline;
+}
+/*Wszystkie elementy w body, które nie są &lt;p&gt;*/      
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Pseudoklasy nie mogą być zagnieżdżane. Więcej informacji w <a class="internal-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target=_blank>oficjalnej dokumentacji</a>.</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Node.js</h4>
+                    <p class="inner-section__text"><span class="mark">Node.js</span> jest to środowisko umożliwiające uruchomienie kodu JacaScript poza przeglądarką. Można w nim uruchomić pojedynczy plik *.js, niepodpięty do HTML-a. Node.js nie ma dostępu do DOM. Może służyć również do pisania back-endu.</p>
+                    <p class="inner-section__text">Uruchamianie w terminalu: node nazwapliku.js</p>
+                    <p class="inner-section__text"><span class="mark">npm</span> - repozytorium z gotowymi "paczkami" (modułami) do node'a - przyspiesza tworzenie różnych rzeczy. Zawiera gotowe biblioteki i narzędzia, które są aktualizowane przez twórców. Jest to jakby "App Store dla front-endowców". Inicjalizowany w katalogu z projektem za pomocą polecenia npm init. Więcej poleceń w zakładce <a href="terminal.html">Terminal</a>.</p>
+                    <p class="inner-section__text">Przy zainstalowaniu pierwszej paczki tworzy się katalog node_modules, zawierający "składniki" danej paczki. Ten katalog zazwyczaj jest bardzo ciężki i nie commitujemy go (dzięki wpisaniu go do pliku .gitignore). Informacje o zainstalowanych paczkach znajdują się w pliku <span class="mark">package.json</span> - nawet jeśli usuniemy katalog node_modules, dzięki package.json możemy znów pobrać wszystkie potrzebne elementy za pomocą polecenia npm install.</p>
+                    <p class="inner-section__text"><span class="mark">yarn</span> - alternatywa dla npm-a.</p>
+                    <p class="inner-section__text"><span class="mark">npx</span> - polecenie, które uruchamia paczkę bez instalowania, z katalogu tymczasowego (np. npx cowsay "MUUU").</p>
+                    <p class="inner-section__text"><span class="mark">npm scripts</span> - uruchamiacz procesu. Dodajemy polecenia do pliku package.json, np:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+scripst: {
+    "cow": "cowsay muuu!",
+    "script": "node script.js"
+}  
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">a następnie możemy wywołać polecenie w terminalu (np. npm run cow).</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Sass</h4>
+                    <p class="inner-section__text">Sass jest to preprocesor CSS. Posiada własną składnię oraz składnię CSS, z której będziemy korzystać. Pliki *.scss są zamieniane przez Sass w *.css-a zrozumiałego dla przeglądarki.</p>
+                    <p class="inner-section__text"><span class="mark">$</span> - zmienna - pozwala zdefiniować własność często powtarzającą się w dokumencie.</p>
+                    <p class="inner-section__text"><span class="mark">@mixin</span> - funkcja łącząca kilka właściwości; można jej zmieniać parametry. Wywoływana za pomocą <span class="mark">@include</span> - to polecenie pozwala automatycznie dodać jej zawartość do danego elementu lub klasy.</p>
+                    <p class="inner-section__text"><span class="mark">@extend</span> - grupuje (w pliku .css) selektory z podanymi właściwościami.</p>
+                    <p class="inner-section__text"><span class="mark">&</span> - parent selector - pozwala zastępować długie nazwy BEM-a, można zagnieżdżać, np:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+.test {
+    color: rgb(171, 81, 255);
+    &:hover {
+        color: rgb(255, 102, 0);
+      }
+    &__item {
+        font-size: 16px;
+        &--special {
+            font-size: 20px;
+        }
+    }
+  }
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Gdy korzystamy z preprocesorów, <span class="mark">NIE EDYTUJEMY</span> wygenerowanych plików .css - są nadpisywane przez zawartość .scss!</p>
+
+                </section>
+
+
+
+
             </article><!--pamiętaj o id dla kolejnych tygodni-->
 
         </section>
