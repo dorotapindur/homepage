@@ -595,7 +595,7 @@ switch (myVariable) {
                     <p class="inner-section__text">Zapis skrócony: <span class="mark">?</span> - np:</p>
                     <div class="code-wrapper">
                         <pre><code class="code">
- (32 > 20) ? console.log('to prawda') : consolelog('to nieprawda');
+(32 > 20) ? console.log('to prawda') : console.log('to nieprawda');
                         </code></pre>
                     </div>
                 </section>
@@ -653,7 +653,7 @@ switch (myVariable) {
                             <p class="inner-section__text grid-template-areas__value">"header header"<br>
                             "article aside"<br>
                             "footer footer";</p>
-                        </div><!--to zrób w gridzie-->
+                        </div>
                         <p class="inner-section__text">grid-row-start: 2;<br>
                         grid-row-end: 4; - ten rząd zajmnie komówki od drugiej do początku czwartej (czyli drugą i trzecią). Można też użyć zapisu<br>
                         grid-row-end: span 2; - czyli przez 2 komórki. To samo dotyczy kolumn.</p>
@@ -783,9 +783,112 @@ scripst: {
 
 
                 </section>
+            </article>
+            <article class="week-article">
+                <h3 id="week8" class="week-article__heading">Tydzień 8</h3>
 
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Moduły</h4>
+                    <p class="inner-section__text">Moduły porządkują projekt, skracają kod, umożliwiają korzystanie z gotowych elementów.</p>
+                    <p class="inner-section__text">W SCSS można zaimportować moduł z innego pliku (<span class="mark">@import "źródło"</span>) lub bezpośrednio z internetu (bez pobierania) - np. czcionkę.</p>
+                    <p class="inner-section__text">Moduły w JS: w przeglądarce działają bez pobierania moduły ES6 Modules. Możemy też eksportować i importować moduły między własnymi plikami. Aby to umożliwić, do znacznika script dodajemy type="module".</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+&lt;script type="module" scr="main.js"&gt;&lt;/script&gt;
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Eksport nazwany: w pliku, z którego chcemy eksportować moduł, dodajemy przed funkcją polecenie "eksport", np: </p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+export const hello = (name) => {...}
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Wywołujemy moduł poleceniem "import". Możemy importować kilka rzeczy na raz:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+import {hello, myFunction} from './file.js';
+                        </code></pre>
+                    </div>                    
+                    <p class="inner-section__text">Eksport domyślny: przez polecenie "export default". Najpierw definiujemy zmienną (lub funkcję) - a następnie piszemy polecenie</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+export default hello;
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">a wywołujemy ją pod dowolną nazwą (i bez nawiasów { } ):
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+import greeting from './file.js';
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Dzięki importowi nie trzeba w wielu miejscach kopiować tego samego kodu, wystarczy wywołać funkcję.</p>
+                    <p class="inner-section__text">Możemy też importować rzeczy z node modules:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+import nazwaRzeczy from 'nazwa-modułu';
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">W przypadku długiej lub kolidującej z czymś nazwy możemy ją zmienić:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+import {veryLongAndDifficultName as newName} from 'ścieżka-do-pliku';
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Możemy też importować całą zawartość pliku:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+import * as newName from 'ścieżka-do-pliku';
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">W importowaniu oraz ogarnianiu innych procesów pomaga nam WEBPACK.</p>
+                </section>
 
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Webpack</h4>
+                    <p class="inner-section__text"><span class="mark">Webpack</span> to obecnie jedno z podstawowych narzędzi front-endowca. Automatyzuje procesy w trakcie tworzenia strony, ułatwia development. Wykorzystują go wiodące frameworki i biblioteki.</p>
+                    <p class="inner-section__text">Dokumentacja i tutorial: <a class="external-link" href="https://webpack.js.org" target=_blank>webpack.js.org</a></p>
+                    <p class="inner-section__text">Plik wejściowy jest przetwarzany w webpacku i powstaje zminifikowany, przyjazny dla przeglądarki plik w katalogu "dist". Uwaga, <span class="mark">nie edytujemy dist!</span> - jego zawartość jest nadpisywana w trybie produkcji.</p>
+                    <p class="inner-section__text"><b>Loader</b> - pozwala na wczytanie innych plików niż pliki .js</p>
+                    <p class="inner-section__text"><b>Plugin</b> - pozwala na wykonywanie różnych operacji</p>
+                    <p class="inner-section__text">W webpacku mamy 2 tryby pracy (mode): <span class="mark">development</span> - czyli to, w czym pracujemy - oraz <span class="mark">production</span> - zcyli to, co leci na serwer.</p>
+                    <p class="inner-section__text">Webpacka można rozszerzać za pomocą paczek z NPM.</p>
+                    <p class="inner-section__text">korzystanie z webpacka staje się obecnie standardem, ale przy małych projektach nie jest konieczne.</p>
+                </section>
 
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">CSS Custom Properties</h4>
+                    <p class="inner-section__text"> - czyli tzw. "zmienne" CSS.</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+:root {
+    --nazwa: wartość;
+    --inna-nazwa: wartość;
+}
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Pobranie wartości ze zmiennej:</p> 
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+właściwość: var(--nazwa);
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Zmienne CSS żyją w przeglądarce - możemy je zmieniać JS-em (w odróżnieniu od zmiennych SCSS, które zostają zastąpione przez zwykłe wartości w CSS). Polecenie do ustawania wartości zmiennej w JS:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+document.documentElement.style.setProperty('--zmienna', 'nowa-wartość');
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">W ten sposób możemy np. zrobić dark mode na całej stronie. Zmienne CSS możemy zmieniać również przez media queries:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+@media (max-width: 768px) {
+    :root {
+        --nazwa: nowa-wartość;
+    }
+}
+                        </code></pre>
+                    </div>
+                </section>
 
             </article><!--pamiętaj o id dla kolejnych tygodni-->
 
