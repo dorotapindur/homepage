@@ -17,6 +17,22 @@ html {
   
   .menu-button {
     display: none;
+    @media screen and (max-width: 1340px) {
+      display: inline-block;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+      border: 2px solid rgb(16, 0, 31);
+      background-color: rgb(58, 0, 83);
+      color: #dddddd;
+      z-index: 30;
+    }
   }
   
   .top-navigation {
@@ -28,6 +44,24 @@ html {
     z-index: 30;
     flex-direction: column;
     padding: 1vw;
+    @media screen and (max-width: 1340px) {
+      display: none;
+    }
+    &--open {
+      @media screen and (max-width: 1340px) {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        top: 50px;
+        border: none;
+        z-index: 30;
+        padding: 1vw;
+        background-color: rgba(173, 137, 202, 0.795)
+      }
+    }
     &__item {
         display: flex;
         width: 130px;
@@ -46,6 +80,14 @@ html {
         color: rgb(255, 102, 0);
         transform: scale(1);
         transition: background-color 0.5s linear, transform 0.5s linear, color 0.5s linear;
+        @media screen and (max-width: 1340px) {
+          width: 100px;
+          height: 100px;
+          border: 2px solid rgb(16, 0, 31);
+          background-color: rgba(58, 0, 83, 0.932);
+          font-size: 16px;
+          margin: 7px;
+        }
         &:visited {
             color: rgb(255, 102, 0);
             background-color: rgba(58, 0, 83, 0.589);
@@ -73,6 +115,14 @@ html {
             margin: 15px;
             text-decoration: none;
             color: rgba(185, 90, 204, 0.521);
+            @media screen and (max-width: 1340px) {
+              width: 100px;
+              height: 100px;
+              border: 2px solid rgb(16, 0, 31);
+              background: rgba(58, 0, 83, 0.863);
+              font-size: 16px;
+              margin: 7px;
+            }
           }
       }
   }
@@ -81,6 +131,9 @@ html {
     min-height: calc(100vh - 50px);
     margin: 0;
     padding-top: 50px;
+    @media screen and (max-width: 1340px) {
+      min-height: calc(100vh - 100px);
+    }
   }
   
   .main-header {
@@ -98,6 +151,9 @@ html {
         text-shadow: rgb(24, 0, 46) 0 0 0.1em, rgba(163, 1, 128, 0.904) 0 0 0.1em;
         transition: text-shadow 0.5s linear;
         margin: 0;
+        @media screen and (max-width: 700px) {
+          font-size: 1.5em;  
+        }
         &:hover {
             text-shadow: rgb(24, 0, 46) 0 -0.2em 0.1em,
               rgba(163, 1, 128, 0.904) 0 0.2em 0.1em;
@@ -109,6 +165,10 @@ html {
         transition: filter 0.5s linear;
         transition: transform 0.5s linear;
         margin: 0;
+        @media screen and (max-width: 700px) {
+          width: 40vw;
+          height: auto;
+        }
         &:hover {
             filter: brightness(1.1);
             transform: scale(1.1);
@@ -122,19 +182,34 @@ html {
         text-align: center;
         text-shadow: rgba(165, 60, 0, 0.801) 0 0 0.1em;
         margin: 0;
-        padding: 20px 0;
-        line-height: 50%;
+        padding: 16px 0 0;
+        line-height: 94%;
         transition: text-shadow 0.5s linear;
-        &--span {
-            font-size: 48%;
-            font-style: normal;
-            color: rgb(255, 102, 0);
-          }
-        &:hover {
-            text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em;
-          }
+        @media screen and (max-width: 700px) {
+          font-size: 30px;
+        }
+      }
+    &__subtitle {
+        display: inline-block;
+        font-size: 32px;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: rgba(165, 60, 0, 0.801) 0 0 0.1em;
+        margin: 0;
+        padding: 0;
+        line-height: 94%;
+        color: rgb(255, 102, 0);     
+        transition: text-shadow 0.5s linear;
+        @media screen and (max-width: 700px) {         
+          font-size: 18px;
+        }
+      }
+    &:hover {
+        text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em;
       }
   }
+  
   
   
   main {
@@ -160,8 +235,12 @@ html {
         -webkit-text-fill-color: transparent;
         font-weight: bold;
         font-size: 22px;
+        @media screen and (max-width: 700px) {
+          font-size: 16px;
+        }
         &--gradient-box {
             display: flex;
+            max-width: max-content;
           }
         &::before {
             content: "";
@@ -177,6 +256,9 @@ html {
         color: #dddddd;
         margin-left: 0.5vw;
         text-shadow: black 0.2em 0.2em 0.2em;
+        @media screen and (max-width: 700px) {
+          font-size: 14px;
+        }
       }
     &__list {
         color: rgb(255, 102, 0);
@@ -195,6 +277,10 @@ html {
     grid-template-rows: auto;
     column-gap: 1.5vw;
     text-align: justify;
+    @media screen and (max-width: 700px) {
+      display: block;
+      text-align: justify;
+    }
   }
 
   .navigation-weeks {
@@ -232,11 +318,17 @@ html {
         position: sticky;
         top: 10px;
         z-index: 20;
+        @media screen and (max-width: 1340px) {
+          top: 50px;
+        }
       }
       &__text {
         color: #dddddd;
         margin-left: 1.3vw;
         text-shadow: black 0.2em 0.2em 0.2em;
+        @media screen and (max-width: 700px) {
+          font-size: 14px;
+        }
       }
       &__list {
         color: rgb(255, 102, 0);
@@ -270,6 +362,9 @@ html {
         color: #dddddd;
         margin-left: 2vw;
         text-shadow: black 0.2em 0.2em 0.2em;
+        @media screen and (max-width: 700px) {
+          font-size: 14px;
+        }
       }
   }
   
@@ -277,9 +372,15 @@ html {
     color: rgb(255, 102, 0);
     margin-left: 1vw;
     line-height: 1.5em;
+    @media screen and (max-width: 700px) {
+      font-size: 14px;
+    }
     &__content {
         color: #dddddd;
         text-shadow: black 0.2em 0.2em 0.2em;
+        @media screen and (max-width: 700px) {
+          font-size: 14px;
+        }
       }
   }
   
@@ -291,6 +392,10 @@ html {
     text-align: center;
     text-shadow: black 0.1em 0.1em 0.2em;
     margin: none;
+    @media screen and (max-width: 700px) {
+      display: block;
+      width: 80%;
+    }
   }
   
   .up-navigation {
@@ -298,7 +403,6 @@ html {
     position: fixed;
     bottom: 0;
     right: 0;
-    float: right;
     width: 130px;
     height: 130px;
     border: 3px solid rgb(16, 0, 31);
@@ -315,16 +419,51 @@ html {
     color: rgb(255, 102, 0);
     transform: scale(1);
     transition: background-color 0.5s linear, transform 0.5s linear, color 0.5s linear;
+    @media screen and (max-width: 1340px) {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      border: 2px solid rgb(16, 0, 31);
+      border-radius: 50% 0 0 0;
+      background-color: rgba(58, 0, 83, 0.822);
+      text-align: right;
+      font-size: 16px;
+      margin: 0;
+      transform: none;
+      transition: none;
+    }
     &:visited {
         color: rgb(255, 102, 0);
         background-color: rgba(58, 0, 83, 0.589);
         transform: scale(1);
-        transition: background-color 0.5s linear, transform 0.5s linear, color 0.5s linear;        
+        transition: background-color 0.5s linear, transform 0.5s linear, color 0.5s linear; 
+        @media screen and (max-width: 1340px) {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          width: 70px;
+          height: 70px;
+          border: 2px solid rgb(16, 0, 31);
+          border-radius: 50% 0 0 0;
+          background-color: rgba(58, 0, 83, 0.822);
+          text-align: right;
+          font-size: 16px;
+          margin: 0;
+          transform: none;
+          transition: none;
+        }     
       }
     &:hover {
         color: #dddddd;
         background: rgba(185, 90, 204, 0.521);
         transform: scale(1.1);
+        @media screen and (max-width: 1340px) {
+          color: rgb(255, 102, 0);
+          background-color: rgba(58, 0, 83, 0.822);
+          transform: none;
+        }   
       }
   }
   
@@ -419,7 +558,7 @@ html {
     &__container {
         width: 100%;
         clear: both;
-        margin: 10px;
+        margin: 10px 0;
         padding: 0 0 5px;
       }
     &__text {
@@ -429,6 +568,9 @@ html {
         margin: 0;
         padding: 0;
         text-align: center;
+        @media screen and (max-width: 700px) {
+          font-size: 16px;
+        }
       }
   }
   
@@ -461,6 +603,12 @@ html {
         position: relative;
         float: left;
         margin: 0 30px;
+        @media screen and (max-width: 700px) {
+          width: 80vw;
+          height: 60vw;
+          float: none;
+          margin: 0 auto;
+        }
       }
     &__item {
         position: absolute;
@@ -531,6 +679,9 @@ html {
   
   .code {
     color: #c47124;
+    @media screen and (max-width: 700px) {
+      font-size: 14px;
+    }
   }
   .code-wrapper {
     display: flex;
@@ -539,6 +690,7 @@ html {
   }
   pre {
     white-space: pre-wrap;
+    overflow-wrap: anywhere;
   }
   
   
@@ -552,6 +704,15 @@ html {
     "content aside"
     "footer footer";
     column-gap: 10px;
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "heading"
+      "content"
+      "scheme"
+      "aside"
+      "footer";
+      row-gap: 10px;
+    }
     &__heading {
         grid-area: heading;
       }
@@ -565,6 +726,10 @@ html {
         &--clicked {
             transform: translate(-50%) scale(2);
             transition: transform 0.5s ease-out;
+            @media screen and (max-width: 700px) {
+              transform: none;
+              transition: none;
+            }
           }
       }
     &__content {
@@ -649,190 +814,8 @@ html {
       }
   }
   
-  @media screen and (max-width: 1340px) {
-    .menu-button {
-      display: inline-block;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      height: 50px;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 20px;
-      font-weight: bold;
-      padding: 10px;
-      border: 2px solid rgb(16, 0, 31);
-      background-color: rgb(58, 0, 83);
-      color: #dddddd;
-      z-index: 30;
-    }
-    .top-navigation {
-      display: none;
-      &--open {
-        display: flex;
-        position: fixed;
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        top: 50px;
-        border: none;
-        z-index: 30;
-        padding: 1vw;
-        background-color: rgba(173, 137, 202, 0.795)
-      }
-      &__item {
-        display: flex;
-        width: 100px;
-        height: 100px;
-        border: 2px solid rgb(16, 0, 31);
-        border-radius: 50%;
-        background-color: rgba(58, 0, 83, 0.932);
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        font-size: 16px;
-        text-transform: uppercase;
-        margin: 7px;
-        text-decoration: none;
-        color: rgb(255, 102, 0);
-        transform: scale(1);
-        transition: background-color 0.5s linear, transform 0.5s linear, color 0.5s linear;
-        &:visited {
-            color: rgb(255, 102, 0);
-            background-color: rgba(58, 0, 83, 0.589);
-            transform: scale(1);
-            transition: background-color 0.5s linear, transform 0.5s linear, color 0.5s linear;
-          }
-        &--disabled {
-            display: flex;
-            width: 100px;
-            height: 100px;
-            border: 2px solid rgb(16, 0, 31);
-            border-radius: 50%;
-            background: rgba(58, 0, 83, 0.863);
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 16px;
-            text-transform: uppercase;
-            margin: 7px;
-            text-decoration: none;
-            color: rgba(185, 90, 204, 0.521);
-          }
-        }
-    }
-    
-    .page-content {
-        min-height: calc(100vh - 100px);
-      }
-    
-    .week-article__heading {
-      display: inline-block;
-      background: rgb(23, 0, 37);
-      border-radius: 0.5vw;
-      padding: 0 10px;
-      color: rgb(255, 102, 0);
-      box-shadow: 5px 5px 5px black;
-      position: sticky;
-      top: 50px;
-      z-index: 20;
-    }
-    .up-navigation {
-      display: flex;
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      float: right;
-      width: 70px;
-      height: 70px;
-      border: 2px solid rgb(16, 0, 31);
-      border-radius: 50% 0 0 0;
-      background-color: rgba(58, 0, 83, 0.822);
-      text-align: right;
-      padding-right: 12px;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 16px;
-      text-transform: uppercase;
-      margin: 0;
-      text-decoration: none;
-      color: rgb(255, 102, 0);
-      transform: none;
-      transition: none;
-      &:visited {
-        color: rgb(255, 102, 0);
-        background-color: rgba(58, 0, 83, 0.822);
-        transform: none;
-        transition: none;
-      } 
-      &:hover {
-        color: rgb(255, 102, 0);
-        background-color: rgba(58, 0, 83, 0.822);
-        transform: none;
-      }
-    }    
-  }
   
-  @media screen and (max-width: 700px) {
-    .main-headre {
-        &__author {
-            font-size: 1.5em;    
-          }
-        &__image {
-            width: 40vw;
-            height: auto;
-          }
-        &__title {
-            font-size: 30px;
-            text-transform: uppercase;
-            text-align: center;
-            text-shadow: rgba(165, 60, 0, 0.801) 0 0 0.1em;
-            margin: auto;
-            padding: 20px 0;
-            line-height: 50%;
-            transition: text-shadow 0.5s linear;
-          }
-    }
-    
-    .half-size-sections {
-      display: block;
-      text-align: justify;
-    }
-    .box-model {
-      margin-bottom: 20px;
-      &__float {
-        display: block;
-        width: 80vw;
-        height: 60vw;
-        position: relative;
-        float: none;
-        margin: 0 auto;
-      }
-    }
   
-    .grid-section {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas: "heading"
-      "content"
-      "scheme"
-      "aside"
-      "footer";
-      row-gap: 10px;
-      &__scheme--clicked {
-        transform: none;
-        transition: none;
-      }
-    }
-    
-    .footer {
-      display: block;
-      width: 80%;
-    }
-
-  }
+  
+   
+   
