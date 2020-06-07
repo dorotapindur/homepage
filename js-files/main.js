@@ -175,5 +175,5 @@ changeMode.addEventListener('click', () => {
     }
 console.log('działa?');
 })
-    
+
     

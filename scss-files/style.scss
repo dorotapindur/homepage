@@ -194,6 +194,9 @@ html {
         padding: 16px 0 0;
         line-height: 94%;
         transition: text-shadow 0.5s linear;
+        &:hover {
+          text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em;
+        }
         @media screen and (max-width: 700px) {
           font-size: 30px;
         }
@@ -210,13 +213,14 @@ html {
         line-height: 94%;
         color: rgb(255, 102, 0);     
         transition: text-shadow 0.5s linear;
+        &:hover {
+          text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em;
+        }
         @media screen and (max-width: 700px) {         
           font-size: 18px;
         }
       }
-    &:hover {
-        text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em;
-      }
+    
   }
   
   

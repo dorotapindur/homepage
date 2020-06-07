@@ -177,6 +177,8 @@ body {
     padding: 16px 0 0;
     line-height: 94%;
     transition: text-shadow 0.5s linear; }
+    .main-header__title:hover {
+      text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em; }
     @media screen and (max-width: 700px) {
       .main-header__title {
         font-size: 30px; } }
@@ -192,11 +194,11 @@ body {
     line-height: 94%;
     color: #ff6600;
     transition: text-shadow 0.5s linear; }
+    .main-header__subtitle:hover {
+      text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em; }
     @media screen and (max-width: 700px) {
       .main-header__subtitle {
         font-size: 18px; } }
-  .main-header:hover {
-    text-shadow: rgba(255, 102, 0, 0.801) 0 0 0.3em; }
 
 main {
   display: block;
