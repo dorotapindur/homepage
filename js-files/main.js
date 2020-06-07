@@ -139,6 +139,41 @@ clickScheme.addEventListener('click', () => {
     scaleScheme.classList.toggle('grid-section__scheme--clicked');
 })
 
+//change mode
 
+function buttonText(selectorContent, newContent) {
+    const myElement = document.querySelector(selectorContent);
+    myElement.innerHTML = newContent;
+}
+buttonText('.change-mode__button--js', 'tryb jasny')
+
+let isLight = false;
+
+const changeMode = document.querySelector('.change-mode__button--js')
+changeMode.addEventListener('click', () => {
+    if (isLight) {
+        document.documentElement.style.setProperty('--mode-background', 'rgba(83, 39, 119, 0.253)');
+        document.documentElement.style.setProperty('--mode-heading', '#dddddd');
+        document.documentElement.style.setProperty('--mode-text', '#dddddd');
+        document.documentElement.style.setProperty('--mode-button-label', 'rgb(58, 0, 83)');
+        document.documentElement.style.setProperty('--mode-button', '#dddddd');
+        document.documentElement.style.setProperty('--mode-text-shadow', 'black 0.2em 0.2em 0.2em');
+        isLight = false;
+        buttonText('.change-mode__button--js', 'tryb jasny')
+
+    }
+    else {
+        document.documentElement.style.setProperty('--mode-background', '#dddddd');
+        document.documentElement.style.setProperty('--mode-heading', 'rgb(58, 0, 83)');
+        document.documentElement.style.setProperty('--mode-text', 'rgb(58, 0, 83)');
+        document.documentElement.style.setProperty('--mode-button-label', '#dddddd');
+        document.documentElement.style.setProperty('--mode-button', 'rgb(58, 0, 83)');
+        document.documentElement.style.setProperty('--mode-text-shadow', 'none');
+
+        isLight = true;
+        buttonText('.change-mode__button--js', 'tryb zwykły')
+    }
+console.log('działa?');
+})
     
     

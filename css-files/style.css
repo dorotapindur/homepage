@@ -5,6 +5,14 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+:root {
+  --mode-background: rgba(83, 39, 119, 0.253);
+  --mode-heading: #dddddd;
+  --mode-text: #dddddd;
+  --mode-button-label: rgb(58, 0, 83);
+  --mode-button: #dddddd;
+  --mode-text-shadow: black 0.2em 0.2em 0.2em; }
+
 body {
   background-color: black;
   background-image: url(../pictures/cosmos.jpg);
@@ -695,3 +703,36 @@ pre {
   .grid-template-areas__value {
     grid-area: value;
     margin-left: 5px; }
+
+.change-mode {
+  background-color: var(--mode-background); }
+  .change-mode__heading {
+    color: var(--mode-heading);
+    text-shadow: var(--mode-text-shadow); }
+  .change-mode__grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 16px;
+    width: 100%;
+    align-items: center; }
+  .change-mode__text {
+    grid-column: 1;
+    color: var(--mode-text);
+    text-shadow: var(--mode-text-shadow); }
+  .change-mode__button {
+    width: 150px;
+    height: max-content;
+    padding: 16px;
+    grid-column: 2;
+    background-color: var(--mode-button);
+    color: var(--mode-button-label);
+    justify-self: end;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    outline-color: #c382ee; }
+    @media screen and (max-width: 700px) {
+      .change-mode__button {
+        width: 100px;
+        font-size: 14px;
+        padding: 12px; } }

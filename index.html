@@ -855,9 +855,9 @@ import * as newName from 'ścieżka-do-pliku';
                     <p class="inner-section__text">korzystanie z webpacka staje się obecnie standardem, ale przy małych projektach nie jest konieczne.</p>
                 </section>
 
-                <section class="inner-section">
-                    <h4 class="inner-section__heading">CSS Custom Properties</h4>
-                    <p class="inner-section__text"> - czyli tzw. "zmienne" CSS.</p>
+                <section class="inner-section change-mode">
+                    <h4 class="inner-section__heading change-mode__heading">CSS Custom Properties</h4>
+                    <p class="inner-section__text change-mode__text"> - czyli tzw. "zmienne" CSS.</p>
                     <div class="code-wrapper">
                         <pre><code class="code">
 :root {
@@ -866,19 +866,23 @@ import * as newName from 'ścieżka-do-pliku';
 }
                         </code></pre>
                     </div>
-                    <p class="inner-section__text">Pobranie wartości ze zmiennej:</p> 
+                    <p class="inner-section__text change-mode__text">Pobranie wartości ze zmiennej:</p> 
                     <div class="code-wrapper">
                         <pre><code class="code">
 właściwość: var(--nazwa);
                         </code></pre>
                     </div>
-                    <p class="inner-section__text">Zmienne CSS żyją w przeglądarce - możemy je zmieniać JS-em (w odróżnieniu od zmiennych SCSS, które zostają zastąpione przez zwykłe wartości w CSS). Polecenie do ustawania wartości zmiennej w JS:</p>
+                    <p class="inner-section__text change-mode__text">Zmienne CSS żyją w przeglądarce - możemy je zmieniać JS-em (w odróżnieniu od zmiennych SCSS, które zostają zastąpione przez zwykłe wartości w CSS). Polecenie do ustawania wartości zmiennej w JS:</p>
                     <div class="code-wrapper">
                         <pre><code class="code">
 document.documentElement.style.setProperty('--zmienna', 'nowa-wartość');
                         </code></pre>
                     </div>
-                    <p class="inner-section__text">W ten sposób możemy np. zrobić dark mode na całej stronie. Zmienne CSS możemy zmieniać również przez media queries:</p>
+                    <div class="change-mode__grid">
+                        <p class="inner-section__text change-mode__text">W ten sposób możemy np. zrobić dark mode na całej stronie (lub sekcji, jak tutaj).</p>
+                        <button class="change-mode__button change-mode__button--js" aria-label="przełącz tryb">przełącz tryb</button>
+                    </div>
+                    <p class="inner-section__text change-mode__text">Zmienne CSS możemy zmieniać również przez media queries:</p>
                     <div class="code-wrapper">
                         <pre><code class="code">
 @media (max-width: 768px) {
