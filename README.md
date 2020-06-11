@@ -1,4 +1,4 @@
-![preview]()
+![preview](pictures/readme-image.png)
 
 # My homepage
 This is a training website created during a basic front-end course ["WTF: Co Ten Frontend"](https://cotenfrontend.pl).
