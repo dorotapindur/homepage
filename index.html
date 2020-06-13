@@ -904,6 +904,23 @@ document.documentElement.style.setProperty('--zmienna', 'nowa-wartość');
                     <p class="inner-section__text">Prefiksy CSS określają własności dla różnych przeglądarek. Są potrzebne, aby starsze przeglądarki mogły korzystać z nowych rzeczy (z nowych FICZERÓW). Na stronie <a class="external-link" href="https://caniuse.com/" target=_blank>Can I Use</a> można sprawdzić, które własności potrzebują prefixów i w jakich przeglądarkach.</p>
                     <p class="inner-section__text"><a class="external-link" href="https://autoprefixer.github.io/" target=_blank>Autoprefixer.github.io/</a> - narzędzie, które dodaje automatycznie potrzebne prefixy. Nasz webpack od Maćka robi to za nas, nie musimy się martwić.</p>                    
                 </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Google Fonts</h4>
+                    <p class="inner-section__text">Można je zaimportować bez pobierania. UWAGA: w przypadku stron w języtku polskim zawsze wybierać font z grupy <span class="mark">Language -> Latin Extended</span>, żeby były polskie znaki. Sprawdzamy je zdaniem: "ZAŻÓŁĆ GĘŚLĄ JAŹŃ"</p>
+                    <p class="inner-section__text">Czcionkę możemy zaimportować do  SCSS lub HTML. Nie należy korzystać z więcej niż dwóch czcionek na stronie, bo będzie się długo ładować (no i wygląd może być przeładowany i niespójny)</p>
+                    <p class="inner-section__text">@font-face w SCSS dołącza pliki z własnymi fontami (z komputera lub adresu url).</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+@font-face {
+  font-family: "Open Sans";
+  src:  url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+        url(basic-sans-serif.ttf) format("truetype"),
+        local("My Font Sans");
+}
+                        </code></pre>
+                    </div>
+                </section>
                 
             </article><!--pamiętaj o id dla kolejnych tygodni-->
 
