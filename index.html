@@ -866,12 +866,7 @@ import * as newName from 'ścieżka-do-pliku';
 }
                         </code></pre>
                     </div>
-                    <p class="inner-section__text change-mode__text">Pobranie wartości ze zmiennej:</p> 
-                    <div class="code-wrapper">
-                        <pre><code class="code">
-właściwość: var(--nazwa);
-                        </code></pre>
-                    </div>
+                    <p class="inner-section__text change-mode__text">Pobranie wartości ze zmiennej:<code class="code"> właściwość: var(--nazwa);</code></p>
                     <p class="inner-section__text change-mode__text">Zmienne CSS żyją w przeglądarce - możemy je zmieniać JS-em (w odróżnieniu od zmiennych SCSS, które zostają zastąpione przez zwykłe wartości w CSS). Polecenie do ustawania wartości zmiennej w JS:</p>
                     <div class="code-wrapper">
                         <pre><code class="code">
@@ -940,8 +935,8 @@ document.documentElement.style.setProperty('--zmienna', 'nowa-wartość');
                         <li><span class="inner-section-list__content">## Nagłówek2</span></li>
                         <li><span class="inner-section-list__content">### Nagłówek3</span></li>
                         <li><span class="inner-section-list__content">tezkst zwykły - bez znacznika</span></li>
-                        <li><span class="inner-section-list__content">link: <abbr class="light-on-hover--white" title="treść">[wtf]</abbr><abbr class="light-on-hover--white" title="adres">(https://cotenfrontend.pl)</abbr></span></li>
-                        <li><span class="inner-section-list__content">obrazek: <abbr class="light-on-hover--white" title="alt">![logo]</abbr><abbr class="light-on-hover--white" title="adres">(../pictures/logo.png)</abbr><small> (wykrzyknik z przodu)</small></span></li>
+                        <li><span class="inner-section-list__content">link: <abbr class="light-on-hover" title="treść">[wtf]</abbr><abbr class="light-on-hover" title="adres">(https://cotenfrontend.pl)</abbr></span></li>
+                        <li><span class="inner-section-list__content">obrazek: <abbr class="light-on-hover" title="alt">![logo]</abbr><abbr class="light-on-hover" title="adres">(../pictures/logo.png)</abbr><small> (wykrzyknik z przodu)</small></span></li>
                         <li><span class="inner-section-list__content">`tekst` - jednolinijkowy kod w monospace</span></li>
                         <li><span class="inner-section-list__content">```javascript<br>
                             to jest<br>
@@ -975,6 +970,99 @@ document.documentElement.style.setProperty('--zmienna', 'nowa-wartość');
                     <p class="inner-section__text">Markdown działa też np. w Slacku czy przeglądarkowym Messengerze.</p>
 
                 </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">JS Array (tablica)</h4>
+                    <p class="inner-section__text">Zapis:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+const myArray = ['element1', 'element2', 'element3']
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Jej elementami mogą być różne typy danych: stringi, liczby, obiekty:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+const myArray = [
+    {title: 'wtf',
+    content: 'co ten frontend'
+    },
+    {title: 'logo',
+    link: 'https://...'
+    },
+    2
+]
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Index - pozycja elementu w tablicy (od zera). Tablica[index] - namiar na element, np: <code class="code">myArray[1]</code> to drugi element w tablicy.</p>
+                    <p class="inner-section__text"><code class="code">myArray.length</code> podaje ilość elementów (liczoną od 1). Tak samo zachowuje się string - można np. wypisać czwartą literę wyrazu lub sprawdzić ilość liter.</p>
+                    <p class="inner-section__text"><code class="code">myArray.push('element')</code> - dodaje kolejny element na końcu tablicy.</p>
+                    <p class="inner-section__text"><code class="code">myArray.unshift('element')</code> - dodaje element na początku tablicy.</p>
+                    <p class="inner-section__text"><code class="code">myArray.shift('element')</code> - usuwa pierwszys element tablicy (wtedy indeksy pozostałych się zmieniają).</p>
+                    <p class="inner-section__text"><code class="code">myArray.pop('element')</code> - usuwa ostatni element.</p>
+                    <p class="inner-section__text"><code class="code">myArray.indexOf('element')</code> - podaje indeks danego elementu.</p>
+                    <p class="inner-section__text"><code class="code">myArray.splice(index, liczbaElementów)</code> - usuwa n elementów zaczynając od pozycji index.</p>
+                    <p class="inner-section__text"><code class="code">myArray.slice(index, stop)</code> - pobiera n elementów zaczynając od pozycji index i kończąc na pozycji stop (już bez tej pozycji, zatrzymuje się przed nią). Na przykłas <code class="code">myArray.slice(2, 3)</code> pobiera tylko element 2.</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">JS Loops (pętle)</h4>
+                    <p class="inner-section__text">Pętla mówi, ile razy lub do którego momentu polecenie (blok kodu) ma się powtarzać. Podstawowa pętla w JS to FOR:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+for(<abbr class="light-on-hover" title="od kiedy">inicjalizacja; </abbr><abbr class="light-on-hover" title="do którego momentu">warunek stopu; </abbr><abbr class="light-on-hover" title="zmiana licznika">wyrażenie inkrementacji</abbr>) {
+    kod
+}
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text"><span class="mark">i</span> to licznik pętli.</p>
+                    <p class="inner-section__text"><span class="mark">i++</span> zwiększa wartość i o 1 <b>po</b> wykonaniu kodu funkcji (postinkrementacja)</p>
+                    <p class="inner-section__text"><span class="mark">i--</span> zmniejsza wartość i o 1 <b>po</b> wykonaniu kodu funkcji (postdekrementacja)</p>
+                    <p class="inner-section__text"><span class="mark">++i</span> zwiększa wartość i o 1 <b>przed</b> wykonaniem kodu funkcji (preinkrementacja)</p>
+                    <p class="inner-section__text"><span class="mark">--i</span> zmniejsza wartość i o 1 <b>przed</b> wykonaniem kodu funkcji (predekrementacja)</p>
+                    <p class="inner-section__text">Za pomocą for możemy na przykład wypisać elementy tablicy:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+for (let i=0; i &lt; myArray.length; i++) {
+    console.log (`pod indeksem ${i} jest element ${myArray[i]}`)
+}
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Jeśli dodamy jakieś elementy, zostaną one wypisane.</p>
+                    <p class="inner-section__text">Kolejna pętla to WHILE:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+while (warunek logiczny) {
+    kod
+}
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">UWAGA: jeśli warunek logiczny nie będzie się zmieniał, pętla będzie działać w nieskończoność - w ten sposób można zawiesić przeglądarkę!</p>
+                    <p class="inner-section__text">Pętla DO WHILE - najpierw wykonuje kod, a potem sprawdza warunek - kod zostanie przynajmniej raz wykonany.</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+do { 
+    kod
+} while (warunek logiczny)
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Pętla FOR IN - przebiega przez własności obiektu</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+for (let myProperty in myObject) {
+    console.log(myObject[myProperty]);
+}
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Pętla FOR OF - przebiega przez elementy tablicy</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+for (let element of myArray) {
+    console.log(element);
+}
+                        </code></pre>
+                    </div>
+                </section>
+
                 
             </article><!--pamiętaj o id dla kolejnych tygodni-->
 

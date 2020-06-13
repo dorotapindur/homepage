@@ -526,11 +526,6 @@ abbr[title] {
     color: #ab51ff; }
     .light-on-hover--root:hover {
       color: red; }
-  .light-on-hover--white {
-    color: #dddddd;
-    font-weight: bold; }
-    .light-on-hover--white:hover {
-      color: #ff6600; }
 
 /**/
 .box-model {
@@ -604,7 +599,8 @@ abbr[title] {
     cursor: pointer; }
 
 .code {
-  color: #c47124; }
+  color: #c47124;
+  text-shadow: none; }
   @media screen and (max-width: 700px) {
     .code {
       font-size: 14px; } }
