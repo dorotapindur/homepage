@@ -526,6 +526,11 @@ abbr[title] {
     color: #ab51ff; }
     .light-on-hover--root:hover {
       color: red; }
+  .light-on-hover--white {
+    color: #dddddd;
+    font-weight: bold; }
+    .light-on-hover--white:hover {
+      color: #ff6600; }
 
 /**/
 .box-model {
@@ -738,3 +743,6 @@ pre {
         width: 100px;
         font-size: 14px;
         padding: 12px; } }
+
+.markdown-list {
+  list-style: none; }

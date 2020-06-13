@@ -603,6 +603,13 @@ html {
             color: red;
           }
       }
+    &--white {
+      color: #dddddd;
+      font-weight: bold;
+      &:hover {
+        color: rgb(255, 102, 0);
+      }
+    }
   }
   
   /**/
@@ -863,6 +870,10 @@ html {
         padding: 12px;
       }
     }
+  }
+
+  .markdown-list {
+    list-style: none;
   }
 
 

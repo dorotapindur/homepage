@@ -921,6 +921,60 @@ document.documentElement.style.setProperty('--zmienna', 'nowa-wartość');
                         </code></pre>
                     </div>
                 </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Git branch</h4>
+                    <p class="inner-section__text">Branch (gałąź) pozwala na bezkrne testowanie bez naruszania oryginału. Pozwala zrównoleglić<sup>*</sup> pracę. Zwiększa czytelność postępu prac nad projektem.</p>
+                    <p class="inner-section__text">Główna gałąź to master. Polecenie <code class="code">git branch</code> pokazuje obecną gałąź. <code class="code">Git branch mynewbranch</code> tworzy nową gałąź "mynewbranch". Przełączamy się na daną gałąź za pomocą <code class="code">git checkout mynewbranch</code>. Teraz commity z tej gałęzi nie wchodzą na master.</p>
+                    <p class="inner-section__text"><code class="code">git push --set-upstream origin mynewbranch</code> wypycha commita tworząc jedoncześnie mynewbranch na GitHubie</p>
+                    <p class="inner-section__text">Połączenie gałęzi: <code class="code">git merge mynewbranch</code> (z poziomu mastera).</p>
+                    <p class="inner-section__text"><small>* Tak, istnieje takie słowo :)</small></p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Markdown</h4>
+                    <p class="inner-section__text">Jest to język znaczników. Jest czytelny zarówno w formie źródła jak i wyniku. Umożliwia uniwersalne formatoanie tektu oraz bezpieczne wprowadzanie treści bez konieczności korzystania z HTML. Nie trzeba pisać edytora.</p>
+                    <p class="inner-section__text">Znaczniki:</p>
+                    <ul class="inner-section-list">
+                        <li><span class="inner-section-list__content"># Nagłówek1</span></li>
+                        <li><span class="inner-section-list__content">## Nagłówek2</span></li>
+                        <li><span class="inner-section-list__content">### Nagłówek3</span></li>
+                        <li><span class="inner-section-list__content">tezkst zwykły - bez znacznika</span></li>
+                        <li><span class="inner-section-list__content">link: <abbr class="light-on-hover--white" title="treść">[wtf]</abbr><abbr class="light-on-hover--white" title="adres">(https://cotenfrontend.pl)</abbr></span></li>
+                        <li><span class="inner-section-list__content">obrazek: <abbr class="light-on-hover--white" title="alt">![logo]</abbr><abbr class="light-on-hover--white" title="adres">(../pictures/logo.png)</abbr><small> (wykrzyknik z przodu)</small></span></li>
+                        <li><span class="inner-section-list__content">`tekst` - jednolinijkowy kod w monospace</span></li>
+                        <li><span class="inner-section-list__content">```javascript<br>
+                            to jest<br>
+                            długi<br>
+                            kod<br>
+                        ``` - dłuższy fragment kodu. Opcjonalnie można podać nazwę języka, wtedy wyświetli się z kolorami składni.</span></li>
+                        <li><span class="inner-section-list__content">*tekst* - kursywa (italic)</span></li>
+                        <li><span class="inner-section-list__content">**tekst** - bold</span></li>
+                        <li><span class="inner-section-list__content">***tekst*** - bold + italic</span></li>
+                        <li><span class="inner-section-list__content">>cytat</span></li>
+                        <li><span class="inner-section-list__content">lista: 
+                            <ul class="markdown-list">
+                                <li>- pierwszy element</li>
+                                <li>- drugi element</li>
+                                <li>- trzeci element</li>
+                            </ul>
+                            lub <ul class="markdown-list">
+                                <li>1.pierwszy element</li>
+                                <li>2.drugi element</li>
+                                <li>3.trzeci element
+                                    <ul class="markdown-list">
+                                        <li>1.podlista</li>
+                                        <li>2.podlista</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </span></li>
+                    </ul>
+                    <p class="inner-section__text">W języku markdown tworzone są m.in. pliki readme.md. Można je edytować n GitHubie. Zmiany należy zacommitować, a potem KONIECZNIE git pull w terminalu - pobierze nam ten zmieniony plik na dysk i podmieni (bez tego pulla mogą wystąpić konflikty). Obrazek umieszczamy w katalogu repozytorium i podajemy ścieżkę.</p>
+                    <p class="inner-section__text">Ciekawe i niestandardowe README mają znaczenie przy staraniu się o pracę - warto je dopracować, dać interesujący obrazek i opis oraz link do GitHub pages, żeby można było od razu obejrzeć stronę.</p>
+                    <p class="inner-section__text">Markdown działa też np. w Slacku czy przeglądarkowym Messengerze.</p>
+
+                </section>
                 
             </article><!--pamiętaj o id dla kolejnych tygodni-->
 
