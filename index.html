@@ -1063,6 +1063,19 @@ for (let element of myArray) {
                     </div>
                 </section>
 
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">JS - przechowywanie danych</h4>
+                    <p class="inner-section__text">Cookies - możemy podejrzeć w devtools wpisując w konsoli: <code class="code">console.log(document.cookie)</code>. </p>
+                    <p class="inner-section__text">Zapisywanie własnych cookies: document.cookie = "nazwa = wartość"; (w pliku JS). Możemy je potem podejrzeć w devtools -> Application (w Firefox: Dane).</p>
+                    <p class="inner-section__text">localStorage - do ręcznego wyczyszczenia pamięci (trwalsze)</p>
+                    <p class="inner-section__text">sessionStorage - do zamknięcia sesji / zakładki przeglądarki</p>
+                    <p class="inner-section__text"><code class="code">localStorage.setItem('nazwa', wartość)</code> - wartość musi być stringiem</p>
+                    <p class="inner-section__text"><code class="code">localStorage.getItem('nazwa')</code> - pobieranie danych z Local Storage</p>
+                    <p class="inner-section__text"><code class="code">localStorage.removeItem('nazwa')</code> - usuwanie danych z Local Storage</p>
+                    <p class="inner-section__text"><code class="code">JSON.stringify(obiekt)</code> - zamienia obiekt na string, żeby móc go umieścić jako wartość.</p>
+                    <p class="inner-section__text"><code class="code">JSON.parse(JSONString</code> - odwraca ten proces, zamieniając string na obiekt</p>    
+                </section>
+
                 
             </article><!--pamiętaj o id dla kolejnych tygodni-->
 
