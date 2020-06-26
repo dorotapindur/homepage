@@ -945,7 +945,7 @@ document.documentElement.style.setProperty('--zmienna', 'nowa-wartość');
                         <li><span class="inner-section-list__content"># Nagłówek1</span></li>
                         <li><span class="inner-section-list__content">## Nagłówek2</span></li>
                         <li><span class="inner-section-list__content">### Nagłówek3</span></li>
-                        <li><span class="inner-section-list__content">tezkst zwykły - bez znacznika</span></li>
+                        <li><span class="inner-section-list__content">tekst zwykły - bez znacznika</span></li>
                         <li><span class="inner-section-list__content">link: <abbr class="light-on-hover" title="treść">[wtf]</abbr><abbr class="light-on-hover" title="adres">(https://cotenfrontend.pl)</abbr></span></li>
                         <li><span class="inner-section-list__content">obrazek: <abbr class="light-on-hover" title="alt">![logo]</abbr><abbr class="light-on-hover" title="adres">(../pictures/logo.png)</abbr><small> (wykrzyknik z przodu)</small></span></li>
                         <li><span class="inner-section-list__content">`tekst` - jednolinijkowy kod w monospace</span></li>
@@ -1104,6 +1104,255 @@ for (let element of myArray) {
                         <li><a class="external-link" href="https://tympanus.net/codrops/" target=_blank>tympanus.net/codrops/</a></li>
                         <li><a class="external-link" href="https://www.cssdesignawards.com/" target=_blank>www.cssdesignawards.com/</a></li>
                     </ul>
+                </section>
+
+            </article>
+
+            <article class="week-article">
+                <h3 id="week10" class="week-article__heading">Tydzień 10</h3>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Z kim pracuje front-end developer</h4>
+                    <ul class="inner-section-list">
+                        <li><span class="inner-section-list__content">inni frontendowcy</span></li>
+                        <li><span class="inner-section-list__content">backendowcy</span></li>
+                        <li><span class="inner-section-list__content">UX-owcy (spece od User Experience)</span></li>
+                        <li><span class="inner-section-list__content">UI-owcy (graficy, projektanci - od User Interface)</span></li>
+                        <li><span class="inner-section-list__content">testerzy i QA (Quality Assurance)</span></li>
+                        <li><span class="inner-section-list__content">PM - Project Manager (zarządza projektem, rozdziela zadania)</span></li>
+                        <li><span class="inner-section-list__content">SEO (Search Engine Optimisation) - spece od pozycjonowania strony</span></li>
+                        <li><span class="inner-section-list__content">analitycy (analiza ruchu na stronie)</span></li>
+                        <li><span class="inner-section-list__content">copywriter</span></li>
+                        <li><span class="inner-section-list__content">content editor</span></li>
+                        <li><span class="inner-section-list__content">DevOps - programujący administrator (serwery, optymalizacja)</span></li>
+                        <li><span class="inner-section-list__content">level C - zarządzanie:
+                            <ul class="sublist">
+                                <li>CEO - Chief Executive Officer</li>
+                                <li>CTO - Chief Technology Officer</li>
+                                <li>CMO - Chief Marketing Officer</li>
+                                <li>CIO - Chief Information Officer (osoba odpowiedzialna w organizacji za stan, rozwój i wdrożenia technologii informacyjnych)</li>
+                                <li>i inni...</li>
+                            </ul>
+                        </span></li>
+                    </ul>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Animacje i przejścia</h4>
+                    <p class="inner-section__text">Lista właściwości, które mogą być animowane: <a class="external-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target=_blank>Animatable CSS properties</a> (link).</p>
+                    <p class="inner-section__text">Polecenie przejścia: <code class="code">transition: name duration timing-function delay;</code> jeśli zmianie mają ulec 2 własności - wymieniamy po przecinku. W devtools możemy edytować efekt (jego timing-function - krzywa Beziera do wyginania)</p>
+                    <p class="inner-section__text"><code class="code">will-change: name;</code> - przekazuje przeglądarce, że własność będzie zmieniana</p>
+                    <p class="inner-section__text"><code class="code">transform: translate (x, y) - przesuwa element</code></p>
+                    <p class="inner-section__text"><code class="code">transform: scale (1.2) - skaluje element (wartość 1 to 100%)</code></p>
+                    <p class="inner-section__text"><code class="code">transform: rotate (30deg) - obraca element o daną ilość stopni</code></p>
+                    <p class="inner-section__text">Te transformacje nie przesuwają pozostałych elementów na stronie</p>
+                    <p class="inner-section__text">Animacje - mogą być uruchamiane bez interakcji i działać cały czas. Definiowane za pomocą @keyframes.</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">SVG - Scalable Vector Graphics</h4>
+                    <p class="inner-section__text">Dodawanie: jako &lt;img src="..."&gt; lub bezpośrednio (inline) jako &lt;svg&gt; ...opis właściwości i ścieżki... &lt;/svg&gt;</p>
+                    <p class="inner-section__text">Elementom svg można nadawać style i klasy - uwaga, nie działa u nich specyficzność, klasy będą ważniejsze niż style inline. Animację możemy dodać od razu w pliku svg, a jeśli ma zadziałać na akcję (np. hover) - to dodajemy ją w scss.</p>
+                    <p class="inner-section__text">SVG z Inkscape:</p>
+                    <ul class="inner-section-list">
+                        <li><span class="inner-section-list__content">właściwości dokumentu - dopasuj stronę do zawartości</span></li>
+                        <li><span class="inner-section-list__content">zapisz jako: zoptymalizowany svg</span></li>
+                        <li><span class="inner-section-list__content">otwórz w edytorze tekstu i skopiuj zawartość</span></li>
+                    </ul>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">&lt;head&gt; & Open Graph</h4>
+                    <p class="inner-section__text">Mtaznaczniki &lt;meta&gt; - opisują, jaki jest język (języki) strony, jaki viewport. &lt;title&gt; odpowiada opisowi strony na zakładce. &lt;icon&gt; - ikona przed tytułem (favicon).</p>
+                    <p class="inner-section__text">Open Graph - opisuje naszą stronę przy udostępnianiu - jej opis, grafikę (np. przy wklejaniu linku na fb) - zachęca do kliknięcia w link, pierwsze wrażenie. Og: image możemy stworzyć np. w Canva z szablonu. Na <a href="http://debug.iframely.com/" class="external-link" target=_blank>debug.iframely.com/</a> możemy sprawdzić wygląd naszego og (z już opublikowanej strony).</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">WAI / WCAG / A11y / ARIA - czyli odpowiedzialność w internecie</h4>
+                    <p class="inner-section__text">WAI - Web Accessibility Initiative</p>
+                    <p class="inner-section__text">WCAG - Web Content Accessibility Guidelines - dokument opisujący, co powinna zawierać (i jak być zabezpieczona) strona dostępna dla osób niepełnosprawnych. Niektóre strony (np. instytucji publicznych) muszą wg. prawa spełniać pewne standardy.</p>
+                    <p class="inner-section__text">A11y (Accessibility) - projekt pomagający w tworzeniu dostępnych stron. Więcej informacji na stronie <a href="https://a11yproject.com/" class="external-link" target=_blank>a11yproject.com/</a> oraz <a href="https://a11y.me/" class="external-link" target=_blank>https://a11y.me/</a>.</p>
+                    <p class="inner-section__text">Fundacja Widzialni - zajmuje się tym tematem w Polsce (np. szkolenia z dostępności). Link: <a href="https://widzialni.org/" class="external-link" target=_blank>https://widzialni.org/</a>.</p>
+                    <p class="inner-section__text">Rady:</p>
+                    <ol class="inner-section-list">
+                        <li><span class="inner-section-list__content">Pisz semantycznie.</span></li>
+                        <li><span class="inner-section-list__content">Trzymaj kontrast (sprawdź na <a href="https://color.a11y.com/contrast/" class="external-link" target=_blank>color.a11y.com/contrast/</a>, </span></li>
+                        <li><span class="inner-section-list__content">Dobrze dobieraj kolory, jeśli to od ciebie zależy, lub zwarcaj uwagę projektantom.</span></li>
+                        <li><span class="inner-section-list__content">Unikaj autoplay - atakujących z nienacka dźwięków i wideo bez możliwości włączenia i wyłączenia.</span></li>
+                        <li><span class="inner-section-list__content">Nie ograniczaj czasowo rzeczy, które mają treść.</span></li>
+                        <li><span class="inner-section-list__content">Nie usuwaj focus i outline - można stylować, ale w czytelny i widoczny sposób.</span></li>
+                        <li><span class="inner-section-list__content">Używaj alt="" i kończ te opisy KROPKĄ! (wtedy następna treść przy czytaniu czytnikiem będzie oddzielona pauzą). Jeśli obrazek jest ważny dla treści, opis ma być wyczerpujący.</span></li>
+                        <li><span class="inner-section-list__content">ARIA - Accessible Rich Internet Applications - atrybuty wzbogacające o dostępność. Nie wpływają na wygląd, a pomagają niepełnosprawnym.</span></li>
+                        <li><span class="inner-section-list__content">Rozszerzenie Chrome Vox - czyta stronę (treść i znaczini - dlatego tak ważna jest semantyka). Język przełącza się automatycznie do określonego w &lt;head&gt;.</span></li>
+                        <li><span class="inner-section-list__content">Bądź odpowiedzialny.</span></li>
+                    </ol>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">PWA - Progressive Web Applications</h4>
+                    <p class="inner-section__text">PWA umożliwia tworzenie aplikacji w HTML, CSS i JS. Pozwala na wykorzystanie nowych technologii (np. aparat). Łatwa aktualizacja i dystrybucja, działają offline. Ta technologia wciąż jest w trakcie rozwoju, ale wiele rzeczy jest już stabilnych.</p>
+                    <p class="inner-section__text">Szkielet strony: z webpacka.</p>
+                    <p class="inner-section__text">W pliku manifest.json uzupełniamy: <code class="code">scope: "/nazwa-repo/", start ulr: "/nazwa-repo/"</code>.</p>
+                    <p class="inner-section__text">W pliku index.html odkomentowujemy (ctrl + /) link do manifest.json</p>
+                    <p class="inner-section__text">W pliku index.js odkomentowujemy import ... registerSW</p>
+                    <p class="inner-section__text">Service-worker.js - działa w tle niezależnie, pozwala korzystać z aplikacji bez internetu. Możemy do niego dodać pliki, które mają być dostępne offline.</p>
+                    <p class="inner-section__text">Możemy wygenerować własne ikony - podmieniamy ścieżkę i nazwę w package.json i uruchamiamy npm run generate-icons.</p>
+                </section>
+
+            </article>
+            
+            <article class="week-article">
+                <h3 id="week11" class="week-article__heading">Tydzień 11</h3>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">JS destrukturyzacja</h4>
+                    <p class="inner-section__text">Z obiektu możemy bezpośrednio wyciągnąć interesujące nas własności.</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+const person = {name: 'Maciek', age: 32};
+const {name, age} = person;
+console.log(name);
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Uwaga, jeśli później zmienimy wartość np. name, wypisując console.log(name) wciąż będziemy mieć starą wartość, bo została podpięta wcześniej.</p>
+                    <p class="inner-section__text">Destrukturyzacja działa też przy tablicach.</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+const food = ['apple', 'pear', 'orange'];
+const [frist, second] = food
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Możemy nadać inne nazwy, możemy też pominąć element zostawiając puste miejsce, np. <code class="code">const [one, , three] = food</code></p>
+
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">JS spread operator ...</h4>
+                    <p class="inner-section__text">... czyli tzw. "rozsmarowywacz" :D </p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+const person = {
+    name: 'Maciek',
+    age: 32
+};
+
+const address = {
+    city: 'Białystok',
+    country: 'Poland'
+};
+
+const personWithAddress = {
+    ...person,
+    ...address
+}
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Ostatnie polecenie podaje bezpośrednio wszystkie własności (klucze) danego obiektu, bez potrzeby odwoływania się do każdego z nich (person.name, person.age itd.)</p>
+                    <p class="inner-section__text">Spread operator działa też z tablicami, umieszcza wszystkie elementy wywołanej tablicy: <code class="code">
+                        const newArray = [...fruitArray, ...drinksArray];</code></p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">JS - praca z API</h4>
+                    <p class="inner-section__text">API - Application Programming Interface - umożliwia pobranie danych z zewnątrz. Zestaw funkcji do wykorzystania przez innych deweloperów. API pozwala na wykonywanie operacji (np. pobieranie, dodawanie, usuwanie, modyfikacja) w aplikacji bez konieczności poznania jej budowy od środka. JS udostępnia wiele API, podobnie GitHub, Google, Slack itd.</p>
+                    <p class="inner-section__text">Sposoby korzystania z API: np. GraphQL (rozwojowe, zyskuje na popularności), REST - Representational State Transfer (zmiana stanu poprzez reprezentacje) – styl architektury oprogramowania wywiedziony z doświadczeń przy pisaniu specyfikacji protokołu HTTP dla systemów rozproszonych. REST wykorzystuje m.in. jednorodny interfejs, bezstanową komunikację, zasoby, reprezentacje, hipermedia</p>
+                    <p class="inner-section__text">Łączenie z API: aplikacja Postman - do podglądania żądań HTTP.</p>
+                    <p class="inner-section__text"><span class="mark">Fetch API</span> - pobieranie danych z zewnętrznego serwisu.</p>
+                    <p class="inner-section__text">Mechanizm <span class="mark">promise</span>: w oczekiwaniu na odpowiedź serwera kolejne linie kodu wykonują się "w międzyczasie".</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+something ()
+    .then((response) => {
+        do something;
+    })
+    .catch((error) => {
+        something else
+    })
+
+console.log('test') //wykona się w międzyczasie
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Taki mechanizm to <span class="mark">asynchroniczność</span> - kod nie wykonuje się po kolei linijkami.</p>
+                    <p class="inner-section__text">FETCH:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+fetch("https://adres-api")
+    .then(resp => resp.json())
+    .then(resp => {
+        //w resp jest json z odpowiedzią
+    })
+    .catch(error => {
+        console.log('Nie udało się pobrać')
+    })
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Wypisywanie zawartości tablicy:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+for (let repo of resp) => {
+    .
+    .
+    myElement.innerHTML += myTemplate
+}
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text"><span class="mark">+=</span> nie nadpisuje zawartości myElement, tylko dodaje nową treść.</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Sprawdzanie stron w różnych przeglądarkach</h4>
+                    <ul class="inner-section-list">
+                        <li><span class="inner-section-list__content"><a class="external-link" href="browserstack.com" target=_blank>browserstack.com</a> - można wybrać system operacyjny, urządzenie, przeglądarkę. (Darmowa wersja tylko na 1 min.)</span></li>
+                        <li><span class="inner-section-list__content"><a class="external-link" href="browsershots.org" target=_blank>browsershots.org</a></span></li>
+                        <li><span class="inner-section-list__content">virtualbox (i inne wirtualne maszyny) - emuluje inne systemy.</span></li>
+                        <li><span class="inner-section-list__content">wirtualny Internet Explorer</span></li>
+                    </ul>
+                    <p class="inner-section__text"><span class="mark">Progressive enhancement</span> - technika umożliwiająca użytkownikowi dostęp do treści niezależnie od urządzenia (z ewentualnym pominięciem grafiki). W SCSS:</p>
+                    <div class="code-wrapper">
+                        <pre><code class="code">
+@supports (display: grid) {
+    div {
+        display: grid;
+    }
+}
+@ supports not (display: grid) {
+    div {
+        float: right;
+    }
+}
+                        </code></pre>
+                    </div>
+                    <p class="inner-section__text">Warto pytać przy nowym projekcie, jakie przeglądarki mają być wspierane.</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Optymalizacja</h4>
+                    <p class="inner-section__text">Minejszy rozmiar plików - 300ms to dużo czasu. DevTools - Network - tam można sprawdzić rozmiar elementów i czas ładowania.</p>
+                    <p class="inner-section__text">DevTools - Lighthouse / audit - sprawdza różne aspekty, podaje wyniki w procentach (np. dostępność) - odpalać z opublikowanej strony, nie lokalnie.</p>
+                    <p class="inner-section__text"><a class="external-link" href="https://web.dev" target=_blank>https://web.dev</a> - robi podobne rzeczy, podpowiada, co poprawić.</p>
+                    <p class="inner-section__text"><a class="external-link" href="https://tinypng.com" target=_blank>https://tinypng.com</a> - strona kompresująca png</p>
+                    <p class="inner-section__text">Upewnijmy się, czy wszystko, co importujemy, na pewno jest potrzebne.</p>
+                    <p class="inner-section__text">Minifikacja - nasz starter kit to robi.</p>
+                    <p class="inner-section__text">CSS krytyczny - część arkusza (najważniejsze selektory, odpowiadające za wygląd początku strony) - od razu w części &lt;head&gt;.</p>
+                    <p class="inner-section__text">Wyszukiwarki promują strony ładujące się szybko i dostępne dla urządzeń mobilnych - warto o to zadbać.</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Conventional commits</h4>
+                    <p class="inner-section__text">&lt;type&gt;[optional scope]: &lt;description&gt; gdzie type tfix / feat (feature) / breaking change (np. feat: add index.html)</p>
+                    <p class="inner-section__text">feature branch: feat/nazwa (np. feat/menu)</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Zmiany w cudzym repozytorium</h4>
+                    <ol class="inner-section-list">
+                        <li><span class="inner-section-list__content">fork</span></li>
+                        <li><span class="inner-section-list__content">clone</span></li>
+                        <li><span class="inner-section-list__content">dig in :)</span></li>
+                        <li><span class="inner-section-list__content">push</span></li>
+                        <li><span class="inner-section-list__content">new pull request - create pull request</span></li>
+                    </ol>
+                    <p class="inner-section__text">Jeśli jesteśmy dodani jako współtwórcy projektu - ZAWSZE pracujemy na swoim branchu, a po zmergeowaniu - kasujemy go.</p>
                 </section>
 
             </article><!--pamiętaj o id dla kolejnych tygodni-->

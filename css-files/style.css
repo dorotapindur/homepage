@@ -742,3 +742,6 @@ pre {
 
 .markdown-list {
   list-style: none; }
+
+.sublist {
+  list-style-type: square; }
