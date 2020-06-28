@@ -175,5 +175,25 @@ changeMode.addEventListener('click', () => {
     }
 console.log('działa?');
 })
+//pobieranie i wypisywanie listy repozytoriów z githuba
+
+const repositoryList = document.querySelector('.repository-list--js');
+
+fetch('https://api.github.com/users/dorotapindur/repos?sort=created&direction=asc')
+.then(resp => resp.json())
+.then(resp => {
+    for (let repo of resp) {
+        const{name, html_url} = repo;
+        console.log(`${name} ${html_url}`);
+        const myTemplate = `<li><span class="inner-section-list__content">
+            ${name}: <a href="${html_url}" class="external-link" target=_blank>${html_url}</a>
+            </span></li>`;
+        repositoryList.innerHTML += myTemplate;
+    }
+})
+.catch(error => {
+    console.log(error);
+    console.log('nie udało się pobrać');    
+})
 
     
