@@ -55,7 +55,7 @@
 
                 <p class="section__text">Pewnie zastanawiasz się, jak trafiłam na ten kurs. Poszukiwałam różnych materiałów na temat nauki programowania dla początkujących. Przeglądałam też oferty
                     bardzo drogich kursów czy „bootcampów“. Po kilku dniach Facebook wyświetlił mi reklamę <a class="external-link" 
-                    href="https://cotenfrontend.pl/" target="_blank">CO TEN FRONTEND</a>.
+                    href="https://cotenfrontend.pl/" target="_blank" rel="noopener">CO TEN FRONTEND</a>.
                     Poczytałam, pooglądałam i podjęłam decyzję: spróbuję! Decyzji sprzyjała też sensowna cena kursu i
                     sympatyczny prowadzący.</p>
             </section>               
@@ -126,7 +126,7 @@
                     <li><span class="week-article__list-content"><span class="mark">Java Script</span></span></li>
                 </ol>
                 <p class="week-article__text">Chrome - funkcja <span class="mark">"inspect"</span> do badania kodu wyświetlanej strony (Firefox też ma tę funkcję)</p>
-                <p class="week-article__text"><a class="external-link" href="https://validator.w3.org/nu/#textarea" target="_blank">Validator</a> - sprawdza kod i
+                <p class="week-article__text"><a class="external-link" href="https://validator.w3.org/nu/#textarea" target="_blank" rel="noopener">Validator</a> - sprawdza kod i
                     wskazuje błędy</p>
                 <p class="week-article__text">Dobrym zwyczajem jest podawanie rozmiarów umieszczonego na stronie obrazka - jeśli nie wczyta się on
                     u użytkownika, nie zmieni to układu reszty elementów.<br>
@@ -189,7 +189,7 @@
                         <li><span class="inner-section-list__content">doing</span></li>
                         <li><span class="inner-section-list__content">done</span></li>
                     </ul>
-                    <p class="inner-section__text">Praktyczny kanban online: <a class="external-link" href="https://trello.com" target="_blank">Trello.com</a></p>   
+                    <p class="inner-section__text">Praktyczny kanban online: <a class="external-link" href="https://trello.com" target="_blank" rel="noopener">Trello.com</a></p>   
                 </section>
             
 
@@ -523,16 +523,16 @@ const car = {
                 
                 <section class="inner-section">
                     <h4 class="inner-section__heading">Flexbox</h4>
-                    <p class="inner-section__text">Rozległy temat - szczegółowy opis można znaleźć tu: <a class="external-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target=_blank>Basic Concepts of Flexbox</a>.</p>
-                    <p class="inner-section__text">A potrenować można grając we <a class="external-link" href="https://flexboxfroggy.com/#pl" target=_blank>Flexbox Froggy</a>.</p>
-                    <p class="inner-section__text">Na tej stronie można przetestować różne możliwości flexboxa: <a class="external-link" href="https://yoksel.github.io/flex-cheatsheet/" target=_blank>Flex-cheatsheet</a>.</p>
+                    <p class="inner-section__text">Rozległy temat - szczegółowy opis można znaleźć tu: <a class="external-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target=_blank rel="noopener">Basic Concepts of Flexbox</a>.</p>
+                    <p class="inner-section__text">A potrenować można grając we <a class="external-link" href="https://flexboxfroggy.com/#pl" target=_blank rel="noopener">Flexbox Froggy</a>.</p>
+                    <p class="inner-section__text">Na tej stronie można przetestować różne możliwości flexboxa: <a class="external-link" href="https://yoksel.github.io/flex-cheatsheet/" target=_blank rel="noopener">Flex-cheatsheet</a>.</p>
 
                 </section> 
 
                 <section class="inner-section">
                     <h4 class="inner-section__heading">Reset i Normalizacja</h4>
                     <p class="inner-section__text">Przeglądarka posiada swoje domyślne style, które nadpisujemy w naszym CSS. Reset je unieważnia. Trzeba być ostrożnym w jego używaniu - strona staje się nieczytelna i traci na dostępności. <span class="mark">NIE WOLNO</span> resetować outline! (outline: 0 lub none) - wtedy linki nie są podświetlane przy pomocy klawisza Tab (dla niedowidzących i osób posługujących się tylko klawiaturą).</p>
-                    <p class="inner-section__text"><span class="mark">Normalizacja</span> - tworzymy specjalny plik normalize.css (link do treści <a class="external-link" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" target=_blank>tutaj</a>), automatycznie wyrównujący drobne różnice między przeglądarkami. Najlepiej zawsze dodawać go w części &lt;head&gt; kodu przed naszym arkuszem stylów.</p>
+                    <p class="inner-section__text"><span class="mark">Normalizacja</span> - tworzymy specjalny plik normalize.css (link do treści <a class="external-link" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" target=_blank rel="noopener">tutaj</a>), automatycznie wyrównujący drobne różnice między przeglądarkami. Najlepiej zawsze dodawać go w części &lt;head&gt; kodu przed naszym arkuszem stylów.</p>
                     <p class="inner-section__text">Warto też ustawić  w całym html box-sizing na border-box (a dla potomków: inherit).</p>
                     <div class="code-wrapper">
                         <pre><code class="code">
@@ -643,7 +643,7 @@ switch (myVariable) {
                     <p class="inner-section__text">Żądanie typu GET - domyślne, wrzuca zawartość formularza do adresu - lepszy do pobierania<br>
                     Żądanie typu POST - zostawia czysty adres, lepsze do wysyłania formularza.</p>
                     <p class="inner-section__text">enctype - określa typ formularza. Domyśny to enctype="application/x-www-form-urlencoded". Jeśli wysyłamy z formularza plik, musimy go zmienić na enctype="multipart/form-data".</p>
-                    <p class="inner-section__text">Właściwość "required" - ustawia pole wymagane. Właściwość "pattern" - pozwala ustawić format wprowadzanej treści (np. kod pocztowy to dwie cyfry, myślnik, trzy cyfry - czyli pattern="[0-9]{2}-[0-9]{3}". Wzory tych wyrażeń online: <a class="external-link" href="http://html5pattern.com/" target=_blank>html5pattern.com</a>.</p>
+                    <p class="inner-section__text">Właściwość "required" - ustawia pole wymagane. Właściwość "pattern" - pozwala ustawić format wprowadzanej treści (np. kod pocztowy to dwie cyfry, myślnik, trzy cyfry - czyli pattern="[0-9]{2}-[0-9]{3}". Wzory tych wyrażeń online: <a class="external-link" href="http://html5pattern.com/" target=_blank rel="noopener">html5pattern.com</a>.</p>
                     <p class="inner-section__text">Walidacja po stronie front-endu nie zastępuje walidacji po stronie back-endu.</p>
                 </section>
 
@@ -683,9 +683,9 @@ switch (myVariable) {
                         <p class="inner-section__text grid-aside__text">GRID!</p>
                     </aside>
                     <div class="grid-section__footer">
-                        <p class="inner-section__text">Więcej na: <a class="external-link" href="https://webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/" target=_blank>webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/</a><br>
-                        oraz <a class="external-link" href="https://css-tricks.com/snippets/css/complete-guide-grid/" target=_blank>CSS-tricks: A complete Guide to Grid</a>.</p>
-                        <p class="inner-section__text">Poćwiczyć można za pomocą gry <a class="external-link" href="https://cssgridgarden.com/#pl" target=_blank>Grid Garden</a>.</p>
+                        <p class="inner-section__text">Więcej na: <a class="external-link" href="https://webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/" target=_blank rel="noopener">webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/</a><br>
+                        oraz <a class="external-link" href="https://css-tricks.com/snippets/css/complete-guide-grid/" target=_blank rel="noopener">CSS-tricks: A complete Guide to Grid</a>.</p>
+                        <p class="inner-section__text">Poćwiczyć można za pomocą gry <a class="external-link" href="https://cssgridgarden.com/#pl" target=_blank rel="noopener">Grid Garden</a>.</p>
                         <p class="inner-section__text"><i>/*Układ tej sekcji został utworzony za pomocą grida*/</i></p>
                     </div>
                 </section>
@@ -790,7 +790,7 @@ scripst: {
                         </code></pre>
                     </div>
                     <p class="inner-section__text">Gdy korzystamy z preprocesorów, <span class="mark">NIE EDYTUJEMY</span> wygenerowanych plików .css - są nadpisywane przez zawartość .scss!</p>
-                    <p class="inner-section__text">Dokumentacja Sass w internecie: <a class="external-link" href="https://sass-lang.com/documentation" target=_blank>Sass-lang documentation</a></p>
+                    <p class="inner-section__text">Dokumentacja Sass w internecie: <a class="external-link" href="https://sass-lang.com/documentation" target=_blank rel="noopener">Sass-lang documentation</a></p>
 
 
                 </section>
@@ -857,14 +857,14 @@ import * as newName from 'ścieżka-do-pliku';
                 <section class="inner-section">
                     <h4 class="inner-section__heading">Webpack</h4>
                     <p class="inner-section__text"><span class="mark">Webpack</span> to obecnie jedno z podstawowych narzędzi front-endowca. Automatyzuje procesy w trakcie tworzenia strony, ułatwia development. Wykorzystują go wiodące frameworki i biblioteki.</p>
-                    <p class="inner-section__text">Dokumentacja i tutorial: <a class="external-link" href="https://webpack.js.org" target=_blank>webpack.js.org</a></p>
+                    <p class="inner-section__text">Dokumentacja i tutorial: <a class="external-link" href="https://webpack.js.org" target=_blank rel="noopener">webpack.js.org</a></p>
                     <p class="inner-section__text">Plik wejściowy jest przetwarzany w webpacku i powstaje zminifikowany, przyjazny dla przeglądarki plik w katalogu "dist". Uwaga, <span class="mark">nie edytujemy dist!</span> - jego zawartość jest nadpisywana w trybie produkcji.</p>
                     <p class="inner-section__text"><b>Loader</b> - pozwala na wczytanie innych plików niż pliki .js</p>
                     <p class="inner-section__text"><b>Plugin</b> - pozwala na wykonywanie różnych operacji</p>
                     <p class="inner-section__text">W webpacku mamy 2 tryby pracy (mode): <span class="mark">development</span> - czyli to, w czym pracujemy - oraz <span class="mark">production</span> - zcyli to, co leci na serwer.</p>
                     <p class="inner-section__text">Webpacka można rozszerzać za pomocą paczek z NPM.</p>
                     <p class="inner-section__text">Korzystanie z webpacka staje się obecnie standardem, ale przy małych projektach nie jest konieczne.</p>
-                    <p class="inner-section__text">"Nasz" webpack od Maćka: <a class="external-link" href="https://github.com/maciejkorsan/wtf-webpack-starter" target=_blank>wtf-webpack-starter</a>.</p>
+                    <p class="inner-section__text">"Nasz" webpack od Maćka: <a class="external-link" href="https://github.com/maciejkorsan/wtf-webpack-starter" target=_blank rel="noopener">wtf-webpack-starter</a>.</p>
                 </section>
 
                 <section class="inner-section change-mode">
@@ -908,8 +908,8 @@ document.documentElement.style.setProperty('--zmienna', 'nowa-wartość');
 
                 <section class="inner-section">
                     <h4 class="inner-section__heading">CSS Prefix</h4>
-                    <p class="inner-section__text">Prefiksy CSS określają własności dla różnych przeglądarek. Są potrzebne, aby starsze przeglądarki mogły korzystać z nowych rzeczy (z nowych FICZERÓW). Na stronie <a class="external-link" href="https://caniuse.com/" target=_blank>Can I Use</a> można sprawdzić, które własności potrzebują prefixów i w jakich przeglądarkach.</p>
-                    <p class="inner-section__text"><a class="external-link" href="https://autoprefixer.github.io/" target=_blank>Autoprefixer.github.io/</a> - narzędzie, które dodaje automatycznie potrzebne prefixy. Nasz webpack od Maćka robi to za nas, nie musimy się martwić.</p>                    
+                    <p class="inner-section__text">Prefiksy CSS określają własności dla różnych przeglądarek. Są potrzebne, aby starsze przeglądarki mogły korzystać z nowych rzeczy (z nowych FICZERÓW). Na stronie <a class="external-link" href="https://caniuse.com/" target=_blank rel="noopener">Can I Use</a> można sprawdzić, które własności potrzebują prefixów i w jakich przeglądarkach.</p>
+                    <p class="inner-section__text"><a class="external-link" href="https://autoprefixer.github.io/" target=_blank rel="noopener">Autoprefixer.github.io/</a> - narzędzie, które dodaje automatycznie potrzebne prefixy. Nasz webpack od Maćka robi to za nas, nie musimy się martwić.</p>                    
                 </section>
 
                 <section class="inner-section">
@@ -1093,17 +1093,17 @@ for (let element of myArray) {
                     <h4 class="inner-section__heading">Proste projektowanie</h4>
                     <p class="inner-section__text">UI KIT - gotowe schematy do projektowania stron</p>
                     <p class="inner-section__text">Kopiujmy elementy, które nam się podobają, zaczynajmy od treści, kolorystycznie startujmy od skali szarości, żeby nie przegiąć, nie przekobinować.</p>
-                    <p class="inner-section__text">Można do projektowania wykorzystywać Figmę oraz <a class="external-link" href="https://pdkit.co/" target=_blank>Product Design Kit</a> (darmowe narzędzia)</p>
+                    <p class="inner-section__text">Można do projektowania wykorzystywać Figmę oraz <a class="external-link" href="https://pdkit.co/" target=_blank rel="noopener">Product Design Kit</a> (darmowe narzędzia)</p>
                     <p class="inner-section__text">Inne przydatne linki dla inspiracji:</p>
                     <ul class="inner-section-list">
-                        <li><a class="external-link" href="https://dribbble.com/" target=_blank>dribbble.com/</a></li>
-                        <li><a class="external-link" href="https://www.behance.net/" target=_blank>behance.net/</a></li>
-                        <li><a class="external-link" href="https://refactoringui.com/" target=_blank>refactoringui.com/</a></li>
-                        <li><a class="external-link" href="https://www.awwwards.com/websites/" target=_blank>www.awwwards.com/websites/</a></li>
-                        <li><a class="external-link" href="https://www.siteinspire.com/" target=_blank>www.siteinspire.com/</a></li>
-                        <li><a class="external-link" href="https://codepen.io/" target=_blank>codepen.io/</a></li>
-                        <li><a class="external-link" href="https://tympanus.net/codrops/" target=_blank>tympanus.net/codrops/</a></li>
-                        <li><a class="external-link" href="https://www.cssdesignawards.com/" target=_blank>www.cssdesignawards.com/</a></li>
+                        <li><a class="external-link" href="https://dribbble.com/" target=_blank rel="noopener">dribbble.com/</a></li>
+                        <li><a class="external-link" href="https://www.behance.net/" target=_blank rel="noopener">behance.net/</a></li>
+                        <li><a class="external-link" href="https://refactoringui.com/" target=_blank rel="noopener">refactoringui.com/</a></li>
+                        <li><a class="external-link" href="https://www.awwwards.com/websites/" target=_blank rel="noopener">www.awwwards.com/websites/</a></li>
+                        <li><a class="external-link" href="https://www.siteinspire.com/" target=_blank rel="noopener">www.siteinspire.com/</a></li>
+                        <li><a class="external-link" href="https://codepen.io/" target=_blank rel="noopener">codepen.io/</a></li>
+                        <li><a class="external-link" href="https://tympanus.net/codrops/" target=_blank rel="noopener">tympanus.net/codrops/</a></li>
+                        <li><a class="external-link" href="https://www.cssdesignawards.com/" target=_blank rel="noopener">www.cssdesignawards.com/</a></li>
                     </ul>
                 </section>
 
@@ -1140,7 +1140,7 @@ for (let element of myArray) {
 
                 <section class="inner-section">
                     <h4 class="inner-section__heading">Animacje i przejścia</h4>
-                    <p class="inner-section__text">Lista właściwości, które mogą być animowane: <a class="external-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target=_blank>Animatable CSS properties</a> (link).</p>
+                    <p class="inner-section__text">Lista właściwości, które mogą być animowane: <a class="external-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target=_blank rel="noopener">Animatable CSS properties</a> (link).</p>
                     <p class="inner-section__text">Polecenie przejścia: <code class="code">transition: name duration timing-function delay;</code> jeśli zmianie mają ulec 2 własności - wymieniamy po przecinku. W devtools możemy edytować efekt (jego timing-function - krzywa Beziera do wyginania)</p>
                     <p class="inner-section__text"><code class="code">will-change: name;</code> - przekazuje przeglądarce, że własność będzie zmieniana</p>
                     <p class="inner-section__text"><code class="code">transform: translate (x, y) - przesuwa element</code></p>
@@ -1165,27 +1165,19 @@ for (let element of myArray) {
                 <section class="inner-section">
                     <h4 class="inner-section__heading">&lt;head&gt; & Open Graph</h4>
                     <p class="inner-section__text">Mtaznaczniki &lt;meta&gt; - opisują, jaki jest język (języki) strony, jaki viewport. &lt;title&gt; odpowiada opisowi strony na zakładce. &lt;icon&gt; - ikona przed tytułem (favicon).</p>
-                    <p class="inner-section__text">Open Graph - opisuje naszą stronę przy udostępnianiu - jej opis, grafikę (np. przy wklejaniu linku na fb) - zachęca do kliknięcia w link, pierwsze wrażenie. Og: image możemy stworzyć np. w Canva z szablonu. Na <a href="http://debug.iframely.com/" class="external-link" target=_blank>debug.iframely.com/</a> możemy sprawdzić wygląd naszego og (z już opublikowanej strony).</p>
+                    <p class="inner-section__text">Open Graph - opisuje naszą stronę przy udostępnianiu - jej opis, grafikę (np. przy wklejaniu linku na fb) - zachęca do kliknięcia w link, pierwsze wrażenie. Og: image możemy stworzyć np. w Canva z szablonu. Na <a href="http://debug.iframely.com/" class="external-link" target=_blank rel="noopener">debug.iframely.com/</a> możemy sprawdzić wygląd naszego og (z już opublikowanej strony).</p>
                 </section>
 
                 <section class="inner-section">
                     <h4 class="inner-section__heading">WAI / WCAG / A11y / ARIA - czyli odpowiedzialność w internecie</h4>
                     <p class="inner-section__text">WAI - Web Accessibility Initiative</p>
                     <p class="inner-section__text">WCAG - Web Content Accessibility Guidelines - dokument opisujący, co powinna zawierać (i jak być zabezpieczona) strona dostępna dla osób niepełnosprawnych. Niektóre strony (np. instytucji publicznych) muszą wg. prawa spełniać pewne standardy.</p>
-                    <p class="inner-section__text">A11y (Accessibility) - projekt pomagający w tworzeniu dostępnych stron. Więcej informacji na stronie <a href="https://a11yproject.com/" class="external-link" target=_blank>a11yproject.com/</a> oraz <a href="https://a11y.me/" class="external-link" target=_blank>https://a11y.me/</a>.</p>
-                    <p class="inner-section__text">Fundacja Widzialni - zajmuje się tym tematem w Polsce (np. szkolenia z dostępności). Link: <a href="https://widzialni.org/" class="external-link" target=_blank>https://widzialni.org/</a>.</p>
-                    <p class="inner-section__text">Rady<!DOCTYPE html>
-                        <html lang="">
-                        <head>
-                        <title>Test</title>
-                        </head>
-                        <body>
-                        <p></p>
-                        </body>
-                        </html>:</p>
+                    <p class="inner-section__text">A11y (Accessibility) - projekt pomagający w tworzeniu dostępnych stron. Więcej informacji na stronie <a href="https://a11yproject.com/" class="external-link" target=_blank rel="noopener">a11yproject.com/</a> oraz <a href="https://a11y.me/" class="external-link" target=_blank rel="noopener">https://a11y.me/</a>.</p>
+                    <p class="inner-section__text">Fundacja Widzialni - zajmuje się tym tematem w Polsce (np. szkolenia z dostępności). Link: <a href="https://widzialni.org/" class="external-link" target=_blank rel="noopener">https://widzialni.org/</a>.</p>
+                    <p class="inner-section__text">Rady:</p>
                     <ol class="inner-section-list">
                         <li><span class="inner-section-list__content">Pisz semantycznie.</span></li>
-                        <li><span class="inner-section-list__content">Trzymaj kontrast (sprawdź na <a href="https://color.a11y.com/contrast/" class="external-link" target=_blank>color.a11y.com/contrast/</a>, </span></li>
+                        <li><span class="inner-section-list__content">Trzymaj kontrast (sprawdź na <a href="https://color.a11y.com/contrast/" class="external-link" target=_blank rel="noopener">color.a11y.com/contrast/</a>, </span></li>
                         <li><span class="inner-section-list__content">Dobrze dobieraj kolory, jeśli to od ciebie zależy, lub zwarcaj uwagę projektantom.</span></li>
                         <li><span class="inner-section-list__content">Unikaj autoplay - atakujących z nienacka dźwięków i wideo bez możliwości włączenia i wyłączenia.</span></li>
                         <li><span class="inner-section-list__content">Nie ograniczaj czasowo rzeczy, które mają treść.</span></li>
@@ -1315,8 +1307,8 @@ for (let repo of resp) => {
                 <section class="inner-section">
                     <h4 class="inner-section__heading">Sprawdzanie stron w różnych przeglądarkach</h4>
                     <ul class="inner-section-list">
-                        <li><span class="inner-section-list__content"><a class="external-link" href="browserstack.com" target=_blank>browserstack.com</a> - można wybrać system operacyjny, urządzenie, przeglądarkę. (Darmowa wersja tylko na 1 min.)</span></li>
-                        <li><span class="inner-section-list__content"><a class="external-link" href="browsershots.org" target=_blank>browsershots.org</a></span></li>
+                        <li><span class="inner-section-list__content"><a class="external-link" href="browserstack.com" target=_blank rel="noopener">browserstack.com</a> - można wybrać system operacyjny, urządzenie, przeglądarkę. (Darmowa wersja tylko na 1 min.)</span></li>
+                        <li><span class="inner-section-list__content"><a class="external-link" href="browsershots.org" target=_blank rel="noopener">browsershots.org</a></span></li>
                         <li><span class="inner-section-list__content">virtualbox (i inne wirtualne maszyny) - emuluje inne systemy.</span></li>
                         <li><span class="inner-section-list__content">wirtualny Internet Explorer</span></li>
                     </ul>
@@ -1342,8 +1334,8 @@ for (let repo of resp) => {
                     <h4 class="inner-section__heading">Optymalizacja</h4>
                     <p class="inner-section__text">Minejszy rozmiar plików - 300ms to dużo czasu. DevTools - Network - tam można sprawdzić rozmiar elementów i czas ładowania.</p>
                     <p class="inner-section__text">DevTools - Lighthouse / audit - sprawdza różne aspekty, podaje wyniki w procentach (np. dostępność) - odpalać z opublikowanej strony, nie lokalnie.</p>
-                    <p class="inner-section__text"><a class="external-link" href="https://web.dev" target=_blank>https://web.dev</a> - robi podobne rzeczy, podpowiada, co poprawić.</p>
-                    <p class="inner-section__text"><a class="external-link" href="https://tinypng.com" target=_blank>https://tinypng.com</a> - strona kompresująca png</p>
+                    <p class="inner-section__text"><a class="external-link" href="https://web.dev" target=_blank rel="noopener">https://web.dev</a> - robi podobne rzeczy, podpowiada, co poprawić.</p>
+                    <p class="inner-section__text"><a class="external-link" href="https://tinypng.com" target=_blank rel="noopener">https://tinypng.com</a> - strona kompresująca png</p>
                     <p class="inner-section__text">Upewnijmy się, czy wszystko, co importujemy, na pewno jest potrzebne.</p>
                     <p class="inner-section__text">Minifikacja - nasz starter kit to robi.</p>
                     <p class="inner-section__text">CSS krytyczny - część arkusza (najważniejsze selektory, odpowiadające za wygląd początku strony) - od razu w części &lt;head&gt;.</p>
@@ -1378,11 +1370,11 @@ for (let repo of resp) => {
             </div>
             <p class="section__text">Inne strony tworzone przeze mnie w trakcie WTF:</p>
             <ul class="section__list">
-                <li><a class="external-link" href="https://dorotapindur.github.io/business-card/" target=_blank>Wizytówka</a> - ćwiczenie programowania strony według gotowego projektu graficznego, zmodyfikowanego potem przeze mnie</li>
-                <li><a class="external-link" href="https://dorotapindur.github.io/webpack-form/" target=_blank>Formularz</a> - ćwiczenie formularza, webpacka i JS</li>
-                <li><a class="external-link" href="https://dorotapindur.github.io/sketching-time/" target=_blank>It's sketching time</a> - mój pomysł :)</li>
-                <li><a class="external-link" href="https://dorotapindur.github.io/notepad/" target=_blank>Notatnik</a> - prosty edytor tekstu</li>
-                <li><a class="external-link" href="https://dorotapindur.github.io/hydrapp/" target=_blank>Hydrapp</a> - aplikacja PWA licząca szklanki wody</li>
+                <li><a class="external-link" href="https://dorotapindur.github.io/business-card/" target=_blank rel="noopener">Wizytówka</a> - ćwiczenie programowania strony według gotowego projektu graficznego, zmodyfikowanego potem przeze mnie</li>
+                <li><a class="external-link" href="https://dorotapindur.github.io/webpack-form/" target=_blank rel="noopener">Formularz</a> - ćwiczenie formularza, webpacka i JS</li>
+                <li><a class="external-link" href="https://dorotapindur.github.io/sketching-time/" target=_blank rel="noopener">It's sketching time</a> - mój pomysł :)</li>
+                <li><a class="external-link" href="https://dorotapindur.github.io/notepad/" target=_blank rel="noopener">Notatnik</a> - prosty edytor tekstu</li>
+                <li><a class="external-link" href="https://dorotapindur.github.io/hydrapp/" target=_blank rel="noopener">Hydrapp</a> - aplikacja PWA licząca szklanki wody</li>
             </ul>
         </section>
 
@@ -1392,11 +1384,11 @@ for (let repo of resp) => {
             </div>
             <p class="section__text">Pomysły na to, co robić po WTF:</p>
             <ul class="section__list">
-                <li><a class="external-link" href="https://devupgrade.online/" target=_blank>DevUpgrade.online</a> - darmowy kurs online dla programistów na poziomie junior i regular</li>
-                <li><a class="external-link" href="https://www.codecademy.com/catalog/subject/all" target=_blank>Codecademy</a> - darmowe i płatne kursy</li>
-                <li><a class="external-link" href="https://www.freecodecamp.org/" target=_blank>Free code camp</a> - darmowe kursy</li>
-                <li><a class="external-link" href="https://helloroman.com/" target=_blank>Hello Roman</a> - kursy, vlog</li>
-                <li><a class="external-link" href="https://nofluffjobs.com/pl/jobs" target=_blank>No Fluff Jobs</a> - oferty pracy</li>             
+                <li><a class="external-link" href="https://devupgrade.online/" target=_blank rel="noopener">DevUpgrade.online</a> - darmowy kurs online dla programistów na poziomie junior i regular</li>
+                <li><a class="external-link" href="https://www.codecademy.com/catalog/subject/all" target=_blank rel="noopener">Codecademy</a> - darmowe i płatne kursy</li>
+                <li><a class="external-link" href="https://www.freecodecamp.org/" target=_blank rel="noopener">Free code camp</a> - darmowe kursy</li>
+                <li><a class="external-link" href="https://helloroman.com/" target=_blank rel="noopener">Hello Roman</a> - kursy, vlog</li>
+                <li><a class="external-link" href="https://nofluffjobs.com/pl/jobs" target=_blank rel="noopener">No Fluff Jobs</a> - oferty pracy</li>             
             </ul>
         </section>
 
