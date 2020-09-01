@@ -1360,7 +1360,75 @@ for (let repo of resp) => {
                     <p class="inner-section__text">Jeśli jesteśmy dodani jako współtwórcy projektu - ZAWSZE pracujemy na swoim branchu, a po zmergeowaniu - kasujemy go.</p>
                 </section>
 
-            </article><!--pamiętaj o id dla kolejnych tygodni-->
+            </article>
+            <article class="week-article">
+                <h3 id="week12" class="week-article__heading">Tydzień 12</h3>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Frameworki CSS</h4>
+                    <p class="inner-section__text"><span class="mark">Bootstrap</span> - zbiór gotowych plików (instalacja przez NPM). Zawiera plik HTML oraz dołączony plik CSS i pliki JS (JQuery i inne). W dokumentacji jest opis gotowych komponentów (np. formularze, przyciski), z których możemy skorzystać (skopiować do kodu). Są też gotowe layouty. Więcej informacji na stronie <a href="https://getbootstrap.com" class="external-link" target=_blank>getbootstrap.com</a></p>
+                    <p class="inner-section__text"><span class="mark">Tailwind</span> - tylko CSS-owy framework (instalacja przen NPM, można go też zaimportować sassem w naszym starter-kicie). Zawiera gotowe, ostylowane elementy: karty, formularze itd. Przyspiesza pracę, nie tzreba się zastanawiać nad wyglądem czy układem. Dobrze działa z Reactem. Więcej informacji na <a href="https://tailwindcss.com" class="external-link" target=_blank>tailwindcss.com</a></p>
+                    <aside>
+                        <p class="inner-section__text">A tak na marginesie: czym różni się biblioteka od frameworka? Odpowiedź zaczerpnęłam z bloga Kamila Kwapisza. <q>Programista wywołuje bibliotekę, a framework wywołuje programistę.</q> <span class="mark">Biblioteką</span> (w programowaniu) nazywamy zbiór funkcji (i klas), które służą programiście do ściśle określonego celu. Biblioteka odpowiada za konkretne zagadnienie, bądź kilka zagadnień będących stosunkowo podobnymi. Programista używa z biblioteki tylko funkcje, które są mu w danym projekcie potrzebne. Daje to większą kontrolę nad wykonywanym kodem niż w przypadku frameworka. Gdy potrzebujemy jakiejś metody zaimplementowanej w ramach biblioteki, używamy jej, po czym pełna kontrola wykonania kodu wraca do nas.</p> 
+                        <p class="inner-section__text"> <span class="mark">Framework</span> tłumaczy się jako “szkielet”. I jest to dobra wskazówka do zrozumienia tego pojęcia.
+                        Framework daje programiście “środowiska” do tworzenia jakiejś aplikacji. Używanie frameworków ułatwia proces tworzenia aplikacji, gdyż nie musimy martwić się o programowanie powtarzalnych rzeczy, które są wymagane do poprawnego działania aplikacji, a możemy skupić się na wdrażaniu logiki biznesowej. W przypadku frameworka programista ma tylko chwilową kontrolę nad wykonywaniem kodu, po wykonaniu kodu stworzonego programistę kontrolę ponownie przejmuje framework. Cały artykuł na stronie <a href="https://kamil.kwapisz.pl/framework-biblioteka/" class="external-link" target=_blank>https://kamil.kwapisz.pl/framework-biblioteka/</a></p>
+                    </aside>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">CSS - dziwne znaczki i selektory</h4>
+                    <p class="inner-section__text">Bezpośrednie rodzeństwo: <span class="mark">+</span><br>
+                        <code class="code">.item + li {...}</code> - dotyczy najbliższego (1 element) rodzeństwa <b>po</b> elemencie .item.</p>
+                    <p class="inner-section__text">Ogólne rodzeństwo: <span class="mark">~</span><br>
+                        <code class="code">.item ~ li {...}</code> - dotyczy całego (wszystkie elementy) rodzeństwa <b>po</b> elemencie .item.</p>
+                    <p class="inner-section__text">Bezpośrednie dziecko: <span class="mark">></span><br>
+                        <code class="code">.list > li {...}</code> - wszystkie dzieci .list otrzymują style</p>
+                    <p class="inner-section__text">Attribute selector: <span class="mark">[ ]</span></p>
+                        <ul class="inner-section-list">
+                            <li><span class="inner-section-list__content"><code class="code">[href] {...}</code> - wszystkie elementy o atrybucie "href"</span></li>
+                            <li><span class="inner-section-list__content"><code class="code">[href="site.html"] {...}</code> - tylko href-y do "site.html", konkretnego adresu</span></li>
+                            <li><span class="inner-section-list__content"><code class="code">[href*="https"] {...}</code> - wszystkie elementy o atrybucie <b>zawierającym</b> "https"</span></li>
+                            <li><span class="inner-section-list__content"><code class="code">[href^="https"] {...}</code> - wszystkie elementy o atrybucie <b>rozpoczynającym się od</b> "https"</span></li>
+                            <li><span class="inner-section-list__content"><code class="code">[href$="https"] {...}</code> - wszystkie elementy o atrybucie <b>kończącym się na</b> "https"</span></li>
+                        </ul>
+                    <p class="inner-section__text"><span class="mark">*</span> zawiera, <span class="mark">^</span> początek, <span class="mark">$</span> koniec</p>          
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Licencje, grafiki, materiały</h4>
+                    <p class="inner-section__text">Jeśli zdjęcie lub grafika, której chcemy użyć na stronie, nie ma informacji o darmowej licencji - trzeba pytać autora (chyba że jest cena już jest określona np. na portalu stockowym). <span class="mark">Creative commons</span> - licencja do darmowego użytku (ewentualnie trzeba podpisać autora). Lista stron z darmowymi materiałami:</p>
+                    <ul class="inner-section-list">
+                        <li><a class="external-link" href="https://undraw.co/illustrations" target=_blank rel="noopener">undraw.co</a> - darmowe ilustracje, można edytować kolor</li>
+                        <li><a class="external-link" href="https://www.flaticon.com/" target=_blank rel="noopener">flaticon.com</a> - darmowe i płatne ikony, wymaga podpisu autora. Gdy mamy konto, możemy edytować kolory.</li>
+                        <li><a class="external-link" href="https://www.drawkit.io/" target=_blank rel="noopener">drawkit.io</a> - podobnie, licencja MIT</li>
+                        <li><a class="external-link" href="https://unsplash.com/" target=_blank rel="noopener">unsplash.com</a> - zdjęcia na CC0 (można podać autora, ale nie trzeba)</li>
+                        <li><a class="external-link" href="https://www.pexels.com/" target=_blank rel="noopener">pexels.com</a> - jak wyżej, CC0</li>
+                        <li><a class="external-link" href="https://pixabay.com/" target=_blank rel="noopener">pixabay.com</a> - jak wyżej, CC</li>
+                        <li><a class="external-link" href="https://ccsearch.creativecommons.org/" target=_blank rel="noopener">ccsearch.creativecommons.org/</a> - wyszukiwarka obrazów z licencją CC (różnego typu, także CC0)</li>
+                    </ul>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Strona user.github.io</h4>
+                    <p class="inner-section__text">Czyli nasza "strona główna" na GitHubie. myname.github.io - tego typu nazwę wpisujemy przy zakładaniu repozytorium na GitHubie (z webpacka). Tworzymy branch "source" i w ustawieniach dajemy go jako główny. Następnie usuwamy branch "master" i zostaje nam tylko "source". Klonujemy repozytorium na komputer (tworzy nam katalog myname.github.io). W pliku package.json modyfikujemy: <code class="code">"scripts": {... "publish":"...dist <b>-b master</b>"</b></code> - żeby webpack na takiej gałęzi publikował naszą stronę.</p>
+                    <p class="inner-section__text">Na GitHubie dodajmy do repozytoriów "repository details" - opis, adres https (do pobrania w API), tagi, które opisują nasze repozytorium, uzupełnijmy readme. Nie wszystkie repozytoria muszą być publiczne - chwalmy się tylko lepszymi projektami.</p>
+                </section>
+
+                <section class="inner-section">
+                    <h4 class="inner-section__heading">Mailto & Tel</h4>
+                    <p class="inner-section__text"><code class="code">&lt;a href="mailto:user@gmail.com"&gt;napisz do mnie&lt;/a&gt;</code> - otwiera nową wiadomość w programie pocztowym. Dodanie do polecenia <code class="code">"user@gmail.com<b>?subject=Wiadomość testowa</b>"</code> - automatycznie uzupełnia temat wiadomości.</p>
+                    <p class="inner-section__text"><code class="code">&lt;a href="tel:+48123123123"&gt;zadzwoń&lt;/a&gt;</code> - uruchamia dzwonienie w telefonie.</p>
+                </section>
+
+            </article>
+            
+            <article class="week-article">
+
+                <h3 id="week13" class="week-article__heading">Tydzień 13</h3>
+
+                <p class="week-article__text">Ten tydzień w szkoleniu prawie w całości poświęcony był rozwiązaniu zadania domowego czyli budowie strony od A do ...</p>
+
+            </article>
 
         </section>
 
@@ -1388,6 +1456,7 @@ for (let repo of resp) => {
                 <li><a class="external-link" href="https://www.codecademy.com/catalog/subject/all" target=_blank rel="noopener">Codecademy</a> - darmowe i płatne kursy</li>
                 <li><a class="external-link" href="https://www.freecodecamp.org/" target=_blank rel="noopener">Free code camp</a> - darmowe kursy</li>
                 <li><a class="external-link" href="https://helloroman.com/" target=_blank rel="noopener">Hello Roman</a> - kursy, vlog</li>
+                <li><a class="external-link" href="https://www.youtube.com/c/overment/featured" target=_blank rel="noopener">Overment (Adam Gospodarczyk)</a> - darmowe tutoriale</li>
                 <li><a class="external-link" href="https://nofluffjobs.com/pl/jobs" target=_blank rel="noopener">No Fluff Jobs</a> - oferty pracy</li>             
             </ul>
         </section>
