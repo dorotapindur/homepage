@@ -175,7 +175,8 @@ changeMode.addEventListener('click', () => {
     }
 console.log('działa?');
 })
-//pobieranie i wypisywanie listy repozytoriów z githuba
+
+//connect to github and diaply list of repositories
 
 const repositoryList = document.querySelector('.repository-list--js');
 
@@ -196,4 +197,20 @@ fetch('https://api.github.com/users/dorotapindur/repos?sort=created&direction=as
     console.log('nie udało się pobrać');    
 })
 
-    
+// appearing inner-sections (with IntersectionObserver)
+
+const innerSections = document.querySelectorAll(".inner-section");
+
+let observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0px)";
+    }
+  });
+},
+{rootMargin: "0px 0px -100px 0px"});
+
+innerSections.forEach((section) => {
+  observer.observe(section);
+});
