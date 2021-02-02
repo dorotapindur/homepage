@@ -204,12 +204,15 @@ const innerSections = document.querySelectorAll(".inner-section");
 let observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.intersectionRatio > 0) {
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = "translateY(0px)";
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = "translateY(0px)";
+    } else {
+        entry.target.style.opacity = 0;
+        entry.target.style.transform = "translateY(30px)";
     }
   });
 },
-{rootMargin: "0px 0px -100px 0px"});
+{rootMargin: "0px 0px -50px 0px"});
 
 innerSections.forEach((section) => {
   observer.observe(section);
