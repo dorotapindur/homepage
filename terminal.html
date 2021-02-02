@@ -80,6 +80,9 @@
                 <li><span class="section__list-content"><b>git push --set-upstream origin myNewBranch</b> - wypycha commit i jednocześnie tworzy nową gałąź na GitHubie</span></li>
                 <li><span class="section__list-content"><b>git merge myNewBranch</b> - łączy gałęzie (polecenie z poziomu mastera)</span></li>
                 <li><span class="section__list-content"><b>git branch -d myNewBranch</b> - usuwa niepotrzebną gałąź (polecenie z poziomu mastera)</span></li>
+                <li><span class="section__list-content"><b>git reset --hard</b> - usuwa niezakomitowane zmiany do momentu ostatniego commita (gdy chcemy "wyczyścić" edytor z nieskutecznych zmian)</span></li>
+                <li><span class="section__list-content"><b>git reset --soft HEAD~1</b> - usuwa ostatni commit, ale z zachowaniem niezakomitowanych zmian</span></li>
+                <li><span class="section__list-content"><b>git rm --cached nazwapliku.svg</b> - usuwa plik z repozytorium bez usuwania z dysku (jednocześnie trzeba go dodać do .gitignore)</span></li>
                 <li><span class="section__list-content"><b>ifconfig</b> - sprawdzanie IP (dla live servera)</span></li>
 
             </ul>
